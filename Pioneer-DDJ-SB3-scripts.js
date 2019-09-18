@@ -707,6 +707,16 @@ PioneerDDJSB3.shiftKeyLockButton = function (channel, control, value, status, gr
     }
 };
 
+PioneerDDJSB3.deck3Button = function (channel, control, value, status, group) {
+    printObject("deck3button");
+    printObject(control);
+};
+
+PioneerDDJSB3.deck4Button = function (channel, control, value, status, group) {
+    printObject("deck4button");
+    printObject(control);
+};
+
 PioneerDDJSB3.loopInButton = function (channel, control, value, status, group) {
     engine.setValue(PioneerDDJSB3.deckSwitchTable[group], 'loop_in', value ? 1 : 0);
 };
