@@ -1,4 +1,5 @@
-var PioneerDDJSB3 = {};
+PioneerDDJSB3 = {};
+//var PioneerDDJSB3 = {};
 
 ///////////////////////////////////////////////////////////////
 //                       USER OPTIONS                        //
@@ -1204,4 +1205,4 @@ PioneerDDJSB3.EffectUnit = function (unitNumber) {
     });
 };
 
-module.exports = PioneerDDJSB3;
+//module.exports = PioneerDDJSB3;

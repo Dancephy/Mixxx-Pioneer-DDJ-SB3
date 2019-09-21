@@ -10,7 +10,9 @@
   },
   "jest": {
     "setupFiles": [
-      "./lodash.mixxx.js"
+      "./lodash.mixxx.js",
+      "./setup.js",
+      "./Pioneer-DDJ-SB3-scripts.js"
     ]
   }
 }
