@@ -1,3 +1,6 @@
+const midicomponents = require('./midi-components-0.0');
+const components=midicomponents.components;
+
 var PioneerDDJSB3 = {};
 ///////////////////////////////////////////////////////////////
 //                       USER OPTIONS                        //
@@ -1202,3 +1205,5 @@ PioneerDDJSB3.EffectUnit = function (unitNumber) {
         }
     });
 };
+
+module.exports = PioneerDDJSB3;
