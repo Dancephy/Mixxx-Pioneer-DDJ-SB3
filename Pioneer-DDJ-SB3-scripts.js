@@ -1,5 +1,5 @@
 const midicomponents = require('./midi-components-0.0');
-const components=midicomponents.components;
+const components = midicomponents.components;
 
 var PioneerDDJSB3 = {};
 ///////////////////////////////////////////////////////////////
