@@ -710,13 +710,20 @@ PioneerDDJSB3.shiftKeyLockButton = function (channel, control, value, status, gr
 };
 
 PioneerDDJSB3.deck3Button = function (channel, control, value, status, group) {
-    printObject("deck3button");
-    printObject(control);
+    printObject("deck3button: " + "channel=" + channel + ", control=" + control + ", value=" + value + ", status=" + status + ", control=" + group);
+    if (value > 0) {
+        //pressed
+        midi.sendShortMsg(0x90, 0x72, 0x7f);
+        midi.sendShortMsg(0x90, 0x73, 0x7f);
+    }
 };
 
 PioneerDDJSB3.deck4Button = function (channel, control, value, status, group) {
-    printObject("deck4button");
-    printObject(control);
+    printObject("deck3button: " + "channel=" + channel + ", control=" + control + ", value=" + value + ", status=" + status + ", control=" + group);
+    if (value > 0) {
+        midi.sendShortMsg(0x91, 0x72, 0x7f);
+        midi.sendShortMsg(0x91, 0x73, 0x7f);
+    }
 };
 
 PioneerDDJSB3.loopInButton = function (channel, control, value, status, group) {
