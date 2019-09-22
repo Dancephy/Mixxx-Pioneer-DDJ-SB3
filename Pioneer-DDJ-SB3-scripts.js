@@ -1,4 +1,4 @@
-PioneerDDJSB3 = {};
+var PioneerDDJSB3 = {};
 //var PioneerDDJSB3 = {};
 
 ///////////////////////////////////////////////////////////////
@@ -1212,4 +1212,9 @@ PioneerDDJSB3.EffectUnit = function (unitNumber) {
     });
 };
 
-//module.exports = PioneerDDJSB3;
+try {
+    module.exports = PioneerDDJSB3;
+
+} catch (e) {
+
+}
