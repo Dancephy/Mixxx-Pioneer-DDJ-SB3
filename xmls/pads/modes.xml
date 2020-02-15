@@ -1,0 +1,343 @@
+      <!-- HotCue / BeatJump mode -->
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <!-- FX Fade / Roll mode -->
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+
+      <!-- Pad Scratch / Slicer Mode -->
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <!-- Sampler / Trans mode -->
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
