@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset schemaVersion="1" mixxxVersion="2.2+">
+  <info>
+    <name>Pioneer DDJ-SB3</name>
+    <author>Dancephy.com</author>
+    <description>Mapping file for the Pioneer DDJ-SB3 controller.</description>
+    <wiki></wiki>
+    <forums></forums>
+  </info>
+  <controller id="DDJ-SB3">
+    <scriptfiles>
+      <file filename="lodash.mixxx.js" />
+      <file filename="midi-components-0.0.js" />
+      <file functionprefix="PioneerDDJSB3" filename="Pioneer-DDJ-SB3-scripts.js" />
+    </scriptfiles>
+  </controller>
+</MixxxControllerPreset>

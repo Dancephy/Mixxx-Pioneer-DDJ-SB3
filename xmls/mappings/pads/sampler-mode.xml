@@ -1,3 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+<controls>
 <!-- PLAY / STOP -->
 <!-- PAD1 -->
       <control>
@@ -659,3 +662,5 @@
     <normal />
   </options>
 </control>
+</controls>
+</controller>

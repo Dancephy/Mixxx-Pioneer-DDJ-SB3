@@ -1,3 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+<controls>
       <!-- HotCue / BeatJump mode -->
       <control>
         <group>[Channel1]</group>
@@ -341,3 +344,5 @@
           <script-binding />
         </options>
       </control>
+</controls>
+</controller>

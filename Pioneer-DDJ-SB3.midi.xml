@@ -1,19 +1,2499 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <MixxxControllerPreset schemaVersion="1" mixxxVersion="2.2+">
   <info>
     <name>Pioneer DDJ-SB3</name>
     <author>Dancephy.com</author>
     <description>Mapping file for the Pioneer DDJ-SB3 controller.</description>
-    <wiki></wiki>
-    <forums></forums>
+    <wiki/>
+    <forums/>
   </info>
-  <controller id="DDJ-SB3">
+  <controller>
     <scriptfiles>
-      <file filename="lodash.mixxx.js" />
-      <file filename="midi-components-0.0.js" />
-      <file functionprefix="PioneerDDJSB3" filename="Pioneer-DDJ-SB3-scripts.js" />
+      <file filename="lodash.mixxx.js"/>
+      <file filename="midi-components-0.0.js"/>
+      <file functionprefix="PioneerDDJSB3" filename="Pioneer-DDJ-SB3-scripts.js"/>
     </scriptfiles>
     <controls>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 1 Auto Loop, Button: Auto Loop</description>
+        <status>0x90</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 2 Auto Loop, Button: Auto Loop</description>
+        <status>0x91</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 3 Auto Loop, Button: Auto Loop</description>
+        <status>0x92</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 4 Auto Loop, Button: Auto Loop</description>
+        <status>0x93</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 1 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x90</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 2 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x91</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 3 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x92</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 4 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x93</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_halve</key>
+        <description>Deck 1 Loop halve, Button: 1/2X</description>
+        <status>0x90</status>
+        <midino>0x12</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_halve</key>
+        <description>Deck 2 Loop halve, Button: 1/2X</description>
+        <status>0x91</status>
+        <midino>0x12</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_halve</key>
+        <description>Deck 4 Loop halve, Button: 1/2X</description>
+        <status>0x92</status>
+        <midino>0x12</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_halve</key>
+        <description>Deck 4 Loop halve, Button: 1/2X</description>
+        <status>0x93</status>
+        <midino>0x12</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_in</key>
+        <description>Deck 1 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x90</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_in</key>
+        <description>Deck 2 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x91</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_in</key>
+        <description>Deck 3 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x92</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_in</key>
+        <description>Deck 4 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x93</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_double</key>
+        <description>Deck 1 Loop Double, Button: 2X</description>
+        <status>0x90</status>
+        <midino>0x13</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_double</key>
+        <description>Deck 2 Loop Double, Button: 2X</description>
+        <status>0x91</status>
+        <midino>0x13</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_double</key>
+        <description>Deck 3 Loop Double, Button: 2X</description>
+        <status>0x92</status>
+        <midino>0x13</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_double</key>
+        <description>Deck 4 Loop Double, Button: 2X</description>
+        <status>0x93</status>
+        <midino>0x13</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_out</key>
+        <description>Deck 1 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x90</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_out</key>
+        <description>Deck 2 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x91</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_out</key>
+        <description>Deck 3 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x92</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_out</key>
+        <description>Deck 4 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x93</status>
+        <midino>0x62</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x69</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x1E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6E</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 1, Button: PAD1 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 2, Button: PAD1 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 3, Button: PAD1 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 4, Button: PAD1 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 1, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 2, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 3, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 4, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 1, Button: PAD2 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 2, Button: PAD2 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 3, Button: PAD2 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 4, Button: PAD2 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 1, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x49</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 2, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x49</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 3, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x49</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 4, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x49</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 1, Button: PAD3 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x42</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 2, Button: PAD3 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x42</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 3, Button: PAD3 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x42</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 4, Button: PAD3 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x42</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 1, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 2, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 3, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 4, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 1, Button: PAD4 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x43</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 2, Button: PAD4 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x43</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 3, Button: PAD4 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x43</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 4, Button: PAD4 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x43</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 1, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 2, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 3, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 4, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>start</key>
+        <description>Start of track Deck 1, Button: PAD5 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x68</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>start</key>
+        <description>Start of track Deck 2, Button: PAD5 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x68</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>start</key>
+        <description>Start of track Deck 3, Button: PAD5 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x68</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>start</key>
+        <description>Start of track Deck 4, Button: PAD5 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x68</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 1, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 2, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 3, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 4, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>back</key>
+        <description>Back for track Deck 1, Button: PAD6 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x45</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>back</key>
+        <description>Back for track Deck 2, Button: PAD6 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x45</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>back</key>
+        <description>Back for track Deck 3, Button: PAD6 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x45</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>back</key>
+        <description>Back for track Deck 4, Button: PAD6 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x45</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 1, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 2, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 3, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 4, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 1, Button: PAD7 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 2, Button: PAD7 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 3, Button: PAD7 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 4, Button: PAD7 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 1, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 2, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 3, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 4, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>reverse</key>
+        <description>Set track Deck 1 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>reverse</key>
+        <description>Set track Deck 2 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>reverse</key>
+        <description>Set track Deck 3 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>reverse</key>
+        <description>Set track Deck 4 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 1, Button: PAD8 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 2, Button: PAD8 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 3, Button: PAD8 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 4, Button: PAD8 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_1_activate</key>
+        <description>Hot-Cue 1 Deck 1, Button: PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x00</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_1_activate</key>
+        <description>Hot-Cue 1 Deck 2, Button: PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x00</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_1_activate</key>
+        <description>Hot-Cue 1 Deck 3, Button: PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x00</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_1_activate</key>
+        <description>Hot-Cue 1 Deck 4, Button: PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x00</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_1_clear</key>
+        <description>Clear Hot-Cue 1 Deck 1, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x08</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_1_clear</key>
+        <description>Clear Hot-Cue 1 Deck 2, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x08</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_1_clear</key>
+        <description>Clear Hot-Cue 1 Deck 3, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x08</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_1_clear</key>
+        <description>Clear Hot-Cue 1 Deck 4, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x08</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_2_activate</key>
+        <description>Hot-Cue 2 Deck 1, Button: PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x01</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_2_activate</key>
+        <description>Hot-Cue 2 Deck 2, Button: PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x01</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_2_activate</key>
+        <description>Hot-Cue 2 Deck 3, Button: PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x01</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_2_activate</key>
+        <description>Hot-Cue 2 Deck 4, Button: PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x01</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_2_clear</key>
+        <description>Clear Hot-Cue 2 Deck 1, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x09</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_2_clear</key>
+        <description>Clear Hot-Cue 2 Deck 2, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x09</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_2_clear</key>
+        <description>Clear Hot-Cue 2 Deck 3, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x09</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_2_clear</key>
+        <description>Clear Hot-Cue 2 Deck 4, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x09</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_3_activate</key>
+        <description>Hot-Cue 3 Deck 1, Button: PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x02</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_3_activate</key>
+        <description>Hot-Cue 3 Deck 2, Button: PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x02</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_3_activate</key>
+        <description>Hot-Cue 3 Deck 3, Button: PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x02</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_3_activate</key>
+        <description>Hot-Cue 3 Deck 4, Button: PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x02</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_3_clear</key>
+        <description>Clear Hot-Cue 3 Deck 1, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x0A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_3_clear</key>
+        <description>Clear Hot-Cue 3 Deck 2, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x0A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_3_clear</key>
+        <description>Clear Hot-Cue 3 Deck 3, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x0A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_3_clear</key>
+        <description>Clear Hot-Cue 3 Deck 4, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x0A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_4_activate</key>
+        <description>Hot-Cue 4 Deck 1, Button: PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x03</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_4_activate</key>
+        <description>Hot-Cue 4 Deck 2, Button: PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x03</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_4_activate</key>
+        <description>Hot-Cue 4 Deck 3, Button: PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x03</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_4_activate</key>
+        <description>Hot-Cue 4 Deck 4, Button: PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x03</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_4_clear</key>
+        <description>Clear Hot-Cue 4 Deck 1, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x0B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_4_clear</key>
+        <description>Clear Hot-Cue 4 Deck 2, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x0B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_4_clear</key>
+        <description>Clear Hot-Cue 4 Deck 3, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x0B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_4_clear</key>
+        <description>Clear Hot-Cue 4 Deck 4, Button: SHIFT &amp; PAD1 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x0B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>start</key>
+        <description>Start of track Deck 1, Button: PAD5 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>start</key>
+        <description>Start of track Deck 2, Button: PAD5 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>start</key>
+        <description>Start of track Deck 3, Button: PAD5 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>start</key>
+        <description>Start of track Deck 4, Button: PAD5 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x04</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_5_activate</key>
+        <description>Hot-Cue 5 Deck 1, Button: SHIFT + PAD5 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x0C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_5_activate</key>
+        <description>Hot-Cue 5 Deck 2, Button: SHIFT + PAD5 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x0C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_5_activate</key>
+        <description>Hot-Cue 5 Deck 3, Button: SHIFT + PAD5 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x0C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_5_activate</key>
+        <description>Hot-Cue 5 Deck 4, Button: SHIFT + PAD5 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x0C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>back</key>
+        <description>Back for track Deck 1, Button: PAD6 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x05</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>back</key>
+        <description>Back for track Deck 2, Button: PAD6 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x05</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>back</key>
+        <description>Back for track Deck 3, Button: PAD6 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x05</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>back</key>
+        <description>Back for track Deck 4, Button: PAD6 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x05</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_6_activate</key>
+        <description>Hot-Cue 6 Deck 1, Button: SHIFT + PAD6 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x0D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_6_activate</key>
+        <description>Hot-Cue 6 Deck 2, Button: SHIFT + PAD6 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x0D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_6_activate</key>
+        <description>Hot-Cue 6 Deck 3, Button: SHIFT + PAD6 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x0D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_6_activate</key>
+        <description>Hot-Cue 6 Deck 4, Button: SHIFT + PAD6 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x0D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 1, Button: PAD7 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x06</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 2, Button: PAD7 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x06</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 3, Button: PAD7 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x06</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 4, Button: PAD7 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x06</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_7_activate</key>
+        <description>Hot-Cue 7 Deck 1, Button: SHIFT + PAD7 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x0e</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_7_activate</key>
+        <description>Hot-Cue 7 Deck 2, Button: SHIFT + PAD7 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x0e</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_7_activate</key>
+        <description>Hot-Cue 7 Deck 3, Button: SHIFT + PAD7 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x0e</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_7_activate</key>
+        <description>Hot-Cue 7 Deck 4, Button: SHIFT + PAD7 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x0e</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>reverse</key>
+        <description>Set track Deck 1 to reverse, Button: PAD8 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>reverse</key>
+        <description>Set track Deck 2 to reverse, Button: PAD8 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>reverse</key>
+        <description>Set track Deck 3 to reverse, Button: PAD8 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>reverse</key>
+        <description>Set track Deck 4 to reverse, Button: PAD8 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x07</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>hotcue_8_activate</key>
+        <description>Hot-Cue 8 Deck 1, Button: SHIFT + PAD8 (in HOT-CUE-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x0F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>hotcue_8_activate</key>
+        <description>Hot-Cue 8 Deck 2, Button: SHIFT + PAD8 (in HOT-CUE-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x0F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>hotcue_8_activate</key>
+        <description>Hot-Cue 8 Deck 3, Button: SHIFT + PAD8 (in HOT-CUE-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x0F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>hotcue_8_activate</key>
+        <description>Hot-Cue 8 Deck 4, Button: SHIFT + PAD8 (in HOT-CUE-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x0F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>start_play</key>
+        <description>Sampler 1 play, Button: PAD1 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>start_play</key>
+        <description>Sampler 5 play, Button: PAD1 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>start_play</key>
+        <description>Sampler 1 play, Button: PAD1 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>start_play</key>
+        <description>Sampler 5 play, Button: PAD1 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x30</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>stop</key>
+        <description>Sampler 1 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x38</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>stop</key>
+        <description>Sampler 5 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x38</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>stop</key>
+        <description>Sampler 1 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x38</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>stop</key>
+        <description>Sampler 5 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x38</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>start_play</key>
+        <description>Sampler 2 play, Button: PAD2 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>start_play</key>
+        <description>Sampler 6 play, Button: PAD2 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>start_play</key>
+        <description>Sampler 2 play, Button: PAD2 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>start_play</key>
+        <description>Sampler 6 play, Button: PAD2 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x31</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>stop</key>
+        <description>Sampler 2 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x39</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>stop</key>
+        <description>Sampler 6 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x39</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>stop</key>
+        <description>Sampler 2 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x39</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>stop</key>
+        <description>Sampler 6 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x39</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>start_play</key>
+        <description>Sampler 3 play, Button: PAD3 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x32</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>start_play</key>
+        <description>Sampler 7 play, Button: PAD3 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x32</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>start_play</key>
+        <description>Sampler 3 play, Button: PAD3 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x32</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>start_play</key>
+        <description>Sampler 7 play, Button: PAD3 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x32</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>stop</key>
+        <description>Sampler 3 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>stop</key>
+        <description>Sampler 7 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>stop</key>
+        <description>Sampler 3 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>stop</key>
+        <description>Sampler 7 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>start_play</key>
+        <description>Sampler4 play, Button: PAD4 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x33</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>start_play</key>
+        <description>Sampler8 play, Button: PAD4 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x33</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>start_play</key>
+        <description>Sampler4 play, Button: PAD4 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x33</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>start_play</key>
+        <description>Sampler8 play, Button: PAD4 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x33</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>stop</key>
+        <description>Sampler4 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>stop</key>
+        <description>Sampler8 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>stop</key>
+        <description>Sampler4 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>stop</key>
+        <description>Sampler8 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD5 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x34</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler5, Button: PAD5 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x34</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD5 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x34</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler5, Button: PAD5 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x34</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>eject</key>
+        <description>Eject Sampler1, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>eject</key>
+        <description>Eject Sampler5, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>eject</key>
+        <description>Eject Sampler1, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>eject</key>
+        <description>Eject Sampler5, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x35</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x35</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x35</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x35</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>eject</key>
+        <description>Eject Sampler2, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>eject</key>
+        <description>Eject Sampler6, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>eject</key>
+        <description>Eject Sampler2, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>eject</key>
+        <description>Eject Sampler6, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler3, Button: PAD7 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x36</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler7, Button: PAD7 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x36</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler3, Button: PAD7 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x36</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler7, Button: PAD7 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x36</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>eject</key>
+        <description>Eject Sampler3, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>eject</key>
+        <description>Eject Sampler7, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>eject</key>
+        <description>Eject Sampler3, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>eject</key>
+        <description>Eject Sampler7, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler4, Button: PAD8 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x37</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler8, Button: PAD8 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x37</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler4, Button: PAD8 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x37</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler8, Button: PAD8 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x37</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>eject</key>
+        <description>Eject Sampler4, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x3F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>eject</key>
+        <description>Eject Sampler8, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x3F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>eject</key>
+        <description>Eject Sampler4, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x3F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>eject</key>
+        <description>Eject Sampler8, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x3F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
       <control>
         <group>[Channel1]</group>
         <key>PioneerDDJSB3.deck[1].playButton.input</key>
@@ -21,7 +2501,7 @@
         <status>0x90</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -31,7 +2511,7 @@
         <status>0x91</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -41,7 +2521,7 @@
         <status>0x92</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -51,7 +2531,7 @@
         <status>0x93</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -61,7 +2541,7 @@
         <status>0x90</status>
         <midino>0x47</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -71,7 +2551,7 @@
         <status>0x91</status>
         <midino>0x47</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -81,7 +2561,7 @@
         <status>0x92</status>
         <midino>0x47</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -91,7 +2571,7 @@
         <status>0x93</status>
         <midino>0x47</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -101,7 +2581,7 @@
         <status>0x90</status>
         <midino>0x0C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -111,7 +2591,7 @@
         <status>0x91</status>
         <midino>0x0C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -121,7 +2601,7 @@
         <status>0x92</status>
         <midino>0x0C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -131,7 +2611,7 @@
         <status>0x93</status>
         <midino>0x0C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -141,7 +2621,7 @@
         <status>0x90</status>
         <midino>0x48</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -151,7 +2631,7 @@
         <status>0x91</status>
         <midino>0x48</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -161,7 +2641,7 @@
         <status>0x92</status>
         <midino>0x48</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -171,7 +2651,7 @@
         <status>0x93</status>
         <midino>0x48</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -181,7 +2661,7 @@
         <status>0x90</status>
         <midino>0x58</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -191,7 +2671,7 @@
         <status>0x91</status>
         <midino>0x58</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -201,7 +2681,7 @@
         <status>0x92</status>
         <midino>0x58</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -211,7 +2691,7 @@
         <status>0x93</status>
         <midino>0x58</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -221,7 +2701,7 @@
         <status>0x90</status>
         <midino>0x5C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -231,7 +2711,7 @@
         <status>0x91</status>
         <midino>0x5C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -241,7 +2721,7 @@
         <status>0x92</status>
         <midino>0x5C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -251,7 +2731,7 @@
         <status>0x93</status>
         <midino>0x5C</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -261,7 +2741,7 @@
         <status>0xB0</status>
         <midino>0x22</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -271,7 +2751,7 @@
         <status>0xB1</status>
         <midino>0x22</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -281,7 +2761,7 @@
         <status>0xB2</status>
         <midino>0x22</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -291,7 +2771,7 @@
         <status>0xB3</status>
         <midino>0x22</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -301,7 +2781,7 @@
         <status>0xB0</status>
         <midino>0x23</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -311,7 +2791,7 @@
         <status>0xB1</status>
         <midino>0x23</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -321,7 +2801,7 @@
         <status>0xB2</status>
         <midino>0x23</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -331,7 +2811,7 @@
         <status>0xB3</status>
         <midino>0x23</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -341,7 +2821,7 @@
         <status>0xB0</status>
         <midino>0x1F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -351,7 +2831,7 @@
         <status>0xB1</status>
         <midino>0x1F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -361,7 +2841,7 @@
         <status>0xB2</status>
         <midino>0x1F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -371,7 +2851,7 @@
         <status>0xB3</status>
         <midino>0x1F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -381,7 +2861,7 @@
         <status>0x90</status>
         <midino>0x36</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -391,7 +2871,7 @@
         <status>0x91</status>
         <midino>0x36</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -401,7 +2881,7 @@
         <status>0x92</status>
         <midino>0x36</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -411,7 +2891,7 @@
         <status>0x93</status>
         <midino>0x36</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -421,7 +2901,7 @@
         <status>0x90</status>
         <midino>0x35</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -431,7 +2911,7 @@
         <status>0x91</status>
         <midino>0x35</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -441,7 +2921,7 @@
         <status>0x92</status>
         <midino>0x35</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -451,7 +2931,7 @@
         <status>0x93</status>
         <midino>0x35</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -461,7 +2941,7 @@
         <status>0x90</status>
         <midino>0x67</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -471,7 +2951,7 @@
         <status>0x91</status>
         <midino>0x67</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -481,7 +2961,7 @@
         <status>0x92</status>
         <midino>0x67</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -491,7 +2971,7 @@
         <status>0x93</status>
         <midino>0x67</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -501,7 +2981,7 @@
         <status>0xB0</status>
         <midino>0x21</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -511,7 +2991,7 @@
         <status>0xB1</status>
         <midino>0x21</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -521,7 +3001,7 @@
         <status>0xB2</status>
         <midino>0x21</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -531,7 +3011,7 @@
         <status>0xB3</status>
         <midino>0x21</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -541,7 +3021,7 @@
         <status>0xB0</status>
         <midino>0x26</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -551,7 +3031,7 @@
         <status>0xB1</status>
         <midino>0x26</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -561,7 +3041,7 @@
         <status>0xB2</status>
         <midino>0x26</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -571,7 +3051,7 @@
         <status>0xB3</status>
         <midino>0x26</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -581,7 +3061,7 @@
         <status>0xB0</status>
         <midino>0x00</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -591,7 +3071,7 @@
         <status>0xB0</status>
         <midino>0x20</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -601,7 +3081,7 @@
         <status>0xB1</status>
         <midino>0x00</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -611,7 +3091,7 @@
         <status>0xB1</status>
         <midino>0x20</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -621,7 +3101,7 @@
         <status>0xB2</status>
         <midino>0x00</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -631,7 +3111,7 @@
         <status>0xB2</status>
         <midino>0x20</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -641,7 +3121,7 @@
         <status>0xB3</status>
         <midino>0x00</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -651,11 +3131,9 @@
         <status>0xB3</status>
         <midino>0x20</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-      <!-- Shifted tempo slider needs to be mapped for relative mode to work without jumps
-            when releasing shift. -->
       <control>
         <group>[Channel1]</group>
         <key>PioneerDDJSB3.deck[1].tempoFader.inputMSB</key>
@@ -663,7 +3141,7 @@
         <status>0xB0</status>
         <midino>0x05</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -673,7 +3151,7 @@
         <status>0xB0</status>
         <midino>0x25</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -683,7 +3161,7 @@
         <status>0xB1</status>
         <midino>0x05</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -693,7 +3171,7 @@
         <status>0xB1</status>
         <midino>0x25</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -703,7 +3181,7 @@
         <status>0xB2</status>
         <midino>0x05</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -713,7 +3191,7 @@
         <status>0xB2</status>
         <midino>0x25</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -723,7 +3201,7 @@
         <status>0xB3</status>
         <midino>0x05</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -733,7 +3211,7 @@
         <status>0xB3</status>
         <midino>0x25</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -743,7 +3221,7 @@
         <status>0x90</status>
         <midino>0x17</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -753,7 +3231,7 @@
         <status>0x91</status>
         <midino>0x17</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -763,7 +3241,7 @@
         <status>0x92</status>
         <midino>0x17</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -773,7 +3251,7 @@
         <status>0x93</status>
         <midino>0x17</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -783,7 +3261,7 @@
         <status>0x90</status>
         <midino>0x4E</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -793,7 +3271,7 @@
         <status>0x91</status>
         <midino>0x4E</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -803,7 +3281,7 @@
         <status>0x92</status>
         <midino>0x4E</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -813,7 +3291,7 @@
         <status>0x93</status>
         <midino>0x4E</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -823,7 +3301,7 @@
         <status>0x90</status>
         <midino>0x1A</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -833,7 +3311,7 @@
         <status>0x91</status>
         <midino>0x1A</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -843,7 +3321,7 @@
         <status>0x92</status>
         <midino>0x1A</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -853,7 +3331,7 @@
         <status>0x93</status>
         <midino>0x1A</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -863,7 +3341,7 @@
         <status>0x90</status>
         <midino>0x60</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -873,7 +3351,7 @@
         <status>0x91</status>
         <midino>0x60</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -883,7 +3361,7 @@
         <status>0x92</status>
         <midino>0x60</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -893,7 +3371,7 @@
         <status>0x93</status>
         <midino>0x60</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -903,7 +3381,7 @@
         <status>0x90</status>
         <midino>0x3F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -913,7 +3391,7 @@
         <status>0x91</status>
         <midino>0x3F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -923,7 +3401,7 @@
         <status>0x92</status>
         <midino>0x3F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -933,7 +3411,7 @@
         <status>0x93</status>
         <midino>0x3F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -943,10 +3421,9 @@
         <status>0x90</status>
         <midino>0x72</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
       <control>
         <group>[Channel1]</group>
         <key>PioneerDDJSB3.deck3Button</key>
@@ -954,11 +3431,9 @@
         <status>0x92</status>
         <midino>0x72</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
-      <!-- CHECK -->
       <control>
         <group>[Channel2]</group>
         <key>PioneerDDJSB3.deck4Button</key>
@@ -966,11 +3441,9 @@
         <status>0x91</status>
         <midino>0x72</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
-      <!-- CHECK -->
       <control>
         <group>[Channel2]</group>
         <key>PioneerDDJSB3.deck4Button</key>
@@ -978,10 +3451,9 @@
         <status>0x93</status>
         <midino>0x72</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
       <control>
         <group>[AutoDJ]</group>
         <key>PioneerDDJSB3.autodjSkipNext</key>
@@ -989,10 +3461,9 @@
         <status>0x90</status>
         <midino>0x73</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
       <control>
         <group>[AutoDJ]</group>
         <key>PioneerDDJSB3.autodjToggle</key>
@@ -1000,11 +3471,9 @@
         <status>0x91</status>
         <midino>0x73</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
-
       <control>
         <group>[AutoDJ]</group>
         <key>PioneerDDJSB3.autodjSkipNext</key>
@@ -1012,11 +3481,9 @@
         <status>0x92</status>
         <midino>0x73</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
-
       <control>
         <group>[AutoDJ]</group>
         <key>PioneerDDJSB3.autodjToggle</key>
@@ -1024,11 +3491,9 @@
         <status>0x93</status>
         <midino>0x73</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
-
       <control>
         <group>[Master]</group>
         <key>crossfader</key>
@@ -1036,7 +3501,7 @@
         <status>0xB6</status>
         <midino>0x1F</midino>
         <options>
-          <fourteen-bit-msb />
+          <fourteen-bit-msb/>
         </options>
       </control>
       <control>
@@ -1046,7 +3511,7 @@
         <status>0xB6</status>
         <midino>0x3F</midino>
         <options>
-          <fourteen-bit-lsb />
+          <fourteen-bit-lsb/>
         </options>
       </control>
       <control>
@@ -1056,7 +3521,7 @@
         <status>0xB0</status>
         <midino>0x13</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1066,7 +3531,7 @@
         <status>0xB0</status>
         <midino>0x33</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1076,7 +3541,7 @@
         <status>0xB1</status>
         <midino>0x13</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1086,7 +3551,7 @@
         <status>0xB1</status>
         <midino>0x33</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1096,7 +3561,7 @@
         <status>0xB2</status>
         <midino>0x13</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1106,7 +3571,7 @@
         <status>0xB2</status>
         <midino>0x33</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1116,7 +3581,7 @@
         <status>0xB3</status>
         <midino>0x13</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1126,7 +3591,7 @@
         <status>0xB3</status>
         <midino>0x33</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1136,7 +3601,7 @@
         <status>0xB0</status>
         <midino>0x04</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1146,7 +3611,7 @@
         <status>0xB0</status>
         <midino>0x24</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1156,7 +3621,7 @@
         <status>0xB1</status>
         <midino>0x04</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1166,7 +3631,7 @@
         <status>0xB1</status>
         <midino>0x24</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1176,7 +3641,7 @@
         <status>0xB2</status>
         <midino>0x04</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1186,7 +3651,7 @@
         <status>0xB2</status>
         <midino>0x24</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1196,7 +3661,7 @@
         <status>0xB3</status>
         <midino>0x04</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1206,7 +3671,7 @@
         <status>0xB3</status>
         <midino>0x24</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1216,7 +3681,7 @@
         <status>0xB0</status>
         <midino>0x07</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1226,7 +3691,7 @@
         <status>0xB0</status>
         <midino>0x27</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1236,7 +3701,7 @@
         <status>0xB1</status>
         <midino>0x07</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1246,7 +3711,7 @@
         <status>0xB1</status>
         <midino>0x27</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1256,7 +3721,7 @@
         <status>0xB2</status>
         <midino>0x07</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1266,7 +3731,7 @@
         <status>0xB2</status>
         <midino>0x27</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1276,7 +3741,7 @@
         <status>0xB3</status>
         <midino>0x07</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1286,7 +3751,7 @@
         <status>0xB3</status>
         <midino>0x27</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1296,7 +3761,7 @@
         <status>0xB0</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1306,7 +3771,7 @@
         <status>0xB0</status>
         <midino>0x2B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1316,7 +3781,7 @@
         <status>0xB1</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1326,7 +3791,7 @@
         <status>0xB1</status>
         <midino>0x2B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1336,7 +3801,7 @@
         <status>0xB2</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1346,7 +3811,7 @@
         <status>0xB2</status>
         <midino>0x2B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1356,7 +3821,7 @@
         <status>0xB3</status>
         <midino>0x0B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1366,7 +3831,7 @@
         <status>0xB3</status>
         <midino>0x2B</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1376,7 +3841,7 @@
         <status>0xB0</status>
         <midino>0x0F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1386,7 +3851,7 @@
         <status>0xB0</status>
         <midino>0x2F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1396,7 +3861,7 @@
         <status>0xB1</status>
         <midino>0x0F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1406,7 +3871,7 @@
         <status>0xB1</status>
         <midino>0x2F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1416,7 +3881,7 @@
         <status>0xB2</status>
         <midino>0x0F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1426,7 +3891,7 @@
         <status>0xB2</status>
         <midino>0x2F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1436,7 +3901,7 @@
         <status>0xB3</status>
         <midino>0x0F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1446,7 +3911,7 @@
         <status>0xB3</status>
         <midino>0x2F</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1456,7 +3921,7 @@
         <status>0xB6</status>
         <midino>0x17</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1466,7 +3931,7 @@
         <status>0xB6</status>
         <midino>0x37</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1476,7 +3941,7 @@
         <status>0xB6</status>
         <midino>0x18</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1486,7 +3951,7 @@
         <status>0xB6</status>
         <midino>0x38</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1496,7 +3961,7 @@
         <status>0xB6</status>
         <midino>0x19</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1506,7 +3971,7 @@
         <status>0xB6</status>
         <midino>0x39</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1516,7 +3981,7 @@
         <status>0xB6</status>
         <midino>0x1A</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1526,7 +3991,7 @@
         <status>0xB6</status>
         <midino>0x3A</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1536,7 +4001,7 @@
         <status>0x90</status>
         <midino>0x54</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1546,7 +4011,7 @@
         <status>0x91</status>
         <midino>0x54</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1556,7 +4021,7 @@
         <status>0x92</status>
         <midino>0x54</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1566,7 +4031,7 @@
         <status>0x93</status>
         <midino>0x54</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1576,7 +4041,7 @@
         <status>0x90</status>
         <midino>0x68</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1586,7 +4051,7 @@
         <status>0x91</status>
         <midino>0x68</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1596,7 +4061,7 @@
         <status>0x92</status>
         <midino>0x68</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1606,34 +4071,9 @@
         <status>0x93</status>
         <midino>0x68</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
-
-      <!-- USELESS
-      <control>
-        <group>[Master]</group>
-        <key>headMix</key>
-        <description>Head mix (MSB), Knob: HEADPHONES MIX</description>
-        <status>0xB6</status>
-        <midino>0x05</midino>
-        <options>
-          <fourteen-bit-msb />
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>headMix</key>
-        <description>Head mix (MSB), Knob: HEADPHONES MIX</description>
-        <status>0xB6</status>
-        <midino>0x25</midino>
-        <options>
-          <fourteen-bit-lsb />
-        </options>
-      </control>
-
-      -->
-
       <control>
         <group>[EffectRack1_EffectUnit1]</group>
         <key>PioneerDDJSB3.effectUnit[1].button[1].input</key>
@@ -1641,7 +4081,7 @@
         <status>0x94</status>
         <midino>0x47</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1651,7 +4091,7 @@
         <status>0x94</status>
         <midino>0x63</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1661,7 +4101,7 @@
         <status>0x94</status>
         <midino>0x48</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1671,7 +4111,7 @@
         <status>0x94</status>
         <midino>0x64</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1681,7 +4121,7 @@
         <status>0x94</status>
         <midino>0x49</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1691,7 +4131,7 @@
         <status>0x94</status>
         <midino>0x65</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1701,7 +4141,7 @@
         <status>0xB4</status>
         <midino>0x06</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1711,7 +4151,7 @@
         <status>0xB4</status>
         <midino>0x26</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1721,7 +4161,7 @@
         <status>0xB4</status>
         <midino>0x00</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1731,7 +4171,7 @@
         <status>0xB4</status>
         <midino>0x20</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1741,7 +4181,7 @@
         <status>0x95</status>
         <midino>0x47</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1751,7 +4191,7 @@
         <status>0x95</status>
         <midino>0x63</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1761,7 +4201,7 @@
         <status>0x95</status>
         <midino>0x48</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1771,7 +4211,7 @@
         <status>0x95</status>
         <midino>0x64</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1781,7 +4221,7 @@
         <status>0x95</status>
         <midino>0x49</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1791,7 +4231,7 @@
         <status>0x95</status>
         <midino>0x65</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1801,7 +4241,7 @@
         <status>0xB5</status>
         <midino>0x06</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1811,7 +4251,7 @@
         <status>0xB5</status>
         <midino>0x26</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1821,7 +4261,7 @@
         <status>0xB5</status>
         <midino>0x00</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1831,7 +4271,7 @@
         <status>0xB5</status>
         <midino>0x20</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1841,7 +4281,7 @@
         <status>0xB6</status>
         <midino>0x40</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1851,7 +4291,7 @@
         <status>0xB6</status>
         <midino>0x64</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1861,7 +4301,7 @@
         <status>0x96</status>
         <midino>0x41</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1871,7 +4311,7 @@
         <status>0x96</status>
         <midino>0x42</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1881,7 +4321,7 @@
         <status>0x96</status>
         <midino>0x46</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1891,7 +4331,7 @@
         <status>0x96</status>
         <midino>0x58</midino>
         <options>
-          <normal />
+          <normal/>
         </options>
       </control>
       <control>
@@ -1901,7 +4341,7 @@
         <status>0x96</status>
         <midino>0x48</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1911,7 +4351,7 @@
         <status>0x96</status>
         <midino>0x60</midino>
         <options>
-          <normal />
+          <normal/>
         </options>
       </control>
       <control>
@@ -1921,7 +4361,7 @@
         <status>0x96</status>
         <midino>0x47</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1931,7 +4371,7 @@
         <status>0x96</status>
         <midino>0x59</midino>
         <options>
-          <normal />
+          <normal/>
         </options>
       </control>
       <control>
@@ -1941,7 +4381,7 @@
         <status>0x96</status>
         <midino>0x49</midino>
         <options>
-          <script-binding />
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1951,10 +4391,10 @@
         <status>0x96</status>
         <midino>0x61</midino>
         <options>
-          <normal />
+          <normal/>
         </options>
       </control>
     </controls>
-    <outputs />
+    <outputs/>
   </controller>
 </MixxxControllerPreset>

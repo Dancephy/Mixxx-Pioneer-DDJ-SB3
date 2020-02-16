@@ -1,3 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
 <controls>
 <!-- PAD1 -->
       <control>
@@ -666,70 +668,4 @@
         </options>
       </control>
 </controls>
-
-<outputs>
-    <output>
-        <group>[Channel1]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x97</status>
-        <midino>0x00</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-    <output>
-        <group>[Channel2]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x98</status>
-        <midino>0x00</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-    <output>
-        <group>[Channel3]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x99</status>
-        <midino>0x00</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-    <output>
-        <group>[Channel4]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x9A</status>
-        <midino>0x00</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-    <output>
-        <group>[Channel1]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x97</status>
-        <midino>0x08</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-    <output>
-        <group>[Channel2]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x98</status>
-        <midino>0x08</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-    <output>
-        <group>[Channel3]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x99</status>
-        <midino>0x08</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-    <output>
-        <group>[Channel4]</group>
-        <key>hotcue_1_enabled</key>
-        <status>0x9A</status>
-        <midino>0x08</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-    </output>
-</outputs>
+</controller>
