@@ -226,6 +226,9 @@ PioneerDDJSB3.init = function (id) {
     // request the positions of the knobs and faders from the controller
     midi.sendShortMsg(0x9B, 0x09, 0x7f);
 
+    var initSysBytes = [0xF0, 0x00, 0x20, 0x7F, 0x03, 0x01, 0xF7];
+    midi.sendSysexMsg(initSysBytes, initSysBytes.length);
+
     PioneerDDJSB3.flasher.init();
     PioneerDDJSB3.initFlashingPadLedControl();
 };
@@ -329,8 +332,6 @@ PioneerDDJSB3.Deck = function (deckNumber) {
         //         relative: true,
         invert: false,
     });
-
-    this.autoLoop =
 
     this.forEachComponent(function (c) {
         if (c.group === undefined) {
@@ -764,35 +765,39 @@ PioneerDDJSB3.shiftKeyLockButton = function (channel, control, value, status, gr
     }
 };
 
+PioneerDDJSB3.deck3Active = false;
+
 PioneerDDJSB3.deck3Button = function (channel, control, value, status, group) {
     if (value) {
-        // for (var i = 0x10; i <= 0x1F; i++) {
-            for (var j = 0; j <= 0xFF; j++) {
-                midi.sendShortMsg(0x90, 0x72, j);
-                midi.sendShortMsg(0x92, 0x72, j);
-                // midi.sendShortMsg(0x90, 0x73, 0x0);
-            }
-        // }
-        // midi.sendShortMsg(0x90, 0x69, 0x0);
-    } else {
-        // for (var i = 0; i < 0xFF; i++) {
-        //     for (var j = 0; j <= 0xFF; j++) {
-        //         midi.sendShortMsg(i, j, 0x00);
-        //         // midi.sendShortMsg(0x90, 0x73, 0x0);
-        //     }
-        // }
-        //pressed
+        if (PioneerDDJSB3.deck3Active) {
+            midi.sendShortMsg(0xB0, 0x02, 0x0);
+            var deck3Deactivate = [0xF0, 0x00, 0x20, 0x7F, 0x11, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0xF7];
+            midi.sendSysexMsg(deck3Deactivate, deck3Deactivate.length);
+            PioneerDDJSB3.deck3Active = false;
+        } else {
+            midi.sendShortMsg(0xB2, 0x02, 0x0);
+            var deck3Activate = [0xF0, 0x00, 0x20, 0x7F, 0x13, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0xF7];
+            midi.sendSysexMsg(deck3Activate, deck3Activate.length);
+            PioneerDDJSB3.deck3Active = true;
+        }
     }
-
-/*        midi.sendShortMsg(0x92, 0x72, 0xFF);
-        midi.sendShortMsg(0x92, 0x73, 0xFF);*/
 };
 
+PioneerDDJSB3.deck4Active = false;
+
 PioneerDDJSB3.deck4Button = function (channel, control, value, status, group) {
-    printObject("deck3button: " + "channel=" + channel + ", control=" + control + ", value=" + value + ", status=" + status + ", control=" + group);
-    if (value > 0) {
-        midi.sendShortMsg(0x91, 0x72, 0x7f);
-        midi.sendShortMsg(0x91, 0x73, 0x7f);
+    if (value) {
+        if (PioneerDDJSB3.deck4Active) {
+            midi.sendShortMsg(0xB1, 0x02, 0x0);
+            var deck4Deactivate = [0xF0, 0x00, 0x20, 0x7F, 0x12, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0xF7];
+            midi.sendSysexMsg(deck4Deactivate, deck4Deactivate.length);
+            PioneerDDJSB3.deck4Active = false;
+        } else {
+            midi.sendShortMsg(0xB3, 0x02, 0x0);
+            var deck4Activate = [0xF0, 0x00, 0x20, 0x7F, 0x14, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0xF7];
+            midi.sendSysexMsg(deck4Activate, deck4Activate.length);
+            PioneerDDJSB3.deck4Active = true;
+        }
     }
 };
 
