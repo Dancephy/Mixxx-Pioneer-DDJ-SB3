@@ -648,6 +648,7 @@ PioneerDDJSB3.bindDeckControlConnections = function (channelGroup, isUnbinding) 
             'keylock': 'PioneerDDJSB3.keyLockLed',
             'mute': 'PioneerDDJSB3.muteLed',
             'loop_enabled': 'PioneerDDJSB3.autoLoopLed',
+            'track_loaded': 'PioneerDDJSB3.trackLoaded',
         };
 
     if (PioneerDDJSB3.invertVinylSlipButton) {
@@ -700,6 +701,13 @@ PioneerDDJSB3.deckShiftSwitchTable = {
     '[Channel2]': '[Channel4]',
     '[Channel3]': '[Channel1]',
     '[Channel4]': '[Channel2]'
+};
+
+PioneerDDJSB3.deckIndexTable = {
+    '[Channel1]': 0,
+    '[Channel2]': 1,
+    '[Channel3]': 2,
+    '[Channel4]': 3
 };
 
 PioneerDDJSB3.initDeck = function (group) {
@@ -1448,6 +1456,16 @@ PioneerDDJSB3.EffectUnit = function (unitNumber) {
             engine.softTakeoverIgnoreNextValue(effectGroup, 'meta');
         }
     });
+};
+
+PioneerDDJSB3.trackLoaded = function (value, group, control) {
+    var i = PioneerDDJSB3.deckIndexTable[group];
+
+    if (value) {
+        midi.sendShortMsg(0x96, 0x46 + i, 0x7F);
+    } else {
+        midi.sendShortMsg(0x96, 0x46 + i, 0x0);
+    }
 };
 
 try {
