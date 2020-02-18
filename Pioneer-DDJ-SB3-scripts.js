@@ -118,7 +118,7 @@ PioneerDDJSB3.flasher.shutdown = function() {
 };
 
 PioneerDDJSB3.flasher.addFunction = function(fn) {
-    PioneerDDJSB3.flasher.functions.push(fn)
+    PioneerDDJSB3.flasher.functions.push(fn);
 };
 
 PioneerDDJSB3.flasher.removeFunction = function (fn) {
@@ -258,6 +258,29 @@ PioneerDDJSB3.Deck = function (deckNumber) {
         shiftOffset: 60,
         shiftControl: true,
         sendShifted: true,
+        connect: function() {
+            this.connections[0] = engine.makeConnection(this.group, 'play_indicator', this.output);
+            this.connections[1] = engine.makeConnection(this.group, 'track_loaded', this.output);
+            this.flashLedBinded = this.flashLed.bind(this);
+        },
+        flashLed: function(active) {
+            this.send(this.outValueScale(active));
+        },
+        output: function(value, group, control) {
+            this[control] = value;
+
+            if (this.track_loaded) {
+                if (this.play_indicator) {
+                    PioneerDDJSB3.flasher.removeFunction(flashLedBinded);
+                    this.send(this.outValueScale(true));
+                } else {
+                    PioneerDDJSB3.flasher.addFunction(flashLedBinded);
+                }
+            } else {
+                PioneerDDJSB3.flasher.removeFunction(flashLedBinded);
+                this.send(this.outValueScale(false));
+            }
+        }
     });
 
     this.cueButton = new components.CueButton({
@@ -452,11 +475,13 @@ PioneerDDJSB3.Pad = function(padNumber) {
     }
 
     this.beatJumpMultiply = function(channel, control, value, status, group) {
-        // TODO
+        var size = engine.getValue(group, 'beatjump_size');
+        engine.setValue(group, 'beatjump_size', size * 2.0);
     }
 
     this.beatJumpDivide = function(channel, control, value, status, group) {
-        //TODO
+        var size = engine.getValue(group, 'beatjump_size');
+        engine.setValue(group, 'beatjump_size', size / 2.0);
     }
 }
 
