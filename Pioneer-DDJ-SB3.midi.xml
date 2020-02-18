@@ -15,6 +15,126 @@
     </scriptfiles>
     <controls>
       <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterCueButton</key>
+        <description>Toggles headphone master cue, Button: Master</description>
+        <status>0x96</status>
+        <midino>0x5B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterCueButton</key>
+        <description>Toggles headphone master cue, Button: SHIFT + Master</description>
+        <status>0x96</status>
+        <midino>0x78</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 1, Button: left CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 2, Button: right CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 3, Button: left CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 4, Button: right CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 3, Button: SHIFT &amp; left CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 4, Button: SHIFT &amp; right CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 1, Button: SHIFT &amp; left CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 2, Button: SHIFT &amp; right CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.headphoneLevel.inputMSB</key>
+        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (MSB)</description>
+        <status>0xB6</status>
+        <midino>0x0D</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.headphoneLevel.inputLSB</key>
+        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (LSB)</description>
+        <status>0xB6</status>
+        <midino>0x2D</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
         <group>[Channel1]</group>
         <key>PioneerDDJSB3.autoLoopButton</key>
         <description>Deck 1 Auto Loop, Button: Auto Loop</description>
@@ -252,6 +372,166 @@
         <midino>0x62</midino>
         <options>
           <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Playlist]</group>
+        <key>PioneerDDJSB3.rotarySelector</key>
+        <description>Browser rotate, Knob: BROWSER</description>
+        <status>0xB6</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Playlist]</group>
+        <key>PioneerDDJSB3.shiftedRotarySelector</key>
+        <description>Shift Browser rotate, Knob: BROWSER</description>
+        <status>0xB6</status>
+        <midino>0x64</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[PreviewDeck1]</group>
+        <key>PioneerDDJSB3.rotarySelectorClick</key>
+        <description>Preview of selected song, stop preview if no rotation between next press (Down: Load and start -- Up: Jump to position 30%), Knob: BROWSER</description>
+        <status>0x96</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Playlist]</group>
+        <key>PioneerDDJSB3.rotarySelectorShiftedClick</key>
+        <description>Open/close selected left List, Knob: SHIFT &amp; BROWSER</description>
+        <status>0x96</status>
+        <midino>0x42</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 1, Button: left LOAD (Deck 1 active)</description>
+        <status>0x96</status>
+        <midino>0x46</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1]</group>
+        <key>show</key>
+        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 1 active)</description>
+        <status>0x96</status>
+        <midino>0x58</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 3, Button: left LOAD (Deck 3 active)</description>
+        <status>0x96</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1]</group>
+        <key>show</key>
+        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 3 active)</description>
+        <status>0x96</status>
+        <midino>0x60</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 2, Button: right LOAD (Deck 2 active)</description>
+        <status>0x96</status>
+        <midino>0x47</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Samplers]</group>
+        <key>show_samplers</key>
+        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 2 active)</description>
+        <status>0x96</status>
+        <midino>0x59</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 4, Button: right LOAD (Deck 4 active)</description>
+        <status>0x96</status>
+        <midino>0x49</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Samplers]</group>
+        <key>show_samplers</key>
+        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 4 active)</description>
+        <status>0x96</status>
+        <midino>0x61</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <description>Crossfader (MSB), Slider: FADE</description>
+        <status>0xB6</status>
+        <midino>0x1F</midino>
+        <options>
+          <fourteen-bit-msb/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <description>Crossfader (LSB), Slider: FADE</description>
+        <status>0xB6</status>
+        <midino>0x3F</midino>
+        <options>
+          <fourteen-bit-lsb/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterGain.inputMSB</key>
+        <description>Master Gain (MSB), Master Volume</description>
+        <status>0xB6</status>
+        <midino>0x08</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterGain.inputLSB</key>
+        <description>Master Gain (LSB), Master Volume</description>
+        <status>0xB6</status>
+        <midino>0x28</midino>
+        <options>
+          <script-binding/>
         </options>
       </control>
       <control>
@@ -1855,6 +2135,326 @@
         </options>
       </control>
       <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x51</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x51</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x51</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x51</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x52</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x52</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x52</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x52</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x53</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x53</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x53</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x53</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x55</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x55</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x55</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x55</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x56</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x56</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x56</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x56</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x57</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x57</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x57</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.beatloopRollButtons</key>
+        <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x57</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
         <group>[Sampler1]</group>
         <key>start_play</key>
         <description>Sampler 1 play, Button: PAD1 (in SAMPLER-Mode, Deck 1 active)</description>
@@ -3415,7 +4015,7 @@
         </options>
       </control>
       <control>
-        <group>[Channel1]</group>
+        <group>[Channel3]</group>
         <key>PioneerDDJSB3.deck3Button</key>
         <description>Toggles Deck 3 Button</description>
         <status>0x90</status>
@@ -3426,7 +4026,7 @@
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.deck3Button</key>
+        <key>PioneerDDJSB3.deck1Button</key>
         <description>Toggles Deck 3 Button</description>
         <status>0x92</status>
         <midino>0x72</midino>
@@ -3445,8 +4045,8 @@
         </options>
       </control>
       <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.deck4Button</key>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck2Button</key>
         <description>Toggles Deck 4 Button</description>
         <status>0x93</status>
         <midino>0x72</midino>
@@ -3492,26 +4092,6 @@
         <midino>0x73</midino>
         <options>
           <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>crossfader</key>
-        <description>Crossfader (MSB), Slider: FADE</description>
-        <status>0xB6</status>
-        <midino>0x1F</midino>
-        <options>
-          <fourteen-bit-msb/>
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>crossfader</key>
-        <description>Crossfader (LSB), Slider: FADE</description>
-        <status>0xB6</status>
-        <midino>0x3F</midino>
-        <options>
-          <fourteen-bit-lsb/>
         </options>
       </control>
       <control>
@@ -3995,86 +4575,6 @@
         </options>
       </control>
       <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 1, Button: left CUE (Deck 1 active)</description>
-        <status>0x90</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 2, Button: right CUE (Deck 2 active)</description>
-        <status>0x91</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 3, Button: left CUE (Deck 3 active)</description>
-        <status>0x92</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 4, Button: right CUE (Deck 4 active)</description>
-        <status>0x93</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 3, Button: SHIFT &amp; left CUE (Deck 1 active)</description>
-        <status>0x90</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 4, Button: SHIFT &amp; right CUE (Deck 2 active)</description>
-        <status>0x91</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 1, Button: SHIFT &amp; left CUE (Deck 3 active)</description>
-        <status>0x92</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 2, Button: SHIFT &amp; right CUE (Deck 4 active)</description>
-        <status>0x93</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
         <group>[EffectRack1_EffectUnit1]</group>
         <key>PioneerDDJSB3.effectUnit[1].button[1].input</key>
         <description>FX1-1 (Deck1), Button: left FX1-1</description>
@@ -4272,126 +4772,6 @@
         <midino>0x20</midino>
         <options>
           <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Playlist]</group>
-        <key>PioneerDDJSB3.rotarySelector</key>
-        <description>Browser rotate, Knob: BROWSER</description>
-        <status>0xB6</status>
-        <midino>0x40</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Playlist]</group>
-        <key>PioneerDDJSB3.shiftedRotarySelector</key>
-        <description>Shift Browser rotate, Knob: BROWSER</description>
-        <status>0xB6</status>
-        <midino>0x64</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[PreviewDeck1]</group>
-        <key>PioneerDDJSB3.rotarySelectorClick</key>
-        <description>Preview of selected song, stop preview if no rotation between next press (Down: Load and start -- Up: Jump to position 30%), Knob: BROWSER</description>
-        <status>0x96</status>
-        <midino>0x41</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Playlist]</group>
-        <key>PioneerDDJSB3.rotarySelectorShiftedClick</key>
-        <description>Open/close selected left List, Knob: SHIFT &amp; BROWSER</description>
-        <status>0x96</status>
-        <midino>0x42</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 1, Button: left LOAD (Deck 1 active)</description>
-        <status>0x96</status>
-        <midino>0x46</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1]</group>
-        <key>show</key>
-        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 1 active)</description>
-        <status>0x96</status>
-        <midino>0x58</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 3, Button: left LOAD (Deck 3 active)</description>
-        <status>0x96</status>
-        <midino>0x48</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1]</group>
-        <key>show</key>
-        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 2 active)</description>
-        <status>0x96</status>
-        <midino>0x60</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 2, Button: right LOAD (Deck 2 active)</description>
-        <status>0x96</status>
-        <midino>0x47</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Samplers]</group>
-        <key>show_samplers</key>
-        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 2 active)</description>
-        <status>0x96</status>
-        <midino>0x59</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 4, Button: right LOAD (Deck 4 active)</description>
-        <status>0x96</status>
-        <midino>0x49</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Samplers]</group>
-        <key>show_samplers</key>
-        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 4 active)</description>
-        <status>0x96</status>
-        <midino>0x61</midino>
-        <options>
-          <normal/>
         </options>
       </control>
     </controls>

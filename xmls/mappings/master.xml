@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+  <controls>
+      <control>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <description>Crossfader (MSB), Slider: FADE</description>
+        <status>0xB6</status>
+        <midino>0x1F</midino>
+        <options>
+          <fourteen-bit-msb />
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <description>Crossfader (LSB), Slider: FADE</description>
+        <status>0xB6</status>
+        <midino>0x3F</midino>
+        <options>
+          <fourteen-bit-lsb />
+        </options>
+      </control>
+
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterGain.inputMSB</key>
+        <description>Master Gain (MSB), Master Volume</description>
+        <status>0xB6</status>
+        <midino>0x08</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterGain.inputLSB</key>
+        <description>Master Gain (LSB), Master Volume</description>
+        <status>0xB6</status>
+        <midino>0x28</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+  </controls>
+</controller>

@@ -923,8 +923,9 @@
           <script-binding />
         </options>
       </control>
+
       <control>
-        <group>[Channel1]</group>
+        <group>[Channel3]</group>
         <key>PioneerDDJSB3.deck3Button</key>
         <description>Toggles Deck 3 Button</description>
         <status>0x90</status>
@@ -936,7 +937,7 @@
 
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.deck3Button</key>
+        <key>PioneerDDJSB3.deck1Button</key>
         <description>Toggles Deck 3 Button</description>
         <status>0x92</status>
         <midino>0x72</midino>
@@ -945,7 +946,6 @@
         </options>
       </control>
 
-      <!-- CHECK -->
       <control>
         <group>[Channel2]</group>
         <key>PioneerDDJSB3.deck4Button</key>
@@ -957,10 +957,9 @@
         </options>
       </control>
 
-      <!-- CHECK -->
       <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.deck4Button</key>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck2Button</key>
         <description>Toggles Deck 4 Button</description>
         <status>0x93</status>
         <midino>0x72</midino>
@@ -991,7 +990,6 @@
         </options>
       </control>
 
-
       <control>
         <group>[AutoDJ]</group>
         <key>PioneerDDJSB3.autodjSkipNext</key>
@@ -1002,7 +1000,6 @@
           <script-binding />
         </options>
       </control>
-
 
       <control>
         <group>[AutoDJ]</group>
@@ -1015,27 +1012,6 @@
         </options>
       </control>
 
-
-      <control>
-        <group>[Master]</group>
-        <key>crossfader</key>
-        <description>Crossfader (MSB), Slider: FADE</description>
-        <status>0xB6</status>
-        <midino>0x1F</midino>
-        <options>
-          <fourteen-bit-msb />
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>crossfader</key>
-        <description>Crossfader (LSB), Slider: FADE</description>
-        <status>0xB6</status>
-        <midino>0x3F</midino>
-        <options>
-          <fourteen-bit-lsb />
-        </options>
-      </control>
       <control>
         <group>[Channel1]</group>
         <key>PioneerDDJSB3.deckFaderMSB</key>
@@ -1516,110 +1492,6 @@
           <script-binding />
         </options>
       </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 1, Button: left CUE (Deck 1 active)</description>
-        <status>0x90</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 2, Button: right CUE (Deck 2 active)</description>
-        <status>0x91</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 3, Button: left CUE (Deck 3 active)</description>
-        <status>0x92</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 4, Button: right CUE (Deck 4 active)</description>
-        <status>0x93</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 3, Button: SHIFT &amp; left CUE (Deck 1 active)</description>
-        <status>0x90</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 4, Button: SHIFT &amp; right CUE (Deck 2 active)</description>
-        <status>0x91</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 1, Button: SHIFT &amp; left CUE (Deck 3 active)</description>
-        <status>0x92</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 2, Button: SHIFT &amp; right CUE (Deck 4 active)</description>
-        <status>0x93</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-
-      <!-- USELESS
-      <control>
-        <group>[Master]</group>
-        <key>headMix</key>
-        <description>Head mix (MSB), Knob: HEADPHONES MIX</description>
-        <status>0xB6</status>
-        <midino>0x05</midino>
-        <options>
-          <fourteen-bit-msb />
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>headMix</key>
-        <description>Head mix (MSB), Knob: HEADPHONES MIX</description>
-        <status>0xB6</status>
-        <midino>0x25</midino>
-        <options>
-          <fourteen-bit-lsb />
-        </options>
-      </control>
-
-      -->
 
       <control>
         <group>[EffectRack1_EffectUnit1]</group>
@@ -1819,126 +1691,6 @@
         <midino>0x20</midino>
         <options>
           <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Playlist]</group>
-        <key>PioneerDDJSB3.rotarySelector</key>
-        <description>Browser rotate, Knob: BROWSER</description>
-        <status>0xB6</status>
-        <midino>0x40</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Playlist]</group>
-        <key>PioneerDDJSB3.shiftedRotarySelector</key>
-        <description>Shift Browser rotate, Knob: BROWSER</description>
-        <status>0xB6</status>
-        <midino>0x64</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[PreviewDeck1]</group>
-        <key>PioneerDDJSB3.rotarySelectorClick</key>
-        <description>Preview of selected song, stop preview if no rotation between next press (Down: Load and start -- Up: Jump to position 30%), Knob: BROWSER</description>
-        <status>0x96</status>
-        <midino>0x41</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Playlist]</group>
-        <key>PioneerDDJSB3.rotarySelectorShiftedClick</key>
-        <description>Open/close selected left List, Knob: SHIFT &amp; BROWSER</description>
-        <status>0x96</status>
-        <midino>0x42</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 1, Button: left LOAD (Deck 1 active)</description>
-        <status>0x96</status>
-        <midino>0x46</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1]</group>
-        <key>show</key>
-        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 1 active)</description>
-        <status>0x96</status>
-        <midino>0x58</midino>
-        <options>
-          <normal />
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 3, Button: left LOAD (Deck 3 active)</description>
-        <status>0x96</status>
-        <midino>0x48</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1]</group>
-        <key>show</key>
-        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 2 active)</description>
-        <status>0x96</status>
-        <midino>0x60</midino>
-        <options>
-          <normal />
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 2, Button: right LOAD (Deck 2 active)</description>
-        <status>0x96</status>
-        <midino>0x47</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Samplers]</group>
-        <key>show_samplers</key>
-        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 2 active)</description>
-        <status>0x96</status>
-        <midino>0x59</midino>
-        <options>
-          <normal />
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.loadButton</key>
-        <description>Load selected Deck 4, Button: right LOAD (Deck 4 active)</description>
-        <status>0x96</status>
-        <midino>0x49</midino>
-        <options>
-          <script-binding />
-        </options>
-      </control>
-      <control>
-        <group>[Samplers]</group>
-        <key>show_samplers</key>
-        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 4 active)</description>
-        <status>0x96</status>
-        <midino>0x61</midino>
-        <options>
-          <normal />
         </options>
       </control>
     </controls>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+  <controls>
+      <control>
+        <group>[Playlist]</group>
+        <key>PioneerDDJSB3.rotarySelector</key>
+        <description>Browser rotate, Knob: BROWSER</description>
+        <status>0xB6</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Playlist]</group>
+        <key>PioneerDDJSB3.shiftedRotarySelector</key>
+        <description>Shift Browser rotate, Knob: BROWSER</description>
+        <status>0xB6</status>
+        <midino>0x64</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[PreviewDeck1]</group>
+        <key>PioneerDDJSB3.rotarySelectorClick</key>
+        <description>Preview of selected song, stop preview if no rotation between next press (Down: Load and start -- Up: Jump to position 30%), Knob: BROWSER</description>
+        <status>0x96</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Playlist]</group>
+        <key>PioneerDDJSB3.rotarySelectorShiftedClick</key>
+        <description>Open/close selected left List, Knob: SHIFT &amp; BROWSER</description>
+        <status>0x96</status>
+        <midino>0x42</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <!-- LOAD Button -->
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 1, Button: left LOAD (Deck 1 active)</description>
+        <status>0x96</status>
+        <midino>0x46</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[EffectRack1]</group>
+        <key>show</key>
+        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 1 active)</description>
+        <status>0x96</status>
+        <midino>0x58</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 3, Button: left LOAD (Deck 3 active)</description>
+        <status>0x96</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[EffectRack1]</group>
+        <key>show</key>
+        <description>Toggle Effect view, Button: SHIFT &amp; left LOAD (Deck 3 active)</description>
+        <status>0x96</status>
+        <midino>0x60</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 2, Button: right LOAD (Deck 2 active)</description>
+        <status>0x96</status>
+        <midino>0x47</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Samplers]</group>
+        <key>show_samplers</key>
+        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 2 active)</description>
+        <status>0x96</status>
+        <midino>0x59</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.loadButton</key>
+        <description>Load selected Deck 4, Button: right LOAD (Deck 4 active)</description>
+        <status>0x96</status>
+        <midino>0x49</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Samplers]</group>
+        <key>show_samplers</key>
+        <description>Toggle Sampler view, Button: SHIFT &amp; right LOAD (Deck 4 active)</description>
+        <status>0x96</status>
+        <midino>0x61</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+  </controls>
+</controller>
