@@ -18,7 +18,7 @@ Here we try and list what is working and what isn't
 
 | Feature      | Deck 1 | Deck 2 | Deck 3 | Deck 4 |
 |--------------|--------|--------|--------|--------|
-| Play / Pause | Yes    | Yes    | No     | No     |
-| Cue          | Yes    | Yes    | No     | No     |
-| Key Lock     | Yes    | Yes    | No     | No     |
-| Sync         | Yes    | Yes    | No     | No     |
+| Play / Pause | Yes    | Yes    | Yes    | Yes    |
+| Cue          | Yes    | Yes    | Yes    | Yes    |
+| Key Lock     | Yes    | Yes    | Yes    | Yes    |
+| Sync         | Yes    | Yes    | Yes    | Yes    |
