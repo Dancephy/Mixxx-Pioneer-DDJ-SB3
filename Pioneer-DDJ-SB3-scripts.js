@@ -410,6 +410,24 @@ PioneerDDJSB3.Pad = function(padNumber) {
         midi.sendShortMsg(0x97 + padNumber - 1, 0x43, 0x7F);
     }
 
+    // Change BeatJump leds when shifted
+    PioneerDDJSB3.shiftListeners.push(function(group, isShifted) {
+        if (isShifted) {
+            for (var i = 0; i < 8; i++) {
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x40 + i, 0x7F);
+            }
+        } else {
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x40, 0x0);
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x41, 0x0);
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x42, 0x7F);
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x43, 0x7F);
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x44, 0x0);
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x45, 0x0);
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x46, 0x0);
+            midi.sendShortMsg(0x97 + padNumber - 1, 0x47, 0x0);
+        }
+    });
+
     this.fxFadeMode = function(channel, control, value, status, group) {
         midi.sendShortMsg(0x90 + padNumber - 1, 0x1B, 0x0);
         midi.sendShortMsg(0x90 + padNumber - 1, 0x1E, 0x7F);
@@ -1104,6 +1122,13 @@ PioneerDDJSB3.beatlooprollLeds = function (value, group, control) {
     }
 };
 
+PioneerDDJSB3.hotCueLedStates = {
+    '[Channel1]': { states: [], isShifted: false },
+    '[Channel2]': { states: [], isShifted: false },
+    '[Channel3]': { states: [], isShifted: false },
+    '[Channel4]': { states: [], isShifted: false },
+};
+
 PioneerDDJSB3.hotCueLeds = function (value, group, control) {
     var shiftedGroup = false,
         padNum = null,
@@ -1115,6 +1140,32 @@ PioneerDDJSB3.hotCueLeds = function (value, group, control) {
 
             if (hotCueNum <= 4) {
                 PioneerDDJSB3.padLedControl(group, PioneerDDJSB3.ledGroups.hotCue, shiftedGroup, padNum, false, value);
+            } else {
+                PioneerDDJSB3.hotCueLedStates[group].states[hotCueNum] = value;
+                PioneerDDJSB3.updateHotCueLeds();
+            }
+        }
+    }
+};
+
+PioneerDDJSB3.shiftListeners.push(function(group, isShifted) {
+    PioneerDDJSB3.hotCueLedStates[group].isShifted = isShifted;
+    PioneerDDJSB3.updateHotCueLeds();
+});
+
+PioneerDDJSB3.updateHotCueLeds = function() {
+    var shiftedGroup = false;
+
+    for (var channelIdx = 1; channelIdx <= 4; channelIdx++) {
+        var group = '[Channel' + channelIdx + ']';
+        var channel = PioneerDDJSB3.hotCueLedStates[group];
+
+        for (var hotCue = 5; hotCue <= 8; hotCue++) {
+            if (channel.isShifted && channel.states[hotCue]) {
+                var padNum = hotCue - 1;
+                PioneerDDJSB3.padLedControl(group, PioneerDDJSB3.ledGroups.hotCue, shiftedGroup, padNum, false, true);
+            } else {
+                PioneerDDJSB3.padLedControl(group, PioneerDDJSB3.ledGroups.hotCue, shiftedGroup, padNum, false, false);
             }
         }
     }
