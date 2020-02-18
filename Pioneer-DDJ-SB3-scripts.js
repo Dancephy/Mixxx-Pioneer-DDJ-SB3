@@ -236,6 +236,8 @@ PioneerDDJSB3.init = function (id) {
     PioneerDDJSB3.initFlashingPadLedControl();
 };
 
+PioneerDDJSB3.shiftListeners = [];
+
 PioneerDDJSB3.Deck = function (deckNumber) {
     var theDeck = this;
     this.group = '[Channel' + deckNumber + ']';
@@ -246,10 +248,16 @@ PioneerDDJSB3.Deck = function (deckNumber) {
             PioneerDDJSB3.shiftPressed = true;
             PioneerDDJSB3.chFaderStart[deckNumber] = null;
             PioneerDDJSB3.headphoneLevel.shift();
+            for (var i = 0; i < PioneerDDJSB3.shiftListeners.length; i++) {
+                PioneerDDJSB3.shiftListeners[i](group, true);
+            }
         } else {
             theDeck.unshift();
             PioneerDDJSB3.shiftPressed = false;
             PioneerDDJSB3.headphoneLevel.unshift();
+            for (var i = 0; i < PioneerDDJSB3.shiftListeners.length; i++) {
+                PioneerDDJSB3.shiftListeners[i](group, false);
+            }
         }
     };
 
