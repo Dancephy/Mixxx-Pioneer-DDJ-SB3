@@ -35,7 +35,6 @@ const mappingFiles = walkSync('xmls/mappings', []);
 
 readFilePromise('xmls/root.xml').then(rootContent => {
   return xml2js.parseStringPromise(rootContent).then(rootXml => {
-    console.log(rootXml.MixxxControllerPreset);
     rootXml.MixxxControllerPreset.controller = {
       scriptfiles: rootXml.MixxxControllerPreset.controller[0].scriptfiles,
       controls: [{ control: [] }],
@@ -64,7 +63,9 @@ readFilePromise('xmls/root.xml').then(rootContent => {
       var builder = new xml2js.Builder();
       var xml = builder.buildObject(rootXml);
 
-      fs.writeFile('Pioneer-DDJ-SB3.midi.xml', xml, 'utf8', console.log);
+      fs.writeFile('Pioneer-DDJ-SB3.midi.xml', xml, 'utf8', () => {
+        console.log("XML Compile Success");
+      });
     });
 
   });
