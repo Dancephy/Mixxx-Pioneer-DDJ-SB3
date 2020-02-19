@@ -105,10 +105,11 @@ PioneerDDJSB3.flasher.functions = [];
 PioneerDDJSB3.flasher.init = function() {
     var flag = true;
 
-    PioneerDDJSB3.flasher.timer = engine.beginTimer(1000, function() {
+    PioneerDDJSB3.flasher.timer = engine.beginTimer(500, function() {
+        flag = !flag;
+
         for (var i = 0; i < PioneerDDJSB3.flasher.functions.length; i++) {
             PioneerDDJSB3.flasher.functions[i](flag);
-            flag = !flag;
         }
     });
 };
@@ -122,7 +123,7 @@ PioneerDDJSB3.flasher.addFunction = function(fn) {
 };
 
 PioneerDDJSB3.flasher.removeFunction = function (fn) {
-    PioneerDDJSB3.flasher.functions = filter(PioneerDDJSB3.flasher.functions, function(f) {
+    PioneerDDJSB3.flasher.functions = _.filter(PioneerDDJSB3.flasher.functions, function(f) {
         return fn !== f;
     });
 };
@@ -160,14 +161,14 @@ PioneerDDJSB3.init = function (id) {
     };
 
     PioneerDDJSB3.samplerGroups = {
-        '[Sampler1]': { channels: [1, 3], ledNumber: 0x00, },
-        '[Sampler2]': { channels: [1, 3], ledNumber: 0x01, },
-        '[Sampler3]': { channels: [1, 3], ledNumber: 0x02, },
-        '[Sampler4]': { channels: [1, 3], ledNumber: 0x03, },
-        '[Sampler5]': { channels: [2, 4], ledNumber: 0x00, },
-        '[Sampler6]': { channels: [2, 4], ledNumber: 0x01, },
-        '[Sampler7]': { channels: [2, 4], ledNumber: 0x02, },
-        '[Sampler8]': { channels: [2, 4], ledNumber: 0x03, },
+        '[Sampler1]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x00, },
+        '[Sampler2]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x01, },
+        '[Sampler3]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x02, },
+        '[Sampler4]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x03, },
+        '[Sampler5]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x00, },
+        '[Sampler6]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x01, },
+        '[Sampler7]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x02, },
+        '[Sampler8]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x03, },
     };
 
     PioneerDDJSB3.shiftPressed = false;
@@ -260,8 +261,7 @@ PioneerDDJSB3.Deck = function (deckNumber) {
             }
         }
     };
-
-    this.playButton = new components.PlayButton({
+    var playButton = this.playButton = new components.PlayButton({
         midi: [0x90 + deckNumber - 1, 0x0B],
         shiftOffset: 60,
         shiftControl: true,
@@ -269,24 +269,26 @@ PioneerDDJSB3.Deck = function (deckNumber) {
         connect: function() {
             this.connections[0] = engine.makeConnection(this.group, 'play_indicator', this.output);
             this.connections[1] = engine.makeConnection(this.group, 'track_loaded', this.output);
-            this.flashLedBinded = this.flashLed.bind(this);
         },
         flashLed: function(active) {
-            this.send(this.outValueScale(active));
+            playButton.send(playButton.outValueScale(active));
         },
         output: function(value, group, control) {
-            this[control] = value;
+            playButton[control] = value;
 
-            if (this.track_loaded) {
-                if (this.play_indicator) {
-                    PioneerDDJSB3.flasher.removeFunction(flashLedBinded);
-                    this.send(this.outValueScale(true));
+            engine.log(control);
+            engine.log(value);
+
+            if (playButton.track_loaded) {
+                if (playButton.play_indicator) {
+                    PioneerDDJSB3.flasher.removeFunction(playButton.flashLed);
+                    playButton.send(playButton.outValueScale(true));
                 } else {
-                    PioneerDDJSB3.flasher.addFunction(flashLedBinded);
+                    PioneerDDJSB3.flasher.addFunction(playButton.flashLed);
                 }
             } else {
-                PioneerDDJSB3.flasher.removeFunction(flashLedBinded);
-                this.send(this.outValueScale(false));
+                PioneerDDJSB3.flasher.removeFunction(playButton.flashLed);
+                playButton.send(playButton.outValueScale(false));
             }
         }
     });
@@ -1043,7 +1045,7 @@ PioneerDDJSB3.stopFlashingPadLedControl = function (deck, groupNumber, shiftGrou
         shift: shift
     };
 
-    PioneerDDJSB3.flashingPadLedControl = filter(PioneerDDJSB3.flashingPadLedControl, function(obj) { return isEqual(obj, target); });
+    PioneerDDJSB3.flashingPadLedControl = _.filter(PioneerDDJSB3.flashingPadLedControl, function(obj) { return isEqual(obj, target); });
 
     PioneerDDJSB3.padLedControl(deck, groupNumber, shiftGroup, ledNumber, shift, false);
 };
@@ -1088,7 +1090,7 @@ PioneerDDJSB3.autoLoopLed = function (value, group, control) {
 PioneerDDJSB3.samplerLedsDuration = function (value, group, control) {
     var sampler = PioneerDDJSB3.samplerGroups[group];
 
-    sampler.loaded = !!value;
+    sampler.loaded = value;
 
     PioneerDDJSB3.samplerLeds(sampler);
 };
@@ -1096,7 +1098,7 @@ PioneerDDJSB3.samplerLedsDuration = function (value, group, control) {
 PioneerDDJSB3.samplerLedsPlay = function (value, group, control) {
     var sampler = PioneerDDJSB3.samplerGroups[group];
 
-    sampler.playing = !!value;
+    sampler.playing = value;
 
     PioneerDDJSB3.samplerLeds(sampler);
 }
