@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MixxxControllerPreset schemaVersion="1" mixxxVersion="">
+    <info/>
+    <controller id="USB">
+        <scriptfiles/>
+    </controller>
+</MixxxControllerPreset>
