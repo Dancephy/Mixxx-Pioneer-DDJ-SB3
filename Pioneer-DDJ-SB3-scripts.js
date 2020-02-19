@@ -161,14 +161,14 @@ PioneerDDJSB3.init = function (id) {
     };
 
     PioneerDDJSB3.samplerGroups = {
-        '[Sampler1]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x00, },
-        '[Sampler2]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x01, },
-        '[Sampler3]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x02, },
-        '[Sampler4]': { channels: ['Channel1', 'Channel3'], ledNumber: 0x03, },
-        '[Sampler5]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x00, },
-        '[Sampler6]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x01, },
-        '[Sampler7]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x02, },
-        '[Sampler8]': { channels: ['Channel2', 'Channel4'], ledNumber: 0x03, },
+        '[Sampler1]': { channels: ['[Channel1]', '[Channel3]'], ledNumber: 0x00, },
+        '[Sampler2]': { channels: ['[Channel1]', '[Channel3]'], ledNumber: 0x01, },
+        '[Sampler3]': { channels: ['[Channel1]', '[Channel3]'], ledNumber: 0x02, },
+        '[Sampler4]': { channels: ['[Channel1]', '[Channel3]'], ledNumber: 0x03, },
+        '[Sampler5]': { channels: ['[Channel2]', '[Channel4]'], ledNumber: 0x00, },
+        '[Sampler6]': { channels: ['[Channel2]', '[Channel4]'], ledNumber: 0x01, },
+        '[Sampler7]': { channels: ['[Channel2]', '[Channel4]'], ledNumber: 0x02, },
+        '[Sampler8]': { channels: ['[Channel2]', '[Channel4]'], ledNumber: 0x03, },
     };
 
     PioneerDDJSB3.shiftPressed = false;
@@ -275,9 +275,6 @@ PioneerDDJSB3.Deck = function (deckNumber) {
         },
         output: function(value, group, control) {
             playButton[control] = value;
-
-            engine.log(control);
-            engine.log(value);
 
             if (playButton.track_loaded) {
                 if (playButton.play_indicator) {
@@ -638,8 +635,8 @@ PioneerDDJSB3.autodjToggle = function (channel, control, value, status, group) {
 ///////////////////////////////////////////////////////////////
 
 PioneerDDJSB3.bindSamplerControlConnections = function (samplerGroup, isUnbinding) {
-    engine.connectControl(samplerGroup, 'duration', 'PioneerDDJSB3.samplerLedsDuration', isUnbinding);
-    engine.connectControl(samplerGroup, 'play', 'PioneerDDJSB3.samplerLedsPlay', isUnbinding);
+    engine.makeConnection(samplerGroup, 'duration', PioneerDDJSB3.samplerLedsDuration);
+    engine.makeConnection(samplerGroup, 'play', PioneerDDJSB3.samplerLedsPlay);
 };
 
 PioneerDDJSB3.bindDeckControlConnections = function (channelGroup, isUnbinding) {
@@ -648,9 +645,7 @@ PioneerDDJSB3.bindDeckControlConnections = function (channelGroup, isUnbinding) 
         controlsToFunctions = {
             'pfl': 'PioneerDDJSB3.headphoneCueLed',
             'keylock': 'PioneerDDJSB3.keyLockLed',
-            'mute': 'PioneerDDJSB3.muteLed',
             'loop_enabled': 'PioneerDDJSB3.autoLoopLed',
-            'track_loaded': 'PioneerDDJSB3.trackLoaded',
         };
 
     if (PioneerDDJSB3.invertVinylSlipButton) {
@@ -1001,6 +996,7 @@ PioneerDDJSB3.padLedControl = function (deck, groupNumber, shiftGroup, ledNumber
         midiChannelOffset = PioneerDDJSB3.deckConverter(deck);
 
     if (midiChannelOffset !== null) {
+        engine.log("Pad Led: deck: " + deck + " group: " + groupNumber + " led: " + ledNumber + " active: " + !!active);
         midi.sendShortMsg(
             padLedsBaseChannel + midiChannelOffset,
             padLedControl,
@@ -1045,9 +1041,7 @@ PioneerDDJSB3.stopFlashingPadLedControl = function (deck, groupNumber, shiftGrou
         shift: shift
     };
 
-    PioneerDDJSB3.flashingPadLedControl = _.filter(PioneerDDJSB3.flashingPadLedControl, function(obj) { return isEqual(obj, target); });
-
-    PioneerDDJSB3.padLedControl(deck, groupNumber, shiftGroup, ledNumber, shift, false);
+    PioneerDDJSB3.flashingPadLedControl = _.filter(PioneerDDJSB3.flashingPadLedControl, function(obj) { return _.isEqual(obj, target); });
 };
 
 PioneerDDJSB3.nonPadLedControl = function (deck, ledNumber, active) {
@@ -1104,12 +1098,12 @@ PioneerDDJSB3.samplerLedsPlay = function (value, group, control) {
 }
 
 PioneerDDJSB3.samplerLeds = function (sampler) {
-    for (var i = 0; i < sampler.channels.lenght; i++) {
+    for (var i = 0; i < sampler.channels.length; i++) {
+
         if (sampler.playing) {
             PioneerDDJSB3.startFlashingPadLedControl(sampler.channels[i], PioneerDDJSB3.ledGroups.sampler, false, sampler.ledNumber, false);
         } else {
             PioneerDDJSB3.stopFlashingPadLedControl(sampler.channels[i], PioneerDDJSB3.ledGroups.sampler, false, sampler.ledNumber, false);
-
             PioneerDDJSB3.padLedControl(sampler.channels[i], PioneerDDJSB3.ledGroups.sampler, false, sampler.ledNumber, false, sampler.loaded);
         }
     }
@@ -1130,10 +1124,10 @@ PioneerDDJSB3.beatlooprollLeds = function (value, group, control) {
 };
 
 PioneerDDJSB3.hotCueLedStates = {
-    '[Channel1]': { states: [], isShifted: false },
-    '[Channel2]': { states: [], isShifted: false },
-    '[Channel3]': { states: [], isShifted: false },
-    '[Channel4]': { states: [], isShifted: false },
+    '[Channel1]': { states: {}, isShifted: false },
+    '[Channel2]': { states: {}, isShifted: false },
+    '[Channel3]': { states: {}, isShifted: false },
+    '[Channel4]': { states: {}, isShifted: false },
 };
 
 PioneerDDJSB3.hotCueLeds = function (value, group, control) {
@@ -1167,9 +1161,11 @@ PioneerDDJSB3.updateHotCueLeds = function() {
         var group = '[Channel' + channelIdx + ']';
         var channel = PioneerDDJSB3.hotCueLedStates[group];
 
+
         for (var hotCue = 5; hotCue <= 8; hotCue++) {
+            var padNum = hotCue - 1;
+
             if (channel.isShifted && channel.states[hotCue]) {
-                var padNum = hotCue - 1;
                 PioneerDDJSB3.padLedControl(group, PioneerDDJSB3.ledGroups.hotCue, shiftedGroup, padNum, false, true);
             } else {
                 PioneerDDJSB3.padLedControl(group, PioneerDDJSB3.ledGroups.hotCue, shiftedGroup, padNum, false, false);
@@ -1455,16 +1451,6 @@ PioneerDDJSB3.EffectUnit = function (unitNumber) {
             engine.softTakeoverIgnoreNextValue(effectGroup, 'meta');
         }
     });
-};
-
-PioneerDDJSB3.trackLoaded = function (value, group, control) {
-    var i = PioneerDDJSB3.deckIndexTable[group];
-
-    if (value) {
-        midi.sendShortMsg(0x96, 0x46 + i, 0x7F);
-    } else {
-        midi.sendShortMsg(0x96, 0x46 + i, 0x0);
-    }
 };
 
 try {
