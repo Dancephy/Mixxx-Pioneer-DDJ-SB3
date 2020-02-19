@@ -1605,7 +1605,7 @@ PioneerDDJSB3.Slicer.prototype.playPositionChange = function(value, group, contr
             this.midiOuputUpdate();
         }
     }
-}
+};
 
 PioneerDDJSB3.Slicer.prototype.midiOuputUpdate = function() {
     var onLedMidi = this.midiOutputBeatLeds[this.currentBeat];
@@ -1621,13 +1621,7 @@ PioneerDDJSB3.Slicer.prototype.midiOuputUpdate = function() {
     if (onLedMidi === 0 || onLedMidi) {
         midi.sendShortMsg(this.midiOutputOp, onLedMidi, 0x7F);
     }
-}
-
-PioneerDDJSB3.shiftListeners.push(function() {
-    var slicer = new PioneerDDJSB3.Slicer('[Channel1]');
-    slicer.getFirstBeat();
-    slicer.moveToSample(slicer.firstBeatSample);
-});
+};
 
 try {
     module.exports = PioneerDDJSB3;
