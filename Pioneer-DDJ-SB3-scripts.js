@@ -386,7 +386,7 @@ PioneerDDJSB3.Pad = function(padNumber) {
 
     this.slicerButtons = [];
 
-    for (var i = 0; i < PioneerDDJSB3.midiOutputBeatLeds.length; i++) {
+    for (var i = 1; i <= PioneerDDJSB3.midiOutputBeatLeds.length; i++) {
         (function(beat) {
             _this.slicerButtons[beat] = function(channel, control, value, status) {
                 if (_this.slicer) {
@@ -434,53 +434,69 @@ PioneerDDJSB3.Pad.prototype.clearSlicer = function() {
 };
 
 PioneerDDJSB3.Pad.prototype.hotcueMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x1B);
-    this.clearSlicer();
+    if (value) {
+        this.setModeActive(0x1B);
+        this.clearSlicer();
+    }
 };
 
 PioneerDDJSB3.Pad.prototype.beatJumpMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x69);
-    this.clearSlicer();
+    if (value) {
+        this.setModeActive(0x69);
+        this.clearSlicer();
 
-    // Let jump pad led on
-    midi.sendShortMsg(0x97 + this.padNumber - 1, 0x42, 0x7F);
-    midi.sendShortMsg(0x97 + this.padNumber - 1, 0x43, 0x7F);
+        // Let jump pad led on
+        midi.sendShortMsg(0x97 + this.padNumber - 1, 0x42, 0x7F);
+        midi.sendShortMsg(0x97 + this.padNumber - 1, 0x43, 0x7F);
+    }
 };
 
 PioneerDDJSB3.Pad.prototype.fxFadeMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x1E);
-    this.clearSlicer();
+    if (value) {
+        this.setModeActive(0x1E);
+        this.clearSlicer();
+    }
 }
 
 PioneerDDJSB3.Pad.prototype.rollMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x6B);
-    this.clearSlicer();
+    if (value) {
+        this.setModeActive(0x6B);
+        this.clearSlicer();
+    }
 }
 
 PioneerDDJSB3.Pad.prototype.padScratchMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x20);
-    this.clearSlicer();
+    if (value) {
+        this.setModeActive(0x20);
+        this.clearSlicer();
+    }
 }
 
 PioneerDDJSB3.Pad.prototype.slicerMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x6D);
+    if (value) {
+        this.setModeActive(0x6D);
 
-    if (!this.slicer) {
-        var group = '[Channel' + this.padNumber + ']';
-        var midiOutputOp = 0x97 + this.padNumber - 1;
+        if (!this.slicer) {
+            var group = '[Channel' + this.padNumber + ']';
+            var midiOutputOp = 0x97 + this.padNumber - 1;
 
-        this.slicer = new PioneerDDJSB3.Slicer(group, midiOutputOp, PioneerDDJSB3.midiOutputBeatLeds);
+            this.slicer = new PioneerDDJSB3.Slicer(group, midiOutputOp, PioneerDDJSB3.midiOutputBeatLeds);
+        }
     }
 };
 
 PioneerDDJSB3.Pad.prototype.samplerMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x22);
-    this.clearSlicer();
+    if (value) {
+        this.setModeActive(0x22);
+        this.clearSlicer();
+    }
 };
 
 PioneerDDJSB3.Pad.prototype.transMode = function(channel, control, value, status, group) {
-    this.setModeActive(0x6E);
-    this.clearSlicer();
+    if (value) {
+        this.setModeActive(0x6E);
+        this.clearSlicer();
+    }
 };
 
 PioneerDDJSB3.Pad.prototype.beatJumpMultiply = function(channel, control, value, status, group) {
@@ -1457,18 +1473,18 @@ PioneerDDJSB3.Slicer = function(group, midiOutputOp, midiOutputBeatLeds) {
 
     this.buttons = [];
 
-    for (var i = 0; i < midiOutputBeatLeds.length; i++) {
+    for (var i = 1; i <= midiOutputBeatLeds.length; i++) {
         (function(beat) {
             _this.buttons[beat] = function(channel, control, value, status) {
                 if (value) {
-                    var beatPosition = _this.beatPositions[beat];
+                    var beatPosition = _this.beatPositions[beat - 1];
 
                     if (beatPosition) {
                         _this.moveToSample(beatPosition.sample);
                     }
                 }
             };
-        })
+        })(i);
     }
 
     this.calculateBeats();
@@ -1494,8 +1510,8 @@ PioneerDDJSB3.Slicer = function(group, midiOutputOp, midiOutputBeatLeds) {
     }));
 };
 
-PioneerDDJSB3.Slicer.prototype.PLAY_POSITION_FLOOR = -0.14;
-PioneerDDJSB3.Slicer.prototype.PLAY_POSITION_RANGE = 1.14 - PioneerDDJSB3.Slicer.prototype.PLAY_POSITION_FLOOR;
+PioneerDDJSB3.Slicer.prototype.PLAY_POSITION_FLOOR = 0;
+PioneerDDJSB3.Slicer.prototype.PLAY_POSITION_RANGE = 1 - PioneerDDJSB3.Slicer.prototype.PLAY_POSITION_FLOOR;
 
 PioneerDDJSB3.Slicer.prototype.shutdown = function() {
     for (var i = 0; i < this.midiOutputBeatLeds.length; i++) {
@@ -1518,9 +1534,9 @@ PioneerDDJSB3.Slicer.prototype.calculateBeats = function() {
     var bpm = engine.getValue(this.group, 'bpm');
     var bps = bpm / 60.0;
 
-    this.samplesPerBeat = trackSamplesPerSecond / bps;
-    this.positionPerBeat = (this.PLAY_POSITION_RANGE * samplesPerBeat) / this.trackSamples;
-    this.playPositionDelta = (this.PLAY_POSITION_RANGE * samplesPerBeat) / (this.trackSamples * 20);
+    this.samplesPerBeat = (trackSamplesPerSecond * 2) / bps;
+    this.positionPerBeat = (this.PLAY_POSITION_RANGE * this.samplesPerBeat) / this.trackSamples;
+    this.playPositionDelta = (this.PLAY_POSITION_RANGE * this.samplesPerBeat) / (this.trackSamples * 20);
 };
 
 PioneerDDJSB3.Slicer.prototype.generateBeatPositions = function() {
@@ -1533,13 +1549,14 @@ PioneerDDJSB3.Slicer.prototype.generateBeatPositions = function() {
         if (sample < this.trackSamples) {
             var bp = {
                 sample: sample,
-                positionIn: (this.PLAY_POSITION_RANGE * sample) / this.trackSamples,
-                positionOut: (this.PLAY_POSITION_RANGE * nextSample) / this.trackSamples,
+                positionIn: (this.PLAY_POSITION_RANGE * sample - 1) / this.trackSamples,
+                positionOut: (this.PLAY_POSITION_RANGE * nextSample - 1) / this.trackSamples,
             };
 
             this.beatPositions.push(bp);
         }
     }
+
 };
 
 PioneerDDJSB3.Slicer.prototype.getFirstBeat = function() {
@@ -1562,6 +1579,7 @@ PioneerDDJSB3.Slicer.prototype.getFirstBeat = function() {
     }
 
     engine.setValue(this.group, 'quantize', oldQuantize);
+    engine.setValue(this.group, 'hotcue_8_position', this.firstBeatSample);
 };
 
 PioneerDDJSB3.Slicer.prototype.moveToSample = function(sample) {
@@ -1579,18 +1597,17 @@ PioneerDDJSB3.Slicer.prototype.moveToSample = function(sample) {
 };
 
 PioneerDDJSB3.Slicer.prototype.playPositionChange = function(value, group, control) {
-    var paddedPlayPosition = value + this.PLAY_POSITION_FLOOR;
-    var playPositionDelta = Math.abs(this.latestPlayPosition - paddedPlayPosition);
+    var playPositionDelta = Math.abs(this.latestPlayPosition - value);
     var oldCurrentBeat = this.currentBeat;
 
     if (playPositionDelta > this.playPositionDelta) {
-        this.latestPlayPosition = paddedPlayPosition;
+        this.latestPlayPosition = value;
         var found = false;
 
         for (var i = 0; i < this.beatPositions.length; i++) {
             var beatPosition = this.beatPositions[i];
 
-            if (paddedPlayPosition >= beatPosition.positionIn && paddedPlayPosition < beatPosition.positionOut) {
+            if (value >= beatPosition.positionIn && value < beatPosition.positionOut) {
                 this.currentBeat = i;
                 found = true;
             }

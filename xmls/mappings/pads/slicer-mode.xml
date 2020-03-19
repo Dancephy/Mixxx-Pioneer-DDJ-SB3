@@ -54,7 +54,7 @@
       <key>PioneerDDJSB3.padForDeck[1].slicerButtons[2]</key>
       <description>Slicer, Button: PAD2 (in SLICER-Mode, Deck 1 active)</description>
       <status>0x97</status>
-      <midino>0x51</midino>
+      <midino>0x61</midino>
       <options>
         <script-binding />
       </options>
@@ -65,7 +65,7 @@
       <key>PioneerDDJSB3.padForDeck[2].slicerButtons[2]</key>
       <description>Slicer, Button: PAD2 (in SLICER-Mode, Deck 2 active)</description>
       <status>0x98</status>
-      <midino>0x51</midino>
+      <midino>0x61</midino>
       <options>
         <script-binding />
       </options>
@@ -76,7 +76,7 @@
       <key>PioneerDDJSB3.padForDeck[3].slicerButtons[2]</key>
       <description>Slicer, Button: PAD2 (in SLICER-Mode, Deck 3 active)</description>
       <status>0x99</status>
-      <midino>0x51</midino>
+      <midino>0x61</midino>
       <options>
         <script-binding />
       </options>
@@ -87,7 +87,7 @@
       <key>PioneerDDJSB3.padForDeck[4].slicerButtons[2]</key>
       <description>Slicer, Button: PAD2 (in SLICER-Mode, Deck 4 active)</description>
       <status>0x9A</status>
-      <midino>0x51</midino>
+      <midino>0x61</midino>
       <options>
         <script-binding />
       </options>
@@ -100,7 +100,7 @@
       <key>PioneerDDJSB3.padForDeck[1].slicerButtons[3]</key>
       <description>Slicer, Button: PAD3 (in SLICER-Mode, Deck 1 active)</description>
       <status>0x97</status>
-      <midino>0x52</midino>
+      <midino>0x62</midino>
       <options>
         <script-binding />
       </options>
@@ -111,7 +111,7 @@
       <key>PioneerDDJSB3.padForDeck[2].slicerButtons[3]</key>
       <description>Slicer, Button: PAD3 (in SLICER-Mode, Deck 2 active)</description>
       <status>0x98</status>
-      <midino>0x52</midino>
+      <midino>0x62</midino>
       <options>
         <script-binding />
       </options>
@@ -122,7 +122,7 @@
       <key>PioneerDDJSB3.padForDeck[3].slicerButtons[3]</key>
       <description>Slicer, Button: PAD3 (in SLICER-Mode, Deck 3 active)</description>
       <status>0x99</status>
-      <midino>0x52</midino>
+      <midino>0x62</midino>
       <options>
         <script-binding />
       </options>
@@ -133,7 +133,7 @@
       <key>PioneerDDJSB3.padForDeck[4].slicerButtons[3]</key>
       <description>Slicer, Button: PAD3 (in SLICER-Mode, Deck 4 active)</description>
       <status>0x9A</status>
-      <midino>0x52</midino>
+      <midino>0x62</midino>
       <options>
         <script-binding />
       </options>
@@ -146,7 +146,7 @@
       <key>PioneerDDJSB3.padForDeck[1].slicerButtons[4]</key>
       <description>Slicer, Button: PAD4 (in SLICER-Mode, Deck 1 active)</description>
       <status>0x97</status>
-      <midino>0x53</midino>
+      <midino>0x63</midino>
       <options>
         <script-binding />
       </options>
@@ -157,7 +157,7 @@
       <key>PioneerDDJSB3.padForDeck[2].slicerButtons[4]</key>
       <description>Slicer, Button: PAD4 (in SLICER-Mode, Deck 2 active)</description>
       <status>0x98</status>
-      <midino>0x53</midino>
+      <midino>0x63</midino>
       <options>
         <script-binding />
       </options>
@@ -168,7 +168,7 @@
       <key>PioneerDDJSB3.padForDeck[3].slicerButtons[4]</key>
       <description>Slicer, Button: PAD4 (in SLICER-Mode, Deck 3 active)</description>
       <status>0x99</status>
-      <midino>0x53</midino>
+      <midino>0x63</midino>
       <options>
         <script-binding />
       </options>
@@ -179,7 +179,7 @@
       <key>PioneerDDJSB3.padForDeck[4].slicerButtons[4]</key>
       <description>Slicer, Button: PAD4 (in SLICER-Mode, Deck 4 active)</description>
       <status>0x9A</status>
-      <midino>0x53</midino>
+      <midino>0x63</midino>
       <options>
         <script-binding />
       </options>
@@ -192,7 +192,7 @@
       <key>PioneerDDJSB3.padForDeck[1].slicerButtons[5]</key>
       <description>Slicer, Button: PAD5 (in SLICER-Mode, Deck 1 active)</description>
       <status>0x97</status>
-      <midino>0x54</midino>
+      <midino>0x64</midino>
       <options>
         <script-binding />
       </options>
@@ -203,7 +203,7 @@
       <key>PioneerDDJSB3.padForDeck[2].slicerButtons[5]</key>
       <description>Slicer, Button: PAD5 (in SLICER-Mode, Deck 2 active)</description>
       <status>0x98</status>
-      <midino>0x54</midino>
+      <midino>0x64</midino>
       <options>
         <script-binding />
       </options>
@@ -214,7 +214,7 @@
       <key>PioneerDDJSB3.padForDeck[3].slicerButtons[5]</key>
       <description>Slicer, Button: PAD5 (in SLICER-Mode, Deck 3 active)</description>
       <status>0x99</status>
-      <midino>0x54</midino>
+      <midino>0x64</midino>
       <options>
         <script-binding />
       </options>
@@ -225,7 +225,7 @@
       <key>PioneerDDJSB3.padForDeck[4].slicerButtons[5]</key>
       <description>Slicer, Button: PAD5 (in SLICER-Mode, Deck 4 active)</description>
       <status>0x9A</status>
-      <midino>0x54</midino>
+      <midino>0x64</midino>
       <options>
         <script-binding />
       </options>
@@ -238,7 +238,7 @@
       <key>PioneerDDJSB3.padForDeck[1].slicerButtons[6]</key>
       <description>Slicer, Button: PAD6 (in SLICER-Mode, Deck 1 active)</description>
       <status>0x97</status>
-      <midino>0x55</midino>
+      <midino>0x65</midino>
       <options>
         <script-binding />
       </options>
@@ -249,7 +249,7 @@
       <key>PioneerDDJSB3.padForDeck[2].slicerButtons[6]</key>
       <description>Slicer, Button: PAD6 (in SLICER-Mode, Deck 2 active)</description>
       <status>0x98</status>
-      <midino>0x55</midino>
+      <midino>0x65</midino>
       <options>
         <script-binding />
       </options>
@@ -260,7 +260,7 @@
       <key>PioneerDDJSB3.padForDeck[3].slicerButtons[6]</key>
       <description>Slicer, Button: PAD6 (in SLICER-Mode, Deck 3 active)</description>
       <status>0x99</status>
-      <midino>0x55</midino>
+      <midino>0x65</midino>
       <options>
         <script-binding />
       </options>
@@ -271,7 +271,7 @@
       <key>PioneerDDJSB3.padForDeck[4].slicerButtons[6]</key>
       <description>Slicer, Button: PAD6 (in SLICER-Mode, Deck 4 active)</description>
       <status>0x9A</status>
-      <midino>0x55</midino>
+      <midino>0x65</midino>
       <options>
         <script-binding />
       </options>
@@ -284,7 +284,7 @@
       <key>PioneerDDJSB3.padForDeck[1].slicerButtons[7]</key>
       <description>Slicer, Button: PAD7 (in SLICER-Mode, Deck 1 active)</description>
       <status>0x97</status>
-      <midino>0x56</midino>
+      <midino>0x66</midino>
       <options>
         <script-binding />
       </options>
@@ -295,7 +295,7 @@
       <key>PioneerDDJSB3.padForDeck[2].slicerButtons[7]</key>
       <description>Slicer, Button: PAD7 (in SLICER-Mode, Deck 2 active)</description>
       <status>0x98</status>
-      <midino>0x56</midino>
+      <midino>0x66</midino>
       <options>
         <script-binding />
       </options>
@@ -306,7 +306,7 @@
       <key>PioneerDDJSB3.padForDeck[3].slicerButtons[7]</key>
       <description>Slicer, Button: PAD7 (in SLICER-Mode, Deck 3 active)</description>
       <status>0x99</status>
-      <midino>0x56</midino>
+      <midino>0x66</midino>
       <options>
         <script-binding />
       </options>
@@ -317,7 +317,7 @@
       <key>PioneerDDJSB3.padForDeck[4].slicerButtons[7]</key>
       <description>Slicer, Button: PAD7 (in SLICER-Mode, Deck 4 active)</description>
       <status>0x9A</status>
-      <midino>0x56</midino>
+      <midino>0x66</midino>
       <options>
         <script-binding />
       </options>
@@ -330,7 +330,7 @@
       <key>PioneerDDJSB3.padForDeck[1].slicerButtons[8]</key>
       <description>Slicer, Button: PAD8 (in SLICER-Mode, Deck 1 active)</description>
       <status>0x97</status>
-      <midino>0x57</midino>
+      <midino>0x67</midino>
       <options>
         <script-binding />
       </options>
@@ -341,7 +341,7 @@
       <key>PioneerDDJSB3.padForDeck[2].slicerButtons[8]</key>
       <description>Slicer, Button: PAD8 (in SLICER-Mode, Deck 2 active)</description>
       <status>0x98</status>
-      <midino>0x57</midino>
+      <midino>0x67</midino>
       <options>
         <script-binding />
       </options>
@@ -352,7 +352,7 @@
       <key>PioneerDDJSB3.padForDeck[3].slicerButtons[8]</key>
       <description>Slicer, Button: PAD8 (in SLICER-Mode, Deck 3 active)</description>
       <status>0x99</status>
-      <midino>0x57</midino>
+      <midino>0x67</midino>
       <options>
         <script-binding />
       </options>
@@ -363,7 +363,7 @@
       <key>PioneerDDJSB3.padForDeck[4].slicerButtons[8]</key>
       <description>Slicer, Button: PAD8 (in SLICER-Mode, Deck 4 active)</description>
       <status>0x9A</status>
-      <midino>0x57</midino>
+      <midino>0x67</midino>
       <options>
         <script-binding />
       </options>
