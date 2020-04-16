@@ -9,16 +9,18 @@ These files are based on the DDJ-SB2 files that are part of the Mixxx distributi
 
 ## Running the Tests
 1. Install Node
-1. Install Yarn
-1. Install Jest
-1. run yarn test
+2. Install Yarn
+3. Install Jest
+4. run yarn test
 
 ## Feature Matrix
 Here we try and list what is working and what isn't
 
-| Feature      | Deck 1 | Deck 2 | Deck 3 | Deck 4 |
-|--------------|--------|--------|--------|--------|
-| Play / Pause | Yes    | Yes    | No     | No     |
-| Cue          | Yes    | Yes    | No     | No     |
-| Key Lock     | Yes    | Yes    | No     | No     |
-| Sync         | Yes    | Yes    | No     | No     |
+| Feature      | Deck 1  | Deck 2  | Deck 3  | Deck 4  |
+|--------------|---------|---------|---------|---------|
+| Play / Pause | Yes     | Yes     | No      | No      |
+| Cue          | Yes     | Yes     | No      | No      |
+| Key Lock     | Yes     | Yes     | No      | No      |
+| Sync         | Partial | Partial | No      | No      |
+| FX Fade      | Partial | Partial | No      | No      |
+| Auto Loop    | No      | No      | No      | No      |   
