@@ -23,4 +23,4 @@ Here we try and list what is working and what isn't
 | Key Lock     | Yes     | Yes     | No      | No      |
 | Sync         | Partial | Partial | No      | No      |
 | FX Fade      | Partial | Partial | No      | No      |
-| Auto Loop    | No      | No      | No      | No      |   
+| Auto Loop    | Yes     | Yes     | No      | No      |   
