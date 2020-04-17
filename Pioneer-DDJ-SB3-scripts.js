@@ -140,8 +140,6 @@ PioneerDDJSB3.init = function (id) {
 
     PioneerDDJSB3.ledGroups = {
         'hotCue': 0x00,
-        'autoLoop': 0x10,
-        'manualLoop': 0x20,
         'sampler': 0x30
     };
 
@@ -157,7 +155,9 @@ PioneerDDJSB3.init = function (id) {
         'vinyl': 0x17,
         'shiftVinyl': 0x4E,
         'sync': 0x58,
-        'shiftSync': 0x5C
+        'shiftSync': 0x5C,
+        'autoLoop': 0x14,
+        'shiftAutoLoop': 0x50,
     };
 
     PioneerDDJSB3.valueVuMeter = {
@@ -438,6 +438,7 @@ PioneerDDJSB3.bindDeckControlConnections = function (channelGroup, isUnbinding) 
             'filterHighKill': 'PioneerDDJSB3.highKillLed',
             'mute': 'PioneerDDJSB3.muteLed',
             'loop_enabled': 'PioneerDDJSB3.loopExitLed',
+            'loop_enabled': 'PioneerDDJSB3.autoLoopLed'
         };
 
     if (PioneerDDJSB3.invertVinylSlipButton) {
@@ -653,6 +654,10 @@ PioneerDDJSB3.deck4Button = function (channel, control, value, status, group) {
     }
 };
 
+PioneerDDJSB3.autoLoopButton = function (channel, control, value, status, group) {
+    engine.setValue(PioneerDDJSB3.deckSwitchTable[group], 'beatloop_activate', value ? 1 : 0);
+};
+
 PioneerDDJSB3.loopInButton = function (channel, control, value, status, group) {
     engine.setValue(PioneerDDJSB3.deckSwitchTable[group], 'loop_in', value ? 1 : 0);
 };
@@ -781,6 +786,11 @@ PioneerDDJSB3.keyLockLed = function (value, group, control) {
 PioneerDDJSB3.slipLed = function (value, group, control) {
     PioneerDDJSB3.nonPadLedControl(group, PioneerDDJSB3.nonPadLeds.vinyl, value);
     PioneerDDJSB3.nonPadLedControl(group, PioneerDDJSB3.nonPadLeds.shiftVinyl, value);
+};
+
+PioneerDDJSB3.autoLoopLed = function (value, group, control) {
+    PioneerDDJSB3.nonPadLedControl(group, PioneerDDJSB3.nonPadLeds.autoLoop, value);
+    PioneerDDJSB3.nonPadLedControl(group, PioneerDDJSB3.nonPadLeds.shiftAutoLoop, value);
 };
 
 PioneerDDJSB3.loopInLed = function (value, group, control) {
