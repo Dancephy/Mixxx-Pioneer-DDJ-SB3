@@ -366,7 +366,7 @@ PioneerDDJSB3.Deck = function (deckNumber) {
     this.tempoFader = new components.Pot({
         inKey: 'rate',
         //         relative: true,
-        invert: false,
+        invert: true,
     });
 
     this.forEachComponent(function (c) {
@@ -376,6 +376,8 @@ PioneerDDJSB3.Deck = function (deckNumber) {
             c.trigger();
         }
     });
+
+    engine.setValue("[Channel" + deckNumber + "]", "rate_dir", -1);
 };
 PioneerDDJSB3.Deck.prototype = components.ComponentContainer.prototype;
 
