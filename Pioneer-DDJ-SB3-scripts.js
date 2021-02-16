@@ -24,9 +24,6 @@ PioneerDDJSB3.jogwheelSensivity = 1.0;
 // Set to 1 to disable jogwheel sensitivity increase when holding shift.
 PioneerDDJSB3.jogwheelShiftMultiplier = 100;
 
-// Time per step (in ms) for pitch speed fade to normal
-PioneerDDJSB3.speedRateToNormalTime = 200;
-
 // If true Level-Meter shows VU-Master left & right. If false shows level of active deck.
 PioneerDDJSB3.showVumeterMaster = false;
 
@@ -90,13 +87,10 @@ PioneerDDJSB3.looprollIntervals = [1 / 16, 1 / 8, 1 / 4, 1 / 2, 1, 2, 4, 8];
       - bug when touching jog wheel for first time in vinyl mode
 */
 
-
-
 ///////////////////////////////////////////////////////////////
 //               INIT, SHUTDOWN & GLOBAL HELPER              //
 ///////////////////////////////////////////////////////////////
 PioneerDDJSB3.longButtonPress = false;
-PioneerDDJSB3.speedRateToNormalTimer = new Array(4);
 
 PioneerDDJSB3.flasher = {};
 
@@ -542,24 +536,6 @@ PioneerDDJSB3.longButtonPressWait = function () {
     PioneerDDJSB3.longButtonPress = true;
 };
 
-PioneerDDJSB3.speedRateToNormal = function (group, deck) {
-    var speed = engine.getValue(group, 'rate');
-    if (speed > 0) {
-        engine.setValue(group, 'rate_perm_down_small', true);
-        if (engine.getValue(group, 'rate') <= 0) {
-            engine.stopTimer(PioneerDDJSB3.speedRateToNormalTimer[deck]);
-            engine.setValue(group, 'rate', 0);
-        }
-    } else if (speed < 0) {
-        engine.setValue(group, 'rate_perm_up_small', true);
-        if (engine.getValue(group, 'rate') >= 0) {
-            engine.stopTimer(PioneerDDJSB3.speedRateToNormalTimer[deck]);
-            engine.setValue(group, 'rate', 0);
-        }
-    }
-};
-
-
 ///////////////////////////////////////////////////////////////
 //                      VU - Meter                           //
 ///////////////////////////////////////////////////////////////
@@ -789,10 +765,21 @@ PioneerDDJSB3.keyLockButton = function (channel, control, value, status, group) 
 };
 
 PioneerDDJSB3.shiftKeyLockButton = function (channel, control, value, status, group) {
-    var deck = status - 0x90;
     if (value) {
-        engine.stopTimer(PioneerDDJSB3.speedRateToNormalTimer[deck]);
-        PioneerDDJSB3.speedRateToNormalTimer[deck] = engine.beginTimer(PioneerDDJSB3.speedRateToNormalTime, "PioneerDDJSB3.speedRateToNormal('" + group + "', " + deck + ")");
+        var currentTempoRange = engine.getValue(group, 'rateRange');
+        var deckIndex = status - 0x90 + 1;
+
+        PioneerDDJSB3.deck[deckIndex].tempoFader.skipSoftTakeover();
+
+        if (currentTempoRange < 0.081) {
+            engine.setValue(group, 'rateRange', 0.16);
+        } else if (currentTempoRange < 0.161) {
+            engine.setValue(group, 'rateRange', 0.50);
+        } else if (currentTempoRange < 0.501) {
+            engine.setValue(group, 'rateRange', 1.0);
+        } else {
+            engine.setValue(group, 'rateRange', 0.08);
+        }
     }
 };
 

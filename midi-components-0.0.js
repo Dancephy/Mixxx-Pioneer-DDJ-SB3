@@ -448,6 +448,7 @@
         this.firstValueReceived = false;
     };
     Pot.prototype = new Component({
+        softTakeover: true,
         input: function (channel, control, value, status, group) {
             if (this.MSB !== undefined) {
                 value = (this.MSB << 7) + value;
@@ -483,6 +484,10 @@
             if (this.firstValueReceived && !this.relative) {
                 engine.softTakeover(this.group, this.inKey, true);
             }
+        },
+        skipSoftTakeover: function() {
+            engine.softTakeover(this.group, this.inKey, false);
+            this.firstValueReceived = false;
         },
         disconnect: function () {
             if (!this.relative) {
