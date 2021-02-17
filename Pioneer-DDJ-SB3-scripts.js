@@ -175,6 +175,20 @@ PioneerDDJSB3.nonPadLeds = {
     'shiftAutoLoop': 0x50,
 };
 
+PioneerDDJSB3.channelsToPadNumber = {
+    '[Channel1]': 1,
+    '[Channel2]': 2,
+    '[Channel3]': 3,
+    '[Channel4]': 4
+};
+
+PioneerDDJSB3.channelsToEffectUnitNumber = {
+    '[Channel1]': 1,
+    '[Channel2]': 2,
+    '[Channel3]': 1,
+    '[Channel4]': 2
+};
+
 PioneerDDJSB3.init = function (id) {
     PioneerDDJSB3.shiftPressed = false;
 
@@ -394,19 +408,21 @@ PioneerDDJSB3.Pad = function(padNumber) {
 
     // Change BeatJump leds when shifted
     PioneerDDJSB3.shiftListeners.push(function(group, isShifted) {
-        if (isShifted) {
-            for (var i = 0; i < 8; i++) {
-                midi.sendShortMsg(0x97 + padNumber - 1, 0x40 + i, 0x7F);
+        if (PioneerDDJSB3.channelsToPadNumber[group] === padNumber) {
+            if (isShifted) {
+                for (var i = 0; i < 8; i++) {
+                    midi.sendShortMsg(0x97 + padNumber - 1, 0x40 + i, 0x7F);
+                }
+            } else {
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x40, 0x0);
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x41, 0x0);
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x42, 0x7F);
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x43, 0x7F);
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x44, 0x0);
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x45, 0x0);
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x46, 0x0);
+                midi.sendShortMsg(0x97 + padNumber - 1, 0x47, 0x0);
             }
-        } else {
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x40, 0x0);
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x41, 0x0);
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x42, 0x7F);
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x43, 0x7F);
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x44, 0x0);
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x45, 0x0);
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x46, 0x0);
-            midi.sendShortMsg(0x97 + padNumber - 1, 0x47, 0x0);
         }
     });
 };
@@ -1363,51 +1379,95 @@ PioneerDDJSB3.rotarySelectorShiftedClick = function (channel, control, value, st
 
 PioneerDDJSB3.EffectUnit = function (unitNumber) {
     var eu = this;
+    this.isShifted = false;
     this.group = '[EffectRack1_EffectUnit' + unitNumber + ']';
     engine.setValue(this.group, 'show_focus', 1);
 
-    this.EffectButton = function (buttonNumber) {
+    this.buttonLights = [];
+
+    this.EffectButtonLight = function(buttonNumber) {
+        this.isEnabled = false;
+        this.isFocused = false;
+
+        this.midi = [0x93 + unitNumber, 0x46 + buttonNumber];
+    }
+
+    this.EffectButtonLight.prototype.update = function() {
+        if (eu.isShifted) {
+            engine.log("isEnabled" + this.isEnabled);
+            midi.sendShortMsg(this.midi[0], this.midi[1], (this.isFocused ? 0x7F : 0x0));
+        } else {
+            midi.sendShortMsg(this.midi[0], this.midi[1], (this.isEnabled ? 0x7F : 0x0));
+        }
+    };
+
+    for (var i = 1; i <= 3; i++) {
+        this.buttonLights[i] = new this.EffectButtonLight(i);
+    }
+
+    this.EffectFocusButton = function (buttonNumber) {
         this.buttonNumber = buttonNumber;
 
         this.group = eu.group;
-        this.midi = [0x93 + unitNumber, 0x46 + buttonNumber];
+        this.midi = [0x93 + unitNumber, 0x62 + buttonNumber];
 
         components.Button.call(this);
     };
-    this.EffectButton.prototype = new components.Button({
+    this.EffectFocusButton.prototype = new components.Button({
         input: function (channel, control, value, status) {
-            if (this.isPress(channel, control, value, status)) {
-                this.isLongPressed = false;
-                this.longPressTimer = engine.beginTimer(this.longPressTimeout, function () {
-                    var effectGroup = '[EffectRack1_EffectUnit' + unitNumber + '_Effect' + this.buttonNumber + ']';
-                    script.toggleControl(effectGroup, 'enabled');
-                    this.isLongPressed = true;
-                }, true);
-            } else {
-                if (!this.isLongPressed) {
-                    var focusedEffect = engine.getValue(eu.group, 'focused_effect');
-                    if (focusedEffect === this.buttonNumber) {
-                        engine.setValue(eu.group, 'focused_effect', 0);
-                    } else {
-                        engine.setValue(eu.group, 'focused_effect', this.buttonNumber);
-                    }
+            if (value) {
+                var focusedEffect = engine.getValue(eu.group, 'focused_effect');
+
+                if (focusedEffect === this.buttonNumber) {
+                    engine.setValue(eu.group, 'focused_effect', 0);
+                } else {
+                    engine.setValue(eu.group, 'focused_effect', this.buttonNumber);
                 }
-                this.isLongPressed = false;
-                engine.stopTimer(this.longPressTimer);
             }
         },
         outKey: 'focused_effect',
         output: function (value, group, control) {
-            this.send((value === this.buttonNumber) ? this.on : this.off);
+            eu.buttonLights[this.buttonNumber].isFocused = (value === this.buttonNumber) ? true : false;
+            eu.buttonLights[this.buttonNumber].update();
         },
-        sendShifted: true,
-        shiftControl: true,
-        shiftOffset: 28,
+        sendShifted: false,
+        shiftControl: false,
+    });
+
+    this.EffectEnableButton = function (buttonNumber) {
+        this.buttonNumber = buttonNumber;
+
+        this.group = '[EffectRack1_EffectUnit' + unitNumber + '_Effect' + buttonNumber + ']';
+        this.midi = [0x93 + unitNumber, 0x46 + buttonNumber];
+
+        components.Button.call(this);
+    };
+    this.EffectEnableButton.prototype = new components.Button({
+        input: function (channel, control, value, status) {
+            if (value) {
+                var effectEnabled = engine.getValue(this.group, 'enabled');
+
+                if (effectEnabled) {
+                    engine.setValue(this.group, 'enabled', false);
+                } else {
+                    engine.setValue(this.group, 'enabled', true);
+                }
+            }
+        },
+        outKey: 'enabled',
+        output: function (value, group, control) {
+            eu.buttonLights[this.buttonNumber].isEnabled = value ? true : false;
+            eu.buttonLights[this.buttonNumber].update();
+        },
+        sendShifted: false,
+        shiftControl: false,
     });
 
     this.button = [];
+
     for (var i = 1; i <= 3; i++) {
-        this.button[i] = new this.EffectButton(i);
+        this.button[i] = new this.EffectEnableButton(i);
+        this.button[i + 3] = new this.EffectFocusButton(i);
 
         var effectGroup = '[EffectRack1_EffectUnit' + unitNumber + '_Effect' + i + ']';
         engine.softTakeover(effectGroup, 'meta', true);
@@ -1438,7 +1498,20 @@ PioneerDDJSB3.EffectUnit = function (unitNumber) {
             engine.softTakeoverIgnoreNextValue(effectGroup, 'meta');
         }
     });
+
+    PioneerDDJSB3.shiftListeners.push(function(group, shifted) {
+        if (PioneerDDJSB3.channelsToEffectUnitNumber[group] === unitNumber) {
+            eu.setShift(shifted);
+        }
+    });
 };
+
+PioneerDDJSB3.EffectUnit.prototype.setShift = function(value) {
+    this.isShifted = value;
+    for (var i = 1; i <= 3; i++) {
+        this.buttonLights[i].update();
+    }
+}
 
 ///////////////////////////////////////////////////////////////
 //                             SLICER                        //
