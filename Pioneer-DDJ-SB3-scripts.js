@@ -421,7 +421,7 @@ PioneerDDJSB3.Deck = function (deckNumber) {
 
     this.tempoFader = new components.Pot({
         inKey: 'rate',
-        invert: true
+        invert: true,
     });
 
     this.forEachComponent(function (c) {
@@ -431,6 +431,8 @@ PioneerDDJSB3.Deck = function (deckNumber) {
             c.trigger();
         }
     });
+    
+    engine.setValue("[Channel" + deckNumber + "]", "rate_dir", -1);
 
     PioneerDDJSB3.updateBPM(0, "[Channel" + deckNumber + "]");
     this.loadConnection = engine.makeConnection("[Channel" + deckNumber + "]", 'track_loaded', PioneerDDJSB3.trackLoaded);
