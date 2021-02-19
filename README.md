@@ -41,6 +41,19 @@ to the Mixxx controllers folder.
 
 *Beware: If you are updating, I would recommend that you delete any XML files that contains `DDJ-SB3` and activate your controller again in Mixxx*
 
+## Using Effects
+  - The 1, 2, 3 will turn on/off the effect
+
+  - The `Level` knob will change the effect unit `Master`, IF NONE EFFECT IS SELECTED.
+
+  - Pressing SHIFT + 1, 2 or 3 will SELECT the effect. When there is a selected effect:
+    - The `Level` now will change the `META` of the selected effect.
+
+    - Holding SHIFT while changing `GAIN`, one of `EQ` or `FILTER` will change the selected effect params.
+
+    - You can DELESECT it pressing SHIFT and the lighted effect button. After that no buttons will be lighted meaning that no effect if selected
+
+
 ## Midi Message Lists
 * Midi Message List for the SB3 (PDF): https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-sb3/ddj-sb3_midi_message_list_e1.pdf
 * Midi Message List for the SB2 (PDF), for comparison against SB3: http://faq.pioneerdj.com/files/img/DDJ-SB2_List_of_MIDI_Messages_E.pdf
