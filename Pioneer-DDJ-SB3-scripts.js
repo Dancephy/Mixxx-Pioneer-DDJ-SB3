@@ -101,14 +101,32 @@ PioneerDDJSB3.trackLoaded = function(value, group, control) {
 }
 
 // When unloading a deck, it should pass 0 for BPM
+//
+// Controller should know track BPM to match the TRANS pads velocity
+// Also, changing deck without sending BPM does not work
 PioneerDDJSB3.updateBPM = function(bpm, group, control) {
+    // Prevent sending BPM for unselected Deck.
+    // We send it when changing deck also, to keep in sync
+    if (group == '[Channel1]' && PioneerDDJSB3.deck3Enabled) {
+        return;
+    }
+    if (group == '[Channel2]' && PioneerDDJSB3.deck4Enabled) {
+        return;
+    }
+    if (group == '[Channel3]' && !PioneerDDJSB3.deck3Enabled) {
+        return;
+    }
+    if (group == '[Channel4]' && !PioneerDDJSB3.deck4Enabled) {
+        return;
+    }
+
     var bpmValue = Math.round(bpm * 100);
     var bpmBits = bpmValue.toString(2).split("");
 
     var bpmBitsPadded = [];
 
     var offset = 16 - bpmBits.length;
-    
+
     for (var i=0; i<16; i++) {
         if (i < offset) {
             bpmBitsPadded[i] = '0';
@@ -431,7 +449,7 @@ PioneerDDJSB3.Deck = function (deckNumber) {
             c.trigger();
         }
     });
-    
+
     engine.setValue("[Channel" + deckNumber + "]", "rate_dir", -1);
 
     PioneerDDJSB3.updateBPM(0, "[Channel" + deckNumber + "]");
@@ -852,6 +870,7 @@ PioneerDDJSB3.shiftKeyLockButton = function (channel, control, value, status, gr
 
 PioneerDDJSB3.deck1Button = function (channel, control, value, status, group) {
     if (value) {
+        PioneerDDJSB3.deck3Enabled = false;
         var bpm = engine.getValue(group, 'bpm');
         PioneerDDJSB3.updateBPM(bpm, group);
         midi.sendShortMsg(0xB0, 0x02, 0x0);
@@ -860,6 +879,7 @@ PioneerDDJSB3.deck1Button = function (channel, control, value, status, group) {
 
 PioneerDDJSB3.deck2Button = function (channel, control, value, status, group) {
     if (value) {
+        PioneerDDJSB3.deck4Enabled = false;
         var bpm = engine.getValue(group, 'bpm');
         PioneerDDJSB3.updateBPM(bpm, group);
         midi.sendShortMsg(0xB1, 0x02, 0x0);
@@ -868,6 +888,7 @@ PioneerDDJSB3.deck2Button = function (channel, control, value, status, group) {
 
 PioneerDDJSB3.deck3Button = function (channel, control, value, status, group) {
     if (value) {
+        PioneerDDJSB3.deck3Enabled = true;
         midi.sendShortMsg(0xB2, 0x02, 0x0);
         var bpm = engine.getValue(group, 'bpm');
         PioneerDDJSB3.updateBPM(bpm, group);
@@ -876,6 +897,7 @@ PioneerDDJSB3.deck3Button = function (channel, control, value, status, group) {
 
 PioneerDDJSB3.deck4Button = function (channel, control, value, status, group) {
     if (value) {
+        PioneerDDJSB3.deck4Enabled = true;
         var bpm = engine.getValue(group, 'bpm');
         PioneerDDJSB3.updateBPM(bpm, group);
         midi.sendShortMsg(0xB3, 0x02, 0x0);
