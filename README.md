@@ -3,31 +3,43 @@ Mixxx  controller mappings for the Pioneer DDJ SB3
 
 These files are based on the DDJ-SB2 files that are part of the Mixxx distribution: https://github.com/mixxxdj/mixxx/tree/master/res/controllers, however they where adjusted to work fine with DDJ-SB3
 
+## Other branches
+You may want to check the branch [8-hotcues](https://github.com/julia-otran/Mixxx-Pioneer-DDJ-SB3/tree/8-hotcues). The difference is the `HOT CUE` pads: Use the pads as hotcues, and pressing shift:
+  - The 4 pads on top will delete hotcues 1-4
+  - The 4 pads in bottom will be start, rewind, forward and censor.
+
+The behavior on `master` branch is different:
+  - The 4 pads on top are hotcues 1-4, pressing with shift will delete.
+  - The 4 pads on bottom are start, rew, forward, censor. Pressing shift will give you hotcues 5-8
+
 ## Installing / Updating
-You can just copy the files
+- First option: Execute one of the scripts:
+  ### Windows
+  Just double-click the bat file, it will copy files for you (this is not a virus, it will just copy the files for you, if are feeling unsafe, copy files manualy)
+  ```
+  install-win.bat
+  ```
+
+  ### Linux
+  1. Open a terminal
+  2. `cd` to the directory where you downloaded / clonned this project
+  3. Run `./install-linux.sh`
+
+  ### MacOS
+  1. Open a terminal
+  2. `cd` to the directory where you downloaded / clonned this project
+  3. Run `./install-osx.sh`
+
+- Second option: You can just copy the files
 ```
 lodash.mixxx.js
 midi-components-0.0.js
 Pioneer-DDJ-SB3-scripts.js
 Pioneer-DDJ-SB3.midi.xml
 ```
-to the Mixxx controllers folder, or execute one of the scripts:
+to the Mixxx controllers folder.
 
-### Windows
-Just double-click the bat file, it will copy files for you (this is not a virus, it will just copy the files for you, if are feeling unsafe, copy files manualy)
-```
-install-win.bat
-```
-
-### Linux
-1. Open a terminal
-2. `cd` to the directory where this project is
-3. Run `./install-linux.sh`
-
-### MacOS
-1. Open a terminal
-2. `cd` to the directory where this project is
-3. Run `./install-osx.sh`
+*Beware: If you are updating, I would recommend that you delete any XML files that contains `DDJ-SB3` and activate your controller again in Mixxx*
 
 ## Midi Message Lists
 * Midi Message List for the SB3 (PDF): https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-sb3/ddj-sb3_midi_message_list_e1.pdf
