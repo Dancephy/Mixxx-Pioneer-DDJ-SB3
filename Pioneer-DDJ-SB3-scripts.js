@@ -90,6 +90,64 @@ PioneerDDJSB3.looprollIntervals = [1 / 16, 1 / 8, 1 / 4, 1 / 2, 1, 2, 4, 8];
 ///////////////////////////////////////////////////////////////
 //               INIT, SHUTDOWN & GLOBAL HELPER              //
 ///////////////////////////////////////////////////////////////
+PioneerDDJSB3.trackLoadedSends = {};
+
+
+PioneerDDJSB3.trackLoaded = function(value, group, control) {
+    var deckIndex = PioneerDDJSB3.channelGroups[group];
+
+    if (value) {
+        midi.sendShortMsg(0x96, 0x46 + deckIndex, 0x7F);
+    } else {
+        PioneerDDJSB3.trackLoadedSends[group] = false;
+        midi.sendShortMsg(0x96, 0x46 + deckIndex, 0x0);
+    }
+}
+
+// When unloading a deck, it should pass 0 for BPM
+PioneerDDJSB3.updateBPM = function(bpm, group, control) {
+    var bpmValue = Math.round(bpm * 100);
+    var bpmBits = bpmValue.toString(2).split("");
+
+    var bpmBitsPadded = [];
+
+    var offset = 16 - bpmBits.length;
+    
+    for (var i=0; i<16; i++) {
+        if (i < offset) {
+            bpmBitsPadded[i] = '0';
+        } else {
+            bpmBitsPadded[i] = bpmBits[i - offset]
+        }
+    }
+
+    var bytes = [];
+
+    for (var i=0; i<4; i++) {
+        var mbyte = 0;
+
+        for (var j=0; j<4; j++) {
+            var bitIndex = (i * 4) + j;
+            var bit = parseInt(bpmBitsPadded[bitIndex]);
+            mbyte = mbyte | (bit << (3 - j));
+        }
+
+        bytes[i] = mbyte;
+    }
+
+    var deckIndex = PioneerDDJSB3.channelGroups[group];
+    var deckByte = 0x11 + deckIndex;
+
+
+    var sysexMessage = [0xF0, 0x00, 0x20, 0x04, 0x7F, deckByte, 0x00, 0x04, 0x00, bytes[0], bytes[1], 0x07, bytes[2], bytes[3], 0xF7];
+    midi.sendSysexMsg(sysexMessage, sysexMessage.length);
+
+    if (!PioneerDDJSB3.trackLoadedSends[group] && bpm > 0) {
+        PioneerDDJSB3.trackLoadedSends[group] = true;
+        midi.sendShortMsg(0x96, 0x46 + deckIndex, 0x7F);
+    }
+};
+
 PioneerDDJSB3.longButtonPress = false;
 
 PioneerDDJSB3.flasher = {};
@@ -236,11 +294,11 @@ PioneerDDJSB3.init = function (id) {
         PioneerDDJSB3.vu_meter_timer = engine.beginTimer(100, "PioneerDDJSB3.vuMeterTwinkle()");
     }
 
-    // request the positions of the knobs and faders from the controller
-    midi.sendShortMsg(0x9B, 0x09, 0x7f);
-
     var initSysBytes = [0xF0, 0x00, 0x20, 0x7F, 0x03, 0x01, 0xF7];
     midi.sendSysexMsg(initSysBytes, initSysBytes.length);
+
+    // request the positions of the knobs and faders from the controller
+    midi.sendShortMsg(0x9B, 0x09, 0x7f);
 
     PioneerDDJSB3.flasher.init();
     PioneerDDJSB3.initFlashingPadLedControl();
@@ -373,8 +431,6 @@ PioneerDDJSB3.Deck = function (deckNumber) {
 
     this.tempoFader = new components.Pot({
         inKey: 'rate',
-        //         relative: true,
-        invert: true,
     });
 
     this.forEachComponent(function (c) {
@@ -385,7 +441,10 @@ PioneerDDJSB3.Deck = function (deckNumber) {
         }
     });
 
-    engine.setValue("[Channel" + deckNumber + "]", "rate_dir", -1);
+    this.loadConnection = engine.makeConnection("[Channel" + deckNumber + "]", 'track_loaded', PioneerDDJSB3.trackLoaded);
+    this.bpmConnection = engine.makeConnection("[Channel" + deckNumber + "]", 'bpm', PioneerDDJSB3.updateBPM);
+
+    engine.setValue("[Channel" + deckNumber + "]", "rate_dir", 1);
 };
 PioneerDDJSB3.Deck.prototype = components.ComponentContainer.prototype;
 
