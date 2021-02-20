@@ -10,7 +10,7 @@ echo Changes to the mapping will be lost.
 
 set /p id="y/N: "
 
-if %id%=="y" goto :override
+if %id%==y goto :override
 
 goto :end
 
@@ -18,10 +18,12 @@ goto :end
 
 echo Overriding.....
 
-for /f %f in ('dir /b %LOCALAPPDATA%\Mixxx\controllers') do
-  if not x%f:DDJ-SB3=%==x%f%
-    if "%f:~-4%"==".xml"
-      copy Pioneer-DDJ-SB3.midi.xml %LOCALAPPDATA%\Mixxx\controllers\%f%
+for %%f in (%LOCALAPPDATA%\Mixxx\controllers\*.xml) do (
+  echo.%%f | findstr /C:"DDJ-SB3">nul && (
+    copy Pioneer-DDJ-SB3.midi.xml "%LOCALAPPDATA%\Mixxx\controllers\%%~nxf"
+    echo Replaced "%%~nxf"
+  )
+)
 
 :end
 echo 'Installed'
