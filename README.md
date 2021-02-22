@@ -42,7 +42,7 @@ to the Mixxx controllers folder.
 *Beware: If you are updating, I would recommend that you delete any XML files that contains `DDJ-SB3` and activate your controller again in Mixxx*
 
 ## Using Effects
-  - The 1, 2, 3 will turn on/off the effect
+  - The 1, 2, 3 will always turn on/off the effect
 
   - The `Level` knob will change the effect unit `Master`, IF NONE EFFECT IS SELECTED.
 

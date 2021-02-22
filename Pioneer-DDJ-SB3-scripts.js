@@ -581,13 +581,17 @@ PioneerDDJSB3.Pad.prototype.transMode = function(channel, control, value, status
 };
 
 PioneerDDJSB3.Pad.prototype.beatJumpMultiply = function(channel, control, value, status, group) {
-    var size = engine.getValue(group, 'beatjump_size');
-    engine.setValue(group, 'beatjump_size', size * 2.0);
+    if (value) {
+        var size = engine.getValue(group, 'beatjump_size');
+        engine.setValue(group, 'beatjump_size', size * 2.0);
+    }
 };
 
 PioneerDDJSB3.Pad.prototype.beatJumpDivide = function(channel, control, value, status, group) {
-    var size = engine.getValue(group, 'beatjump_size');
-    engine.setValue(group, 'beatjump_size', size / 2.0);
+    if (value) {
+        var size = engine.getValue(group, 'beatjump_size');
+        engine.setValue(group, 'beatjump_size', size / 2.0);
+    }
 };
 
 PioneerDDJSB3.shutdown = function () {
