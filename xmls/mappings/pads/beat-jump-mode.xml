@@ -342,7 +342,7 @@
         <key>start</key>
         <description>Start of track Deck 1, Button: PAD5 (in BEATJUMP-Mode, Deck 1 active)</description>
         <status>0x97</status>
-        <midino>0x68</midino>
+        <midino>0x44</midino>
         <options>
           <normal />
         </options>
@@ -352,7 +352,7 @@
         <key>start</key>
         <description>Start of track Deck 2, Button: PAD5 (in BEATJUMP-Mode, Deck 2 active)</description>
         <status>0x98</status>
-        <midino>0x68</midino>
+        <midino>0x44</midino>
         <options>
           <normal />
         </options>
@@ -362,7 +362,7 @@
         <key>start</key>
         <description>Start of track Deck 3, Button: PAD5 (in BEATJUMP-Mode, Deck 3 active)</description>
         <status>0x99</status>
-        <midino>0x68</midino>
+        <midino>0x44</midino>
         <options>
           <normal />
         </options>
@@ -372,7 +372,7 @@
         <key>start</key>
         <description>Start of track Deck 4, Button: PAD5 (in BEATJUMP-Mode, Deck 4 active)</description>
         <status>0x9A</status>
-        <midino>0x68</midino>
+        <midino>0x44</midino>
         <options>
           <normal />
         </options>
@@ -592,7 +592,7 @@
         <key>reverse</key>
         <description>Set track Deck 1 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 1 active)</description>
         <status>0x97</status>
-        <midino>0x07</midino>
+        <midino>0x47</midino>
         <options>
           <normal />
         </options>
@@ -602,7 +602,7 @@
         <key>reverse</key>
         <description>Set track Deck 2 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 2 active)</description>
         <status>0x98</status>
-        <midino>0x07</midino>
+        <midino>0x47</midino>
         <options>
           <normal />
         </options>
@@ -612,7 +612,7 @@
         <key>reverse</key>
         <description>Set track Deck 3 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 3 active)</description>
         <status>0x99</status>
-        <midino>0x07</midino>
+        <midino>0x47</midino>
         <options>
           <normal />
         </options>
@@ -622,7 +622,7 @@
         <key>reverse</key>
         <description>Set track Deck 4 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 4 active)</description>
         <status>0x9A</status>
-        <midino>0x07</midino>
+        <midino>0x47</midino>
         <options>
           <normal />
         </options>
