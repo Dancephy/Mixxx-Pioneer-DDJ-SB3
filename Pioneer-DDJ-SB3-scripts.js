@@ -1004,11 +1004,15 @@ PioneerDDJSB3.headphoneLevel = new components.Pot({
         // from 3/4 - 500 to 3/4 + 500 represents 1.0
         // from 3/4 + 500 to 4/4 represents 1.0 to 5.0
 
-        var inputMax = (0xFFFF >> 2);
+        var absoluteMax = 0xFFFF >> 2;
+        var inputMax = this.max;
+
+        var zeroRange = (inputMax / absoluteMax) * 500;
+
         var inputQuart = Math.round(inputMax / 4);
 
-        var fromInfToZero = (inputQuart * 3) - 500;
-        var fromZeroToFive = (inputQuart * 3) + 500;
+        var fromInfToZero = (inputQuart * 3) - zeroRange;
+        var fromZeroToFive = (inputQuart * 3) + zeroRange;
 
         if (input < fromInfToZero) {
             return input / fromInfToZero;
@@ -1034,11 +1038,15 @@ PioneerDDJSB3.masterGain = new components.Pot({
         // from 3/4 - 500 to 3/4 + 500 represents 1.0
         // from 3/4 + 500 to 4/4 represents 1.0 to 5.0
 
-        var inputMax = (0xFFFF >> 2);
+        var absoluteMax = 0xFFFF >> 2;
+        var inputMax = this.max;
+
+        var zeroRange = (inputMax / absoluteMax) * 500;
+
         var inputQuart = Math.round(inputMax / 4);
 
-        var fromInfToZero = (inputQuart * 3) - 500;
-        var fromZeroToFive = (inputQuart * 3) + 500;
+        var fromInfToZero = (inputQuart * 3) - zeroRange;
+        var fromZeroToFive = (inputQuart * 3) + zeroRange;
 
         if (input < fromInfToZero) {
             return input / fromInfToZero;
