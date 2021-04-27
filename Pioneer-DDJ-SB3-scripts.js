@@ -8,10 +8,6 @@ var PioneerDDJSB3 = {};
 // If true, vinyl mode will be enabled when Mixxx starts.
 PioneerDDJSB3.vinylModeOnStartup = false;
 
-// If true, the vinyl button activates slip. Vinyl mode is then activated by using shift.
-// Allows toggling slip faster, but is counterintuitive.
-PioneerDDJSB3.invertVinylSlipButton = false;
-
 // If true, pressing shift + cue will play the track in reverse and enable slip mode,
 // which can be used like a censor effect. If false, pressing shift + cue jumps to
 // the beginning of the track and stops playback.
@@ -234,7 +230,7 @@ PioneerDDJSB3.nonPadLeds = {
     'play': 0x0B,
     'shiftPlay': 0x47,
     'vinyl': 0x17,
-    'shiftVinyl': 0x4E,
+    'shiftVinyl': 0x40,
     'sync': 0x58,
     'shiftSync': 0x5C,
     'autoLoop': 0x14,
@@ -713,9 +709,7 @@ PioneerDDJSB3.bindDeckControlConnections = function (channelGroup, isUnbinding) 
             'loop_enabled': 'PioneerDDJSB3.autoLoopLed',
         };
 
-    if (PioneerDDJSB3.invertVinylSlipButton) {
-        controlsToFunctions.slip_enabled = 'PioneerDDJSB3.slipLed';
-    }
+    controlsToFunctions.slip_enabled = 'PioneerDDJSB3.slipLed';
 
     for (i = 1; i <= 8; i++) {
         controlsToFunctions['hotcue_' + i + '_enabled'] = 'PioneerDDJSB3.hotCueLeds';
@@ -832,18 +826,16 @@ PioneerDDJSB3.beatloopRollButtons = function (channel, control, value, status, g
 };
 
 PioneerDDJSB3.vinylButton = function (channel, control, value, status, group) {
-    if (PioneerDDJSB3.invertVinylSlipButton) {
-        engine.setValue(group, 'slip_enabled', value / 127);
-    } else {
-        PioneerDDJSB3.toggleScratch(channel, control, value, status, group);
-    }
+    PioneerDDJSB3.toggleScratch(channel, control, value, status, group);
 };
 
 PioneerDDJSB3.slipButton = function (channel, control, value, status, group) {
-    if (PioneerDDJSB3.invertVinylSlipButton) {
-        PioneerDDJSB3.toggleScratch(channel, control, value, status, group);
-    } else {
-        engine.setValue(group, 'slip_enabled', value / 127);
+    if (value) {
+        if (engine.getValue(group, 'slip_enabled')) {
+            engine.setValue(group, 'slip_enabled', false);
+        } else {
+            engine.setValue(group, 'slip_enabled', true);
+        }
     }
 };
 
@@ -1158,8 +1150,11 @@ PioneerDDJSB3.keyLockLed = function (value, group, control) {
     PioneerDDJSB3.nonPadLedControl(group, PioneerDDJSB3.nonPadLeds.shiftKeyLock, value);
 };
 
-PioneerDDJSB3.slipLed = function (value, group, control) {
+PioneerDDJSB3.vinylLed = function (value, group, control) {
     PioneerDDJSB3.nonPadLedControl(group, PioneerDDJSB3.nonPadLeds.vinyl, value);
+};
+
+PioneerDDJSB3.slipLed = function (value, group, control) {
     PioneerDDJSB3.nonPadLedControl(group, PioneerDDJSB3.nonPadLeds.shiftVinyl, value);
 };
 
@@ -1375,6 +1370,14 @@ PioneerDDJSB3.jogTouch = function (channel, control, value, status, group) {
             );
         } else {
             engine.scratchDisable(deck + 1, true);
+
+            if (engine.getValue(group, 'slip_enabled')) {
+                engine.setValue(group, 'slip_enabled', false);
+
+                engine.beginTimer(250, function() {
+                    engine.setValue(group, 'slip_enabled', true);
+                }, true);
+            }
         }
     }
 };
@@ -1383,10 +1386,9 @@ PioneerDDJSB3.toggleScratch = function (channel, control, value, status, group) 
     var deck = PioneerDDJSB3.channelGroups[group];
     if (value) {
         PioneerDDJSB3.scratchMode[deck] = !PioneerDDJSB3.scratchMode[deck];
-        if (!PioneerDDJSB3.invertVinylSlipButton) {
-            PioneerDDJSB3.nonPadLedControl(deck, PioneerDDJSB3.nonPadLeds.vinyl, PioneerDDJSB3.scratchMode[deck]);
-            PioneerDDJSB3.nonPadLedControl(deck, PioneerDDJSB3.nonPadLeds.shiftVinyl, PioneerDDJSB3.scratchMode[deck]);
-        }
+
+        PioneerDDJSB3.vinylLed(PioneerDDJSB3.scratchMode[deck], group);
+
         if (!PioneerDDJSB3.scratchMode[deck]) {
             engine.scratchDisable(deck + 1, true);
         }

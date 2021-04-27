@@ -768,7 +768,7 @@
         <key>PioneerDDJSB3.slipButton</key>
         <description>Slip Deck 1, Button: SHIFT left VINYL (Deck 1 active)</description>
         <status>0x90</status>
-        <midino>0x4E</midino>
+        <midino>0x40</midino>
         <options>
           <script-binding />
         </options>
@@ -778,7 +778,7 @@
         <key>PioneerDDJSB3.slipButton</key>
         <description>Slip Deck 2, Button: SHIFT right VINYL (Deck 2 active)</description>
         <status>0x91</status>
-        <midino>0x4E</midino>
+        <midino>0x40</midino>
         <options>
           <script-binding />
         </options>
@@ -788,7 +788,7 @@
         <key>PioneerDDJSB3.slipButton</key>
         <description>Slip Deck 3, Button: SHIFT left VINYL (Deck 3 active)</description>
         <status>0x92</status>
-        <midino>0x4E</midino>
+        <midino>0x40</midino>
         <options>
           <script-binding />
         </options>
@@ -798,7 +798,7 @@
         <key>PioneerDDJSB3.slipButton</key>
         <description>Slip Deck 4, Button: SHIFT right VINYL (Deck 4 active)</description>
         <status>0x93</status>
-        <midino>0x4E</midino>
+        <midino>0x40</midino>
         <options>
           <script-binding />
         </options>
