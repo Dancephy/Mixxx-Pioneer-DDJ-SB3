@@ -43,23 +43,26 @@ readFilePromise('xmls/root.xml').then(rootContent => {
 
     const maps = mappingFiles.map(mappingFile => {
       return readFilePromise(mappingFile).then(mappingData => {
-        return xml2js.parseStringPromise(mappingData).then(mappingXml => {
-
-          rootXml.MixxxControllerPreset.controller.controls[0].control = [
-            ...rootXml.MixxxControllerPreset.controller.controls[0].control,
-            ...((mappingXml.controller.controls || [])[0] || {}).control,
-          ];
-
-          rootXml.MixxxControllerPreset.controller.outputs[0].output = [
-            ...rootXml.MixxxControllerPreset.controller.outputs[0].output,
-            ...(((mappingXml.controller.outputs || [])[0] || {}).output || []),
-          ];
-
-        });
-      }).catch(err => console.log("File failed: ", mappingFile, err));
+        return xml2js.parseStringPromise(mappingData);
+      }).catch(err => {
+        console.log("File failed: ", mappingFile, err);
+        throw err;
+      });
     });
 
-    Promise.all(maps).then(() => {
+    Promise.all(maps).then(mappingXmls => {
+      mappingXmls.forEach(mappingXml => {
+        rootXml.MixxxControllerPreset.controller.controls[0].control = [
+          ...rootXml.MixxxControllerPreset.controller.controls[0].control,
+          ...((mappingXml.controller.controls || [])[0] || {}).control,
+        ];
+
+        rootXml.MixxxControllerPreset.controller.outputs[0].output = [
+          ...rootXml.MixxxControllerPreset.controller.outputs[0].output,
+          ...(((mappingXml.controller.outputs || [])[0] || {}).output || []),
+        ];
+      });
+
       var builder = new xml2js.Builder();
       var xml = builder.buildObject(rootXml);
 

@@ -1375,121 +1375,201 @@
         </options>
       </control>
       <control>
-        <group>[Master]</group>
-        <key>PioneerDDJSB3.masterCueButton</key>
-        <description>Toggles headphone master cue, Button: Master</description>
-        <status>0x96</status>
-        <midino>0x5B</midino>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].button[1].input</key>
+        <description>FX1-1 (Deck1), Button: left FX1-1</description>
+        <status>0x94</status>
+        <midino>0x47</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
-        <group>[Master]</group>
-        <key>PioneerDDJSB3.masterCueButton</key>
-        <description>Toggles headphone master cue, Button: SHIFT + Master</description>
-        <status>0x96</status>
-        <midino>0x78</midino>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].button[4].input</key>
+        <description>Shift FX1-1, Button: left SHIFT &amp; FX1-1</description>
+        <status>0x94</status>
+        <midino>0x63</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 1, Button: left CUE (Deck 1 active)</description>
-        <status>0x90</status>
-        <midino>0x54</midino>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].button[2].input</key>
+        <description>FX1-2 (Head), Button: left FX1-2</description>
+        <status>0x94</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].button[5].input</key>
+        <description>Shift FX1-2 (Head), Button: left SHIFT &amp; FX1-2</description>
+        <status>0x94</status>
+        <midino>0x64</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].button[3].input</key>
+        <description>FX1-3  (Deck2), Button: left FX1-3</description>
+        <status>0x94</status>
+        <midino>0x49</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].button[6].input</key>
+        <description>Shift FX1-3  (Deck2), Button: left SHIFT &amp; FX1-3</description>
+        <status>0x94</status>
+        <midino>0x65</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].knob.inputMSB</key>
+        <description>FX1 (MSB), Knob: left FX1</description>
+        <status>0xB4</status>
+        <midino>0x06</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit1]</group>
+        <key>PioneerDDJSB3.effectUnit[1].knob.inputLSB</key>
+        <description>FX1 (LSB), Knob: left FX1</description>
+        <status>0xB4</status>
+        <midino>0x26</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit]</group>
+        <key>PioneerDDJSB3.effectUnit[1].knob.inputMSB</key>
+        <description>Shift FX1 (MSB), Knob: left SHIFT &amp; FX1</description>
+        <status>0xB4</status>
+        <midino>0x00</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit]</group>
+        <key>PioneerDDJSB3.effectUnit[1].knob.inputLSB</key>
+        <description>Shift FX1 (LSB), Knob: left SHIFT &amp; FX1</description>
+        <status>0xB4</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].button[1].input</key>
+        <description>FX2-1 (Deck1), Button: right FX2-1</description>
+        <status>0x95</status>
+        <midino>0x47</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].button[4].input</key>
+        <description>Shift FX2-1 (Deck1), Button: right SHIFT &amp; FX2-1</description>
+        <status>0x95</status>
+        <midino>0x63</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].button[2].input</key>
+        <description>FX2-2 (Head), Button: right FX2-2</description>
+        <status>0x95</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].button[5].input</key>
+        <description>Shift FX2-2 (Head), Button: right SHIFT &amp; FX2-2</description>
+        <status>0x95</status>
+        <midino>0x64</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].button[3].input</key>
+        <description>FX2-3 (Deck2), Button: right FX2-3</description>
+        <status>0x95</status>
+        <midino>0x49</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].button[6].input</key>
+        <description>Shift FX2-3 (Deck2), Button: right SHIFT &amp; FX2-3</description>
+        <status>0x95</status>
+        <midino>0x65</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].knob.inputMSB</key>
+        <description>FX2 (MSB), Knob: right FX2</description>
+        <status>0xB5</status>
+        <midino>0x06</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].knob.inputLSB</key>
+        <description>FX2 (LSB), Knob: right FX2</description>
+        <status>0xB5</status>
+        <midino>0x26</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[EffectRack1_EffectUnit2]</group>
+        <key>PioneerDDJSB3.effectUnit[2].knob.inputMSB</key>
+        <description>Shift FX2 (MSB), Knob: right SHIFT &amp; FX1</description>
+        <status>0xB5</status>
+        <midino>0x00</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 2, Button: right CUE (Deck 2 active)</description>
-        <status>0x91</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 3, Button: left CUE (Deck 3 active)</description>
-        <status>0x92</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.headphoneCueButton</key>
-        <description>Toggles headphone cueing Deck 4, Button: right CUE (Deck 4 active)</description>
-        <status>0x93</status>
-        <midino>0x54</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 3, Button: SHIFT &amp; left CUE (Deck 1 active)</description>
-        <status>0x90</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 4, Button: SHIFT &amp; right CUE (Deck 2 active)</description>
-        <status>0x91</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 1, Button: SHIFT &amp; left CUE (Deck 3 active)</description>
-        <status>0x92</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
-        <description>Toggles headphone cueing Deck 2, Button: SHIFT &amp; right CUE (Deck 4 active)</description>
-        <status>0x93</status>
-        <midino>0x68</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>PioneerDDJSB3.headphoneLevel.inputMSB</key>
-        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (MSB)</description>
-        <status>0xB6</status>
-        <midino>0x0D</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>PioneerDDJSB3.headphoneLevel.inputLSB</key>
-        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (LSB)</description>
-        <status>0xB6</status>
-        <midino>0x2D</midino>
+        <key>PioneerDDJSB3.effectUnit[2].knob.inputLSB</key>
+        <description>Shift FX2 (LSB), Knob: right SHIFT &amp; FX2</description>
+        <status>0xB5</status>
+        <midino>0x20</midino>
         <options>
           <script-binding/>
         </options>
@@ -1735,241 +1815,121 @@
         </options>
       </control>
       <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].button[1].input</key>
-        <description>FX1-1 (Deck1), Button: left FX1-1</description>
-        <status>0x94</status>
-        <midino>0x47</midino>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterCueButton</key>
+        <description>Toggles headphone master cue, Button: Master</description>
+        <status>0x96</status>
+        <midino>0x5B</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].button[4].input</key>
-        <description>Shift FX1-1, Button: left SHIFT &amp; FX1-1</description>
-        <status>0x94</status>
-        <midino>0x63</midino>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterCueButton</key>
+        <description>Toggles headphone master cue, Button: SHIFT + Master</description>
+        <status>0x96</status>
+        <midino>0x78</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].button[2].input</key>
-        <description>FX1-2 (Head), Button: left FX1-2</description>
-        <status>0x94</status>
-        <midino>0x48</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].button[5].input</key>
-        <description>Shift FX1-2 (Head), Button: left SHIFT &amp; FX1-2</description>
-        <status>0x94</status>
-        <midino>0x64</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].button[3].input</key>
-        <description>FX1-3  (Deck2), Button: left FX1-3</description>
-        <status>0x94</status>
-        <midino>0x49</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].button[6].input</key>
-        <description>Shift FX1-3  (Deck2), Button: left SHIFT &amp; FX1-3</description>
-        <status>0x94</status>
-        <midino>0x65</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].knob.inputMSB</key>
-        <description>FX1 (MSB), Knob: left FX1</description>
-        <status>0xB4</status>
-        <midino>0x06</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit1]</group>
-        <key>PioneerDDJSB3.effectUnit[1].knob.inputLSB</key>
-        <description>FX1 (LSB), Knob: left FX1</description>
-        <status>0xB4</status>
-        <midino>0x26</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit]</group>
-        <key>PioneerDDJSB3.effectUnit[1].knob.inputMSB</key>
-        <description>Shift FX1 (MSB), Knob: left SHIFT &amp; FX1</description>
-        <status>0xB4</status>
-        <midino>0x00</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit]</group>
-        <key>PioneerDDJSB3.effectUnit[1].knob.inputLSB</key>
-        <description>Shift FX1 (LSB), Knob: left SHIFT &amp; FX1</description>
-        <status>0xB4</status>
-        <midino>0x20</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].button[1].input</key>
-        <description>FX2-1 (Deck1), Button: right FX2-1</description>
-        <status>0x95</status>
-        <midino>0x47</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].button[4].input</key>
-        <description>Shift FX2-1 (Deck1), Button: right SHIFT &amp; FX2-1</description>
-        <status>0x95</status>
-        <midino>0x63</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].button[2].input</key>
-        <description>FX2-2 (Head), Button: right FX2-2</description>
-        <status>0x95</status>
-        <midino>0x48</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].button[5].input</key>
-        <description>Shift FX2-2 (Head), Button: right SHIFT &amp; FX2-2</description>
-        <status>0x95</status>
-        <midino>0x64</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].button[3].input</key>
-        <description>FX2-3 (Deck2), Button: right FX2-3</description>
-        <status>0x95</status>
-        <midino>0x49</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].button[6].input</key>
-        <description>Shift FX2-3 (Deck2), Button: right SHIFT &amp; FX2-3</description>
-        <status>0x95</status>
-        <midino>0x65</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].knob.inputMSB</key>
-        <description>FX2 (MSB), Knob: right FX2</description>
-        <status>0xB5</status>
-        <midino>0x06</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].knob.inputLSB</key>
-        <description>FX2 (LSB), Knob: right FX2</description>
-        <status>0xB5</status>
-        <midino>0x26</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[EffectRack1_EffectUnit2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].knob.inputMSB</key>
-        <description>Shift FX2 (MSB), Knob: right SHIFT &amp; FX1</description>
-        <status>0xB5</status>
-        <midino>0x00</midino>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 1, Button: left CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x54</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.effectUnit[2].knob.inputLSB</key>
-        <description>Shift FX2 (LSB), Knob: right SHIFT &amp; FX2</description>
-        <status>0xB5</status>
-        <midino>0x20</midino>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 2, Button: right CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 3, Button: left CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 4, Button: right CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 3, Button: SHIFT &amp; left CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 4, Button: SHIFT &amp; right CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 1, Button: SHIFT &amp; left CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 2, Button: SHIFT &amp; right CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x68</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Master]</group>
-        <key>crossfader</key>
-        <description>Crossfader (MSB), Slider: FADE</description>
+        <key>PioneerDDJSB3.headphoneLevel.inputMSB</key>
+        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (MSB)</description>
         <status>0xB6</status>
-        <midino>0x1F</midino>
-        <options>
-          <fourteen-bit-msb/>
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>crossfader</key>
-        <description>Crossfader (LSB), Slider: FADE</description>
-        <status>0xB6</status>
-        <midino>0x3F</midino>
-        <options>
-          <fourteen-bit-lsb/>
-        </options>
-      </control>
-      <control>
-        <group>[Master]</group>
-        <key>PioneerDDJSB3.masterGain.inputMSB</key>
-        <description>Master Gain (MSB), Master Volume</description>
-        <status>0xB6</status>
-        <midino>0x08</midino>
+        <midino>0x0D</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Master]</group>
-        <key>PioneerDDJSB3.masterGain.inputLSB</key>
-        <description>Master Gain (LSB), Master Volume</description>
+        <key>PioneerDDJSB3.headphoneLevel.inputLSB</key>
+        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (LSB)</description>
         <status>0xB6</status>
-        <midino>0x28</midino>
+        <midino>0x2D</midino>
         <options>
           <script-binding/>
         </options>
@@ -2215,323 +2175,683 @@
         </options>
       </control>
       <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].hotcueMode</key>
-        <description>Pad Hot-Cue button, activate HotCue mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x1B</midino>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <description>Crossfader (MSB), Slider: FADE</description>
+        <status>0xB6</status>
+        <midino>0x1F</midino>
+        <options>
+          <fourteen-bit-msb/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>crossfader</key>
+        <description>Crossfader (LSB), Slider: FADE</description>
+        <status>0xB6</status>
+        <midino>0x3F</midino>
+        <options>
+          <fourteen-bit-lsb/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterGain.inputMSB</key>
+        <description>Master Gain (MSB), Master Volume</description>
+        <status>0xB6</status>
+        <midino>0x08</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterGain.inputLSB</key>
+        <description>Master Gain (LSB), Master Volume</description>
+        <status>0xB6</status>
+        <midino>0x28</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].beatJumpMode</key>
-        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x69</midino>
+        <key>PioneerDDJSB3.padForDeck[1].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 1, Button: PAD1 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x40</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].hotcueMode</key>
-        <description>Pad Hot-Cue button, activate HotCue mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x1B</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].beatJumpMode</key>
-        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x69</midino>
+        <key>PioneerDDJSB3.padForDeck[2].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 2, Button: PAD1 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x40</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].hotcueMode</key>
-        <description>Pad Hot-Cue button, activate HotCue mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x1B</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].beatJumpMode</key>
-        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x69</midino>
+        <key>PioneerDDJSB3.padForDeck[3].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 3, Button: PAD1 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x40</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].hotcueMode</key>
-        <description>Pad Hot-Cue button, activate HotCue mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x1B</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].beatJumpMode</key>
-        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x69</midino>
+        <key>PioneerDDJSB3.padForDeck[4].beatJumpDivide</key>
+        <description>BeatJump Size /2 Deck 4, Button: PAD1 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x40</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].fxFadeMode</key>
-        <description>Pad FX FADE button, activate FX Fade mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x1E</midino>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 1, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 2, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 3, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_4_backward</key>
+        <description>BeatJump Backward 4 Deck 4, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x48</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.padForDeck[1].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 1, Button: PAD2 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 2, Button: PAD2 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 3, Button: PAD2 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x41</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].beatJumpMultiply</key>
+        <description>BeatJump Size *2 Deck 4, Button: PAD2 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x41</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].rollMode</key>
-        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x6B</midino>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 1, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x49</midino>
         <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].fxFadeMode</key>
-        <description>Pad FX FADE button, activate FX Fade mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x1E</midino>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 2, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x49</midino>
         <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].rollMode</key>
-        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x6B</midino>
-        <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].fxFadeMode</key>
-        <description>Pad FX FADE button, activate FX Fade mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x1E</midino>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 3, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x49</midino>
         <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].rollMode</key>
-        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x6B</midino>
-        <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].fxFadeMode</key>
-        <description>Pad FX FADE button, activate FX Fade mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x1E</midino>
+        <key>beatjump_8_backward</key>
+        <description>BeatJump Backward 8 Deck 4, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x49</midino>
         <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].rollMode</key>
-        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x6B</midino>
-        <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].padScratchMode</key>
-        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x20</midino>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 1, Button: PAD3 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x42</midino>
         <options>
-          <script-binding/>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 2, Button: PAD3 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x42</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 3, Button: PAD3 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x42</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_backward</key>
+        <description>BeatJump Move Back Deck 4, Button: PAD3 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x42</midino>
+        <options>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].slicerMode</key>
-        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x6D</midino>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 1, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4A</midino>
         <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].padScratchMode</key>
-        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x20</midino>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 2, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4A</midino>
         <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].slicerMode</key>
-        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x6D</midino>
-        <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].padScratchMode</key>
-        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x20</midino>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 3, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4A</midino>
         <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].slicerMode</key>
-        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x6D</midino>
-        <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].padScratchMode</key>
-        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x20</midino>
+        <key>beatjump_16_backward</key>
+        <description>BeatJump Backward 16 Deck 4, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4A</midino>
         <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].slicerMode</key>
-        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x6D</midino>
-        <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].samplerMode</key>
-        <description>Pad SAMPLER button, activate Sampler mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x22</midino>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 1, Button: PAD4 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x43</midino>
         <options>
-          <script-binding/>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 2, Button: PAD4 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x43</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 3, Button: PAD4 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x43</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_forward</key>
+        <description>BeatJump Move Next Deck 4, Button: PAD4 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x43</midino>
+        <options>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].transMode</key>
-        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 1)</description>
-        <status>0x90</status>
-        <midino>0x6E</midino>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 1, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4B</midino>
         <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].samplerMode</key>
-        <description>Pad SAMPLER button, activate Sampler mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x22</midino>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 2, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4B</midino>
         <options>
-          <script-binding/>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 3, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_32_backward</key>
+        <description>BeatJump Backward 32 Deck 4, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4B</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>start</key>
+        <description>Start of track Deck 1, Button: PAD5 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x44</midino>
+        <options>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].transMode</key>
-        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 2)</description>
-        <status>0x91</status>
-        <midino>0x6E</midino>
+        <key>start</key>
+        <description>Start of track Deck 2, Button: PAD5 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x44</midino>
         <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].samplerMode</key>
-        <description>Pad SAMPLER button, activate Sampler mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x22</midino>
+        <key>start</key>
+        <description>Start of track Deck 3, Button: PAD5 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x44</midino>
         <options>
-          <script-binding/>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>start</key>
+        <description>Start of track Deck 4, Button: PAD5 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x44</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 1, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4C</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 2, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4C</midino>
+        <options>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].transMode</key>
-        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 3)</description>
-        <status>0x92</status>
-        <midino>0x6E</midino>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 3, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4C</midino>
         <options>
-          <script-binding/>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].samplerMode</key>
-        <description>Pad SAMPLER button, activate Sampler mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x22</midino>
+        <key>beatjump_4_forward</key>
+        <description>Beatjump Forward 4 Deck 4, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4C</midino>
         <options>
-          <script-binding/>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>back</key>
+        <description>Back for track Deck 1, Button: PAD6 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x45</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>back</key>
+        <description>Back for track Deck 2, Button: PAD6 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x45</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>back</key>
+        <description>Back for track Deck 3, Button: PAD6 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x45</midino>
+        <options>
+          <normal/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].transMode</key>
-        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 4)</description>
-        <status>0x93</status>
-        <midino>0x6E</midino>
+        <key>back</key>
+        <description>Back for track Deck 4, Button: PAD6 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x45</midino>
         <options>
-          <script-binding/>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 1, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 2, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 3, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_8_forward</key>
+        <description>Beatjump Forward 8 Deck 4, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4D</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 1, Button: PAD7 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 2, Button: PAD7 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 3, Button: PAD7 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>fwd</key>
+        <description>Forward for track Deck 4, Button: PAD7 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x46</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 1, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 2, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 3, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_16_forward</key>
+        <description>Beatjump 16 forward Deck 4, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4E</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>reverse</key>
+        <description>Set track Deck 1 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x47</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>reverse</key>
+        <description>Set track Deck 2 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x47</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>reverse</key>
+        <description>Set track Deck 3 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x47</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>reverse</key>
+        <description>Set track Deck 4 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x47</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 1, Button: PAD8 (in BEATJUMP-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 2, Button: PAD8 (in BEATJUMP-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 3, Button: PAD8 (in BEATJUMP-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>beatjump_32_forward</key>
+        <description>Beatjump 32 forward Deck 4, Button: PAD8 (in BEATJUMP-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x4F</midino>
+        <options>
+          <normal/>
         </options>
       </control>
       <control>
@@ -3176,642 +3496,322 @@
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].beatJumpDivide</key>
-        <description>BeatJump Size /2 Deck 1, Button: PAD1 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x40</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].beatJumpDivide</key>
-        <description>BeatJump Size /2 Deck 2, Button: PAD1 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x40</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].beatJumpDivide</key>
-        <description>BeatJump Size /2 Deck 3, Button: PAD1 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x40</midino>
-        <options>
-          <script-binding/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].beatJumpDivide</key>
-        <description>BeatJump Size /2 Deck 4, Button: PAD1 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x40</midino>
+        <key>PioneerDDJSB3.padForDeck[1].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x1B</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>beatjump_4_backward</key>
-        <description>BeatJump Backward 4 Deck 1, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x48</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>beatjump_4_backward</key>
-        <description>BeatJump Backward 4 Deck 2, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x48</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>beatjump_4_backward</key>
-        <description>BeatJump Backward 4 Deck 3, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x48</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>beatjump_4_backward</key>
-        <description>BeatJump Backward 4 Deck 4, Button: SHIFT &amp; PAD1 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x48</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>PioneerDDJSB3.padForDeck[1].beatJumpMultiply</key>
-        <description>BeatJump Size *2 Deck 1, Button: PAD2 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x41</midino>
+        <key>PioneerDDJSB3.padForDeck[1].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x69</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>PioneerDDJSB3.padForDeck[2].beatJumpMultiply</key>
-        <description>BeatJump Size *2 Deck 2, Button: PAD2 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x41</midino>
+        <key>PioneerDDJSB3.padForDeck[2].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x69</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>PioneerDDJSB3.padForDeck[3].beatJumpMultiply</key>
-        <description>BeatJump Size *2 Deck 3, Button: PAD2 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x41</midino>
+        <key>PioneerDDJSB3.padForDeck[3].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x69</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>PioneerDDJSB3.padForDeck[4].beatJumpMultiply</key>
-        <description>BeatJump Size *2 Deck 4, Button: PAD2 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x41</midino>
+        <key>PioneerDDJSB3.padForDeck[4].hotcueMode</key>
+        <description>Pad Hot-Cue button, activate HotCue mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x1B</midino>
+        <options>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].beatJumpMode</key>
+        <description>SHIFT + Pad Hot-Cue button, activate BeatJump mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x69</midino>
         <options>
           <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>beatjump_8_backward</key>
-        <description>BeatJump Backward 8 Deck 1, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x49</midino>
+        <key>PioneerDDJSB3.padForDeck[1].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x1E</midino>
         <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>beatjump_8_backward</key>
-        <description>BeatJump Backward 8 Deck 2, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x49</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>beatjump_8_backward</key>
-        <description>BeatJump Backward 8 Deck 3, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x49</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>beatjump_8_backward</key>
-        <description>BeatJump Backward 8 Deck 4, Button: SHIFT &amp; PAD2 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x49</midino>
-        <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>beatjump_backward</key>
-        <description>BeatJump Move Back Deck 1, Button: PAD3 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x42</midino>
+        <key>PioneerDDJSB3.padForDeck[1].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6B</midino>
         <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>beatjump_backward</key>
-        <description>BeatJump Move Back Deck 2, Button: PAD3 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x42</midino>
+        <key>PioneerDDJSB3.padForDeck[2].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x1E</midino>
         <options>
-          <normal/>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>beatjump_backward</key>
-        <description>BeatJump Move Back Deck 3, Button: PAD3 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x42</midino>
+        <key>PioneerDDJSB3.padForDeck[3].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x1E</midino>
         <options>
-          <normal/>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>beatjump_backward</key>
-        <description>BeatJump Move Back Deck 4, Button: PAD3 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x42</midino>
+        <key>PioneerDDJSB3.padForDeck[4].fxFadeMode</key>
+        <description>Pad FX FADE button, activate FX Fade mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x1E</midino>
         <options>
-          <normal/>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].rollMode</key>
+        <description>SHIFT + Pad FX FADE button, activate Roll mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6B</midino>
+        <options>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>beatjump_16_backward</key>
-        <description>BeatJump Backward 16 Deck 1, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x4A</midino>
+        <key>PioneerDDJSB3.padForDeck[1].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x20</midino>
         <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>beatjump_16_backward</key>
-        <description>BeatJump Backward 16 Deck 2, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x4A</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>beatjump_16_backward</key>
-        <description>BeatJump Backward 16 Deck 3, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x4A</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>beatjump_16_backward</key>
-        <description>BeatJump Backward 16 Deck 4, Button: SHIFT &amp; PAD3 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x4A</midino>
-        <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>beatjump_forward</key>
-        <description>BeatJump Move Next Deck 1, Button: PAD4 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x43</midino>
+        <key>PioneerDDJSB3.padForDeck[1].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6D</midino>
         <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>beatjump_forward</key>
-        <description>BeatJump Move Next Deck 2, Button: PAD4 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x43</midino>
+        <key>PioneerDDJSB3.padForDeck[2].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x20</midino>
         <options>
-          <normal/>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.padForDeck[2].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>beatjump_forward</key>
-        <description>BeatJump Move Next Deck 3, Button: PAD4 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x43</midino>
+        <key>PioneerDDJSB3.padForDeck[3].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x20</midino>
         <options>
-          <normal/>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.padForDeck[3].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>beatjump_forward</key>
-        <description>BeatJump Move Next Deck 4, Button: PAD4 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x43</midino>
+        <key>PioneerDDJSB3.padForDeck[4].padScratchMode</key>
+        <description>Pad PAD SCRATCH button, activate Pad Scratch mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x20</midino>
         <options>
-          <normal/>
+          <script-binding/>
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.padForDeck[4].slicerMode</key>
+        <description>SHIFT + Pad PAD SCRATCH button, activate Slicer mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6D</midino>
+        <options>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>beatjump_32_backward</key>
-        <description>BeatJump Backward 32 Deck 1, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x4B</midino>
+        <key>PioneerDDJSB3.padForDeck[1].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x22</midino>
         <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>beatjump_32_backward</key>
-        <description>BeatJump Backward 32 Deck 2, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x4B</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>beatjump_32_backward</key>
-        <description>BeatJump Backward 32 Deck 3, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x4B</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>beatjump_32_backward</key>
-        <description>BeatJump Backward 32 Deck 4, Button: SHIFT &amp; PAD4 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x4B</midino>
-        <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel1]</group>
-        <key>start</key>
-        <description>Start of track Deck 1, Button: PAD5 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x44</midino>
+        <key>PioneerDDJSB3.padForDeck[1].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 1)</description>
+        <status>0x90</status>
+        <midino>0x6E</midino>
         <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>start</key>
-        <description>Start of track Deck 2, Button: PAD5 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x44</midino>
+        <key>PioneerDDJSB3.padForDeck[2].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x22</midino>
         <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>start</key>
-        <description>Start of track Deck 3, Button: PAD5 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x44</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>start</key>
-        <description>Start of track Deck 4, Button: PAD5 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x44</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>beatjump_4_forward</key>
-        <description>Beatjump Forward 4 Deck 1, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x4C</midino>
-        <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel2]</group>
-        <key>beatjump_4_forward</key>
-        <description>Beatjump Forward 4 Deck 2, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x4C</midino>
+        <key>PioneerDDJSB3.padForDeck[2].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 2)</description>
+        <status>0x91</status>
+        <midino>0x6E</midino>
         <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>beatjump_4_forward</key>
-        <description>Beatjump Forward 4 Deck 3, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x4C</midino>
+        <key>PioneerDDJSB3.padForDeck[3].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x22</midino>
         <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>beatjump_4_forward</key>
-        <description>Beatjump Forward 4 Deck 4, Button: SHIFT + PAD5 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x4C</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>back</key>
-        <description>Back for track Deck 1, Button: PAD6 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x45</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>back</key>
-        <description>Back for track Deck 2, Button: PAD6 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x45</midino>
-        <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel3]</group>
-        <key>back</key>
-        <description>Back for track Deck 3, Button: PAD6 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x45</midino>
+        <key>PioneerDDJSB3.padForDeck[3].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 3)</description>
+        <status>0x92</status>
+        <midino>0x6E</midino>
         <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>back</key>
-        <description>Back for track Deck 4, Button: PAD6 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x45</midino>
+        <key>PioneerDDJSB3.padForDeck[4].samplerMode</key>
+        <description>Pad SAMPLER button, activate Sampler mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x22</midino>
         <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>beatjump_8_forward</key>
-        <description>Beatjump Forward 8 Deck 1, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x4D</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>beatjump_8_forward</key>
-        <description>Beatjump Forward 8 Deck 2, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x4D</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>beatjump_8_forward</key>
-        <description>Beatjump Forward 8 Deck 3, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x4D</midino>
-        <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
         <group>[Channel4]</group>
-        <key>beatjump_8_forward</key>
-        <description>Beatjump Forward 8 Deck 4, Button: SHIFT + PAD6 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x4D</midino>
+        <key>PioneerDDJSB3.padForDeck[4].transMode</key>
+        <description>SHIFT + Pad SAMPLER button, activate Trans mode (Deck 4)</description>
+        <status>0x93</status>
+        <midino>0x6E</midino>
         <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>fwd</key>
-        <description>Forward for track Deck 1, Button: PAD7 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x46</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>fwd</key>
-        <description>Forward for track Deck 2, Button: PAD7 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x46</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>fwd</key>
-        <description>Forward for track Deck 3, Button: PAD7 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x46</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>fwd</key>
-        <description>Forward for track Deck 4, Button: PAD7 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x46</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>beatjump_16_forward</key>
-        <description>Beatjump 16 forward Deck 1, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x4E</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>beatjump_16_forward</key>
-        <description>Beatjump 16 forward Deck 2, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x4E</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>beatjump_16_forward</key>
-        <description>Beatjump 16 forward Deck 3, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x4E</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>beatjump_16_forward</key>
-        <description>Beatjump 16 forward Deck 4, Button: SHIFT + PAD7 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x4E</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>reverse</key>
-        <description>Set track Deck 1 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x47</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>reverse</key>
-        <description>Set track Deck 2 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x47</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>reverse</key>
-        <description>Set track Deck 3 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x47</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>reverse</key>
-        <description>Set track Deck 4 to reverse, Button: PAD8 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x47</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel1]</group>
-        <key>beatjump_32_forward</key>
-        <description>Beatjump 32 forward Deck 1, Button: PAD8 (in BEATJUMP-Mode, Deck 1 active)</description>
-        <status>0x97</status>
-        <midino>0x4F</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel2]</group>
-        <key>beatjump_32_forward</key>
-        <description>Beatjump 32 forward Deck 2, Button: PAD8 (in BEATJUMP-Mode, Deck 2 active)</description>
-        <status>0x98</status>
-        <midino>0x4F</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel3]</group>
-        <key>beatjump_32_forward</key>
-        <description>Beatjump 32 forward Deck 3, Button: PAD8 (in BEATJUMP-Mode, Deck 3 active)</description>
-        <status>0x99</status>
-        <midino>0x4F</midino>
-        <options>
-          <normal/>
-        </options>
-      </control>
-      <control>
-        <group>[Channel4]</group>
-        <key>beatjump_32_forward</key>
-        <description>Beatjump 32 forward Deck 4, Button: PAD8 (in BEATJUMP-Mode, Deck 4 active)</description>
-        <status>0x9A</status>
-        <midino>0x4F</midino>
-        <options>
-          <normal/>
+          <script-binding/>
         </options>
       </control>
       <control>
