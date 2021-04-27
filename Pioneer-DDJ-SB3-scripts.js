@@ -1719,14 +1719,13 @@ PioneerDDJSB3.Slicer.prototype.getFirstBeat = function() {
 
     this.firstBeatSample = engine.getValue(this.group, 'hotcue_8_position');
 
-    if (oldCuePosition === -1) {
-        engine.setValue(this.group, 'hotcue_8_clear', true);
-    } else {
+    if (oldCuePosition != -1) {
         engine.setValue(this.group, 'hotcue_8_position', oldCuePosition);
+    } else {
+        engine.setValue(this.group, 'hotcue_8_clear', true);
     }
 
     engine.setValue(this.group, 'quantize', oldQuantize);
-    engine.setValue(this.group, 'hotcue_8_position', this.firstBeatSample);
 };
 
 PioneerDDJSB3.Slicer.prototype.moveToSample = function(sample) {
@@ -1736,10 +1735,10 @@ PioneerDDJSB3.Slicer.prototype.moveToSample = function(sample) {
     engine.setValue(this.group, 'hotcue_8_position', sample);
     engine.setValue(this.group, 'hotcue_8_goto', true);
 
-    if (oldCuePosition === -1) {
-        engine.setValue(this.group, 'hotcue_8_clear', true);
-    } else {
+    if (oldCuePosition != -1) {
         engine.setValue(this.group, 'hotcue_8_position', oldCuePosition);
+    } else {
+        engine.setValue(this.group, 'hotcue_8_clear', true);
     }
 };
 
