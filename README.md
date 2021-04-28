@@ -60,9 +60,9 @@ to the Mixxx controllers folder.
 
 ## Running the Tests
 1. Install Node
-1. Install Yarn
-1. Install Jest
-1. run yarn test
+2. Install Yarn
+3. Install Jest
+4. run yarn test
 
 ## Contributing
 Please: **do not change the file `Pioneer-DDJ-SB3.midi.xml` manually**. Instead, modify first the files inside `xmls` folder and after run `node ./compile-xml.js`. The script will merge recusively all xmls inside the xmls folder and compile it in the final xml.
@@ -87,5 +87,3 @@ Please: **do not change the file `Pioneer-DDJ-SB3.midi.xml` manually**. Instead,
 | Eq           | Yes    | Yes    | Yes    | Yes    |
 
 *In fact, I think all features are working. Let me know, or open a issue if you experience some problem.*
-
-
