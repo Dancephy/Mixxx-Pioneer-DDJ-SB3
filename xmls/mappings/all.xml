@@ -1,0 +1,1257 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+    <controls>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].playButton.input</key>
+        <description>Toggles Play/Pause Deck 1, Button: left PLAY (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].playButton.input</key>
+        <description>Toggles Play/Pause Deck 2, Button: right PLAY (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].playButton.input</key>
+        <description>Toggles Play/Pause Deck 3, Button: left PLAY (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].playButton.input</key>
+        <description>Toggles Play/Pause Deck 4, Button: right PLAY (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x0B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].playButton.input</key>
+        <description>Reverse play Deck 1, Button: SHIFT left PLAY (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x47</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].playButton.input</key>
+        <description>Reverse play Deck 2, Button: SHIFT right PLAY (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x47</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].playButton.input</key>
+        <description>Reverse play Deck 3, Button: SHIFT left PLAY (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x47</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].playButton.input</key>
+        <description>Reverse play Deck 4, Button: SHIFT right PLAY (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x47</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].cueButton.input</key>
+        <description>Cue Deck 1, Button: left CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].cueButton.input</key>
+        <description>Cue Deck 2, Button: right CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].cueButton.input</key>
+        <description>Cue Deck 3, Button: left CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].cueButton.input</key>
+        <description>Cue Deck 4, Button: right CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x0C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].cueButton.input</key>
+        <description>Break Deck 1, Button: left SHIFT CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].cueButton.input</key>
+        <description>Break Deck 2, Button: right SHIFT CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].cueButton.input</key>
+        <description>Break Deck 3, Button: left SHIFT CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].cueButton.input</key>
+        <description>Break Deck 4, Button: right SHIFT CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x48</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].syncButton.input</key>
+        <description>Sync Deck 1, Button: left SYNC (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x58</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].syncButton.input</key>
+        <description>Sync Deck 2, Button: right SYNC (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x58</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].syncButton.input</key>
+        <description>Sync Deck 3, Button: left SYNC (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x58</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].syncButton.input</key>
+        <description>Sync Deck 4, Button: right SYNC (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x58</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].syncButton.input</key>
+        <description>Quantize Deck 1, Button: left SHIFT SYNC (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x5C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].syncButton.input</key>
+        <description>Quantize Deck 2, Button: right SHIFT SYNC (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x5C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].syncButton.input</key>
+        <description>Quantize Deck 3, Button: left SHIFT SYNC (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x5C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].syncButton.input</key>
+        <description>Quantize Deck 4, Button: right SHIFT SYNC (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x5C</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (Vinyl Mode) Deck 1, left JOGDIAL (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (Vinyl Mode) Deck 2, right JOGDIAL (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (Vinyl Mode) Deck 3, left JOGDIAL (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (Vinyl Mode) Deck 4, right JOGDIAL (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x22</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (no Vinyl Mode) Deck 1, left JOGDIAL (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x23</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (no Vinyl Mode) Deck 2, right JOGDIAL (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x23</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (no Vinyl Mode) Deck 3, left JOGDIAL (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x23</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogPlatterTick</key>
+        <description>Jog (no Vinyl Mode) Deck 4, right JOGDIAL (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x23</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogPlatterTickShift</key>
+        <description>Jog fast Deck 1, SHIFT left JOGDIAL (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x1F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogPlatterTickShift</key>
+        <description>Jog fast Deck 2, SHIFT right JOGDIAL (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x1F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogPlatterTickShift</key>
+        <description>Jog fast Deck 3, SHIFT left JOGDIAL (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x1F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogPlatterTickShift</key>
+        <description>Jog fast Deck 4, SHIFT right JOGDIAL (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x1F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (Vinyl Mode) Deck 1, left JOGDIAL (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x36</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (Vinyl Mode) Deck 2, right JOGDIAL (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x36</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (Vinyl Mode) Deck 3, left JOGDIAL (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x36</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (Vinyl Mode) Deck 4, right JOGDIAL (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x36</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (No Vinyl Mode) Deck 1, left JOGDIAL (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x35</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (No Vinyl Mode) Deck 2, right JOGDIAL (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x35</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (No Vinyl Mode) Deck 3, left JOGDIAL (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x35</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog touch (No Vinyl Mode) Deck 4, right JOGDIAL (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x35</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog shift touch Deck 4, SHIFT right JOGDIAL (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x67</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog shift touch Deck 2, SHIFT right JOGDIAL (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x67</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog shift touch Deck 3, SHIFT left JOGDIAL (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x67</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogTouch</key>
+        <description>Jog shift touch Deck 4, SHIFT right JOGDIAL (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x67</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogRingTick</key>
+        <description>Jog ring Deck 1, left JOGDIALSIDE (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x21</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogRingTick</key>
+        <description>Jog ring Deck 2, right JOGDIALSIDE (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x21</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogRingTick</key>
+        <description>Jog ring Deck 3, left JOGDIALSIDE (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x21</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogRingTick</key>
+        <description>Jog ring Deck 4, right JOGDIALSIDE (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x21</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.jogRingTickShift</key>
+        <description>Jog ring shift Deck 1, SHIFT left JOGDIALSIDE (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x26</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.jogRingTickShift</key>
+        <description>Jog ring shift Deck 2, SHIFT right JOGDIALSIDE (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x26</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.jogRingTickShift</key>
+        <description>Jog ring shift Deck 3, SHIFT left JOGDIALSIDE (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x26</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.jogRingTickShift</key>
+        <description>Jog ring shift Deck 4, SHIFT right JOGDIALSIDE (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x26</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 1 (MSB), Slider: left TEMPO (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x00</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 1 (LSB), Slider: left TEMPO (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 2 (MSB), Slider: right TEMPO (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x00</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 2 (LSB), Slider: right TEMPO (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 3 (MSB), Slider: left TEMPO (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x00</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 3 (LSB), Slider: left TEMPO (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 4 (MSB), Slider: right TEMPO (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x00</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 4 (LSB), Slider: right TEMPO (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x20</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <!-- Shifted tempo slider needs to be mapped for relative mode to work without jumps
+            when releasing shift. -->
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 1 (MSB), Slider: SHIFT left TEMPO (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x05</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 1 (LSB), Slider: SHIFT left TEMPO (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x25</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 2 (MSB), Slider: SHIFT right TEMPO (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x05</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 2 (LSB), Slider: SHIFT right TEMPO (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x25</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 3 (MSB), Slider: SHIFT left TEMPO (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x05</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 3 (LSB), Slider: SHIFT left TEMPO (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x25</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].tempoFader.inputMSB</key>
+        <description>Tempo slider Deck 4 (MSB), Slider: SHIFT right TEMPO (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x05</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].tempoFader.inputLSB</key>
+        <description>Tempo slider Deck 4 (LSB), Slider: SHIFT right TEMPO (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x25</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.vinylButton</key>
+        <description>Vinyl Deck 1, Button: left VINYL (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x17</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.vinylButton</key>
+        <description>Vinyl Deck 2, Button: right VINYL (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x17</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.vinylButton</key>
+        <description>Vinyl Deck 3, Button: left VINYL (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x17</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.vinylButton</key>
+        <description>Vinyl Deck 4, Button: right VINYL (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x17</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.slipButton</key>
+        <description>Slip Deck 1, Button: SHIFT left VINYL (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.slipButton</key>
+        <description>Slip Deck 2, Button: SHIFT right VINYL (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.slipButton</key>
+        <description>Slip Deck 3, Button: SHIFT left VINYL (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.slipButton</key>
+        <description>Slip Deck 4, Button: SHIFT right VINYL (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x40</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.keyLockButton</key>
+        <description>Key lock Deck 1, Button: left KEYLOCK (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x1A</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.keyLockButton</key>
+        <description>Key lock Deck 2, Button: right KEYLOCK (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x1A</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.keyLockButton</key>
+        <description>Key lock Deck 3, Button: left KEYLOCK (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x1A</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.keyLockButton</key>
+        <description>Key lock Deck 4, Button: right KEYLOCK (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x1A</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.shiftKeyLockButton</key>
+        <description>Shift KeyLock, Button: left SHIFT &amp; KeyLock(Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x60</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.shiftKeyLockButton</key>
+        <description>Shift KeyLock, Button: right SHIFT &amp; KeyLock(Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x60</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.shiftKeyLockButton</key>
+        <description>Shift KeyLock, Button: left SHIFT &amp; KeyLock(Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x60</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.shiftKeyLockButton</key>
+        <description>Shift KeyLock, Button: right SHIFT &amp; KeyLock(Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x60</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].shiftButton</key>
+        <description>Shift Deck 1, Button: left SHIFT (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x3F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].shiftButton</key>
+        <description>Shift Deck 2, Button: right SHIFT (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x3F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].shiftButton</key>
+        <description>Shift Deck 3, Button: left SHIFT (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x3F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].shiftButton</key>
+        <description>Shift Deck 4, Button: right SHIFT (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x3F</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck1Button</key>
+        <description>Toggles Deck 1 Button</description>
+        <status>0x90</status>
+        <midino>0x72</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck3Button</key>
+        <description>Toggles Deck 3 Button</description>
+        <status>0x92</status>
+        <midino>0x72</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck2Button</key>
+        <description>Toggles Deck 2 Button</description>
+        <status>0x91</status>
+        <midino>0x72</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck4Button</key>
+        <description>Toggles Deck 4 Button</description>
+        <status>0x93</status>
+        <midino>0x72</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[AutoDJ]</group>
+        <key>PioneerDDJSB3.autodjSkipNext</key>
+        <description>AutoDJ skip next, Button: SHIFT &amp; DECK3</description>
+        <status>0x90</status>
+        <midino>0x73</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[AutoDJ]</group>
+        <key>PioneerDDJSB3.autodjToggle</key>
+        <description>Toggle AutoDJ On/Off, Button: SHIFT DECK4</description>
+        <status>0x91</status>
+        <midino>0x73</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[AutoDJ]</group>
+        <key>PioneerDDJSB3.autodjSkipNext</key>
+        <description>AutoDJ skip next, Button: SHIFT DECK3</description>
+        <status>0x92</status>
+        <midino>0x73</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[AutoDJ]</group>
+        <key>PioneerDDJSB3.autodjToggle</key>
+        <description>Toggle AutoDJ On/Off, Button: SHIFT DECK4</description>
+        <status>0x93</status>
+        <midino>0x73</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deckFaderMSB</key>
+        <description>Channel fader Deck 1 (MSB), Slider: left CHANNELFADER (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deckFaderLSB</key>
+        <description>Channel fader Deck 1 (LSB), Slider: left CHANNELFADER (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x33</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deckFaderMSB</key>
+        <description>Channel fader Deck 2 (MSB), Slider: right CHANNELFADER (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deckFaderLSB</key>
+        <description>Channel fader Deck 2 (LSB), Slider: right CHANNELFADER (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x33</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deckFaderMSB</key>
+        <description>Channel fader Deck 3 (MSB), Slider: left CHANNELFADER (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deckFaderLSB</key>
+        <description>Channel fader Deck 3 (LSB), Slider: left CHANNELFADER (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x33</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deckFaderMSB</key>
+        <description>Channel fader Deck 4 (MSB), Slider: right CHANNELFADER (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x13</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deckFaderLSB</key>
+        <description>Channel fader Deck 4 (LSB), Slider: right CHANNELFADER (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x33</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].gainKnob.inputMSB</key>
+        <description>Gain Deck 1 (MSB), Knob: left TRIM (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x04</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].gainKnob.inputLSB</key>
+        <description>Gain Deck 1 (LSB), Knob: left TRIM (Deck 1 active)</description>
+        <status>0xB0</status>
+        <midino>0x24</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].gainKnob.inputMSB</key>
+        <description>Gain Deck 2 (MSB), Knob: right TRIM (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x04</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].gainKnob.inputLSB</key>
+        <description>Gain Deck 2 (LSB), Knob: right TRIM (Deck 2 active)</description>
+        <status>0xB1</status>
+        <midino>0x24</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].gainKnob.inputMSB</key>
+        <description>Gain Deck 3 (MSB), Knob: left TRIM (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x04</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].gainKnob.inputLSB</key>
+        <description>Gain Deck 3 (LSB), Knob: left TRIM (Deck 3 active)</description>
+        <status>0xB2</status>
+        <midino>0x24</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].gainKnob.inputMSB</key>
+        <description>Gain Deck 4 (MSB), Knob: right TRIM (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x04</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].gainKnob.inputLSB</key>
+        <description>Gain Deck 4 (LSB), Knob: right TRIM (Deck 4 active)</description>
+        <status>0xB3</status>
+        <midino>0x24</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].quickEffectKnob.inputMSB</key>
+        <description>Filter Deck 1 (MSB), Knob: left FILTER (Deck 1 active)</description>
+        <status>0xB6</status>
+        <midino>0x17</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.deck[1].quickEffectKnob.inputLSB</key>
+        <description>Filter Deck 1 (LSB), Knob: left FILTER (Deck 1 active)</description>
+        <status>0xB6</status>
+        <midino>0x37</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].quickEffectKnob.inputMSB</key>
+        <description>Filter Deck 2 (MSB), Knob: right FILTER (Deck 2 active)</description>
+        <status>0xB6</status>
+        <midino>0x18</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.deck[2].quickEffectKnob.inputLSB</key>
+        <description>Filter Deck 2 (LSB), Knob: right FILTER (Deck 2 active)</description>
+        <status>0xB6</status>
+        <midino>0x38</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].quickEffectKnob.inputMSB</key>
+        <description>Filter Deck 3 (MSB), Knob: left FILTER (Deck 3 active)</description>
+        <status>0xB6</status>
+        <midino>0x19</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.deck[3].quickEffectKnob.inputLSB</key>
+        <description>Filter Deck 3 (LSB), Knob: left FILTER (Deck 3 active)</description>
+        <status>0xB6</status>
+        <midino>0x39</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].quickEffectKnob.inputMSB</key>
+        <description>Filter Deck 4 (MSB), Knob: right FILTER (Deck 4 active)</description>
+        <status>0xB6</status>
+        <midino>0x1A</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.deck[4].quickEffectKnob.inputLSB</key>
+        <description>Filter Deck 4 (LSB), Knob: right FILTER (Deck 4 active)</description>
+        <status>0xB6</status>
+        <midino>0x3A</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+    </controls>
+</controller>

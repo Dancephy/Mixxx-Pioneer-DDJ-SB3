@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+  <controls>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].button[1].input</key>
+      <description>FX1-1 (Deck1), Button: left FX1-1</description>
+      <status>0x94</status>
+      <midino>0x47</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].button[4].input</key>
+      <description>Shift FX1-1, Button: left SHIFT &amp; FX1-1</description>
+      <status>0x94</status>
+      <midino>0x63</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].button[2].input</key>
+      <description>FX1-2 (Head), Button: left FX1-2</description>
+      <status>0x94</status>
+      <midino>0x48</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].button[5].input</key>
+      <description>Shift FX1-2 (Head), Button: left SHIFT &amp; FX1-2</description>
+      <status>0x94</status>
+      <midino>0x64</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].button[3].input</key>
+      <description>FX1-3  (Deck2), Button: left FX1-3</description>
+      <status>0x94</status>
+      <midino>0x49</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].button[6].input</key>
+      <description>Shift FX1-3  (Deck2), Button: left SHIFT &amp; FX1-3</description>
+      <status>0x94</status>
+      <midino>0x65</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].knob.inputMSB</key>
+      <description>FX1 (MSB), Knob: left FX1</description>
+      <status>0xB4</status>
+      <midino>0x06</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit1]</group>
+      <key>PioneerDDJSB3.effectUnit[1].knob.inputLSB</key>
+      <description>FX1 (LSB), Knob: left FX1</description>
+      <status>0xB4</status>
+      <midino>0x26</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit]</group>
+      <key>PioneerDDJSB3.effectUnit[1].knob.inputMSB</key>
+      <description>Shift FX1 (MSB), Knob: left SHIFT &amp; FX1</description>
+      <status>0xB4</status>
+      <midino>0x00</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit]</group>
+      <key>PioneerDDJSB3.effectUnit[1].knob.inputLSB</key>
+      <description>Shift FX1 (LSB), Knob: left SHIFT &amp; FX1</description>
+      <status>0xB4</status>
+      <midino>0x20</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].button[1].input</key>
+      <description>FX2-1 (Deck1), Button: right FX2-1</description>
+      <status>0x95</status>
+      <midino>0x47</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].button[4].input</key>
+      <description>Shift FX2-1 (Deck1), Button: right SHIFT &amp; FX2-1</description>
+      <status>0x95</status>
+      <midino>0x63</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].button[2].input</key>
+      <description>FX2-2 (Head), Button: right FX2-2</description>
+      <status>0x95</status>
+      <midino>0x48</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].button[5].input</key>
+      <description>Shift FX2-2 (Head), Button: right SHIFT &amp; FX2-2</description>
+      <status>0x95</status>
+      <midino>0x64</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].button[3].input</key>
+      <description>FX2-3 (Deck2), Button: right FX2-3</description>
+      <status>0x95</status>
+      <midino>0x49</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].button[6].input</key>
+      <description>Shift FX2-3 (Deck2), Button: right SHIFT &amp; FX2-3</description>
+      <status>0x95</status>
+      <midino>0x65</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].knob.inputMSB</key>
+      <description>FX2 (MSB), Knob: right FX2</description>
+      <status>0xB5</status>
+      <midino>0x06</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].knob.inputLSB</key>
+      <description>FX2 (LSB), Knob: right FX2</description>
+      <status>0xB5</status>
+      <midino>0x26</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[EffectRack1_EffectUnit2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].knob.inputMSB</key>
+      <description>Shift FX2 (MSB), Knob: right SHIFT &amp; FX1</description>
+      <status>0xB5</status>
+      <midino>0x00</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.effectUnit[2].knob.inputLSB</key>
+      <description>Shift FX2 (LSB), Knob: right SHIFT &amp; FX2</description>
+      <status>0xB5</status>
+      <midino>0x20</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+  </controls>
+</controller>

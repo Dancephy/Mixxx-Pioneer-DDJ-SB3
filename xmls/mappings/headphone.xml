@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+  <controls>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterCueButton</key>
+        <description>Toggles headphone master cue, Button: Master</description>
+        <status>0x96</status>
+        <midino>0x5B</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.masterCueButton</key>
+        <description>Toggles headphone master cue, Button: SHIFT + Master</description>
+        <status>0x96</status>
+        <midino>0x78</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 1, Button: left CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 2, Button: right CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 3, Button: left CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.headphoneCueButton</key>
+        <description>Toggles headphone cueing Deck 4, Button: right CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x54</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 3, Button: SHIFT &amp; left CUE (Deck 1 active)</description>
+        <status>0x90</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 4, Button: SHIFT &amp; right CUE (Deck 2 active)</description>
+        <status>0x91</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 1, Button: SHIFT &amp; left CUE (Deck 3 active)</description>
+        <status>0x92</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.headphoneShiftCueButton</key>
+        <description>Toggles headphone cueing Deck 2, Button: SHIFT &amp; right CUE (Deck 4 active)</description>
+        <status>0x93</status>
+        <midino>0x68</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.headphoneLevel.inputMSB</key>
+        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (MSB)</description>
+        <status>0xB6</status>
+        <midino>0x0D</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+      <control>
+        <group>[Master]</group>
+        <key>PioneerDDJSB3.headphoneLevel.inputLSB</key>
+        <description>Headphone volume / (Shift for headphone master mix), Button: Headphones Vol (LSB)</description>
+        <status>0xB6</status>
+        <midino>0x2D</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+  </controls>
+</controller>

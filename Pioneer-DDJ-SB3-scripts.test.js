@@ -18,3 +18,7 @@ test('pressDeck4', () => {
 //Debug[Controller]: "deck3button: channel=1, control=114, value=127, status=145, control=[Channel2]"
 //Debug[Controller]: DDJ - SB3: t: 21754 ms status 0x91(ch 2, opcode 0x9), ctrl 0x72, val 0x00
 //Debug[Controller]: "deck3button: channel=1, control=114, value=0, status=145, control=[Channel2]"
+
+test('send bpm', () => {
+	PioneerDDJSB3.updateBPM(130, '[Channel1]', 0);
+});

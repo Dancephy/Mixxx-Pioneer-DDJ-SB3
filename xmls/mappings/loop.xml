@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+<controls>
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 1 Auto Loop, Button: Auto Loop</description>
+        <status>0x90</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 2 Auto Loop, Button: Auto Loop</description>
+        <status>0x91</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 3 Auto Loop, Button: Auto Loop</description>
+        <status>0x92</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.autoLoopButton</key>
+        <description>Deck 4 Auto Loop, Button: Auto Loop</description>
+        <status>0x93</status>
+        <midino>0x14</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel1]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 1 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x90</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 2 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x91</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 3 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x92</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>PioneerDDJSB3.reloopButton</key>
+        <description>Deck 4 Reloop, Button: SHIFT + Auto Loop</description>
+        <status>0x93</status>
+        <midino>0x50</midino>
+        <options>
+          <script-binding />
+        </options>
+      </control>
+
+
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_halve</key>
+        <description>Deck 1 Loop halve, Button: 1/2X</description>
+        <status>0x90</status>
+        <midino>0x12</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_halve</key>
+        <description>Deck 2 Loop halve, Button: 1/2X</description>
+        <status>0x91</status>
+        <midino>0x12</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_halve</key>
+        <description>Deck 4 Loop halve, Button: 1/2X</description>
+        <status>0x92</status>
+        <midino>0x12</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_halve</key>
+        <description>Deck 4 Loop halve, Button: 1/2X</description>
+        <status>0x93</status>
+        <midino>0x12</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_in</key>
+        <description>Deck 1 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x90</status>
+        <midino>0x61</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_in</key>
+        <description>Deck 2 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x91</status>
+        <midino>0x61</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_in</key>
+        <description>Deck 3 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x92</status>
+        <midino>0x61</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_in</key>
+        <description>Deck 4 Loop in, Button: SHIFT + 1/2X</description>
+        <status>0x93</status>
+        <midino>0x61</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_double</key>
+        <description>Deck 1 Loop Double, Button: 2X</description>
+        <status>0x90</status>
+        <midino>0x13</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_double</key>
+        <description>Deck 2 Loop Double, Button: 2X</description>
+        <status>0x91</status>
+        <midino>0x13</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_double</key>
+        <description>Deck 3 Loop Double, Button: 2X</description>
+        <status>0x92</status>
+        <midino>0x13</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_double</key>
+        <description>Deck 4 Loop Double, Button: 2X</description>
+        <status>0x93</status>
+        <midino>0x13</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel1]</group>
+        <key>loop_out</key>
+        <description>Deck 1 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x90</status>
+        <midino>0x62</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel2]</group>
+        <key>loop_out</key>
+        <description>Deck 2 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x91</status>
+        <midino>0x62</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel3]</group>
+        <key>loop_out</key>
+        <description>Deck 3 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x92</status>
+        <midino>0x62</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+      <control>
+        <group>[Channel4]</group>
+        <key>loop_out</key>
+        <description>Deck 4 Loop Out, Button: SHIFT + 2X</description>
+        <status>0x93</status>
+        <midino>0x62</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+</controls>
+</controller>

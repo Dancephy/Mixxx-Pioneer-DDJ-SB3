@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+<controls>
+<!-- PLAY / STOP -->
+<!-- PAD1 -->
+      <control>
+        <group>[Sampler1]</group>
+        <key>start_play</key>
+        <description>Sampler 1 play, Button: PAD1 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x30</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>start_play</key>
+        <description>Sampler 5 play, Button: PAD1 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x30</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>start_play</key>
+        <description>Sampler 1 play, Button: PAD1 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x30</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>start_play</key>
+        <description>Sampler 5 play, Button: PAD1 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x30</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>stop</key>
+        <description>Sampler 1 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x38</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>stop</key>
+        <description>Sampler 5 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x38</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>stop</key>
+        <description>Sampler 1 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x38</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>stop</key>
+        <description>Sampler 5 stop, Button: SHIFT &amp; PAD1 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x38</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+<!-- PAD2 -->
+      <control>
+        <group>[Sampler2]</group>
+        <key>start_play</key>
+        <description>Sampler 2 play, Button: PAD2 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x31</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>start_play</key>
+        <description>Sampler 6 play, Button: PAD2 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x31</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>start_play</key>
+        <description>Sampler 2 play, Button: PAD2 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x31</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>start_play</key>
+        <description>Sampler 6 play, Button: PAD2 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x31</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>stop</key>
+        <description>Sampler 2 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x39</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>stop</key>
+        <description>Sampler 6 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x39</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>stop</key>
+        <description>Sampler 2 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x39</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>stop</key>
+        <description>Sampler 6 stop, Button: SHIFT &amp; PAD2 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x39</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+<!-- PAD3 -->
+      <control>
+        <group>[Sampler3]</group>
+        <key>start_play</key>
+        <description>Sampler 3 play, Button: PAD3 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x32</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>start_play</key>
+        <description>Sampler 7 play, Button: PAD3 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x32</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>start_play</key>
+        <description>Sampler 3 play, Button: PAD3 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x32</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>start_play</key>
+        <description>Sampler 7 play, Button: PAD3 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x32</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>stop</key>
+        <description>Sampler 3 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>stop</key>
+        <description>Sampler 7 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>stop</key>
+        <description>Sampler 3 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>stop</key>
+        <description>Sampler 7 stop, Button: SHIFT &amp; PAD3 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x3A</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+<!-- PAD4 -->
+      <control>
+        <group>[Sampler4]</group>
+        <key>start_play</key>
+        <description>Sampler4 play, Button: PAD4 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x33</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>start_play</key>
+        <description>Sampler8 play, Button: PAD4 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x33</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>start_play</key>
+        <description>Sampler4 play, Button: PAD4 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x33</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>start_play</key>
+        <description>Sampler8 play, Button: PAD4 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x33</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>stop</key>
+        <description>Sampler4 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 1 active)</description>
+        <status>0x97</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>stop</key>
+        <description>Sampler8 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 2 active)</description>
+        <status>0x98</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler4]</group>
+        <key>stop</key>
+        <description>Sampler4 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 3 active)</description>
+        <status>0x99</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler8]</group>
+        <key>stop</key>
+        <description>Sampler8 stop, Button: SHIFT &amp; PAD4 (in SAMPLER-Mode, Deck 4 active)</description>
+        <status>0x9A</status>
+        <midino>0x3B</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+
+<!-- LOAD / UNLOAD -->
+
+<!-- PAD5 -->
+      <control>
+        <group>[Sampler1]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD5 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x34</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler5, Button: PAD5 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x34</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD5 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x34</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler5, Button: PAD5 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x34</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>eject</key>
+        <description>Eject Sampler1, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>eject</key>
+        <description>Eject Sampler5, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler1]</group>
+        <key>eject</key>
+        <description>Eject Sampler1, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler5]</group>
+        <key>eject</key>
+        <description>Eject Sampler5, Button: SHIFT PAD5 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x3C</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+<!-- PAD6 -->
+      <control>
+        <group>[Sampler2]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x35</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x35</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x35</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler1, Button: PAD6 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x35</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>eject</key>
+        <description>Eject Sampler2, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>eject</key>
+        <description>Eject Sampler6, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler2]</group>
+        <key>eject</key>
+        <description>Eject Sampler2, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler6]</group>
+        <key>eject</key>
+        <description>Eject Sampler6, Button: SHIFT PAD6 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x3D</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+
+<!-- PAD7 -->
+
+      <control>
+        <group>[Sampler3]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler3, Button: PAD7 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x36</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler7, Button: PAD7 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x36</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler3, Button: PAD7 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x36</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>LoadSelectedTrack</key>
+        <description>Load selected track in Sampler7, Button: PAD7 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x36</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>eject</key>
+        <description>Eject Sampler3, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 1)</description>
+        <status>0x97</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>eject</key>
+        <description>Eject Sampler7, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 2)</description>
+        <status>0x98</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler3]</group>
+        <key>eject</key>
+        <description>Eject Sampler3, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 3)</description>
+        <status>0x99</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+      <control>
+        <group>[Sampler7]</group>
+        <key>eject</key>
+        <description>Eject Sampler7, Button: SHIFT PAD7 (in SAMPLER-Mode, Deck 4)</description>
+        <status>0x9A</status>
+        <midino>0x3E</midino>
+        <options>
+          <normal />
+        </options>
+      </control>
+
+<!-- PAD8 -->
+<control>
+  <group>[Sampler4]</group>
+  <key>LoadSelectedTrack</key>
+  <description>Load selected track in Sampler4, Button: PAD8 (in SAMPLER-Mode, Deck 1)</description>
+  <status>0x97</status>
+  <midino>0x37</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+<control>
+  <group>[Sampler8]</group>
+  <key>LoadSelectedTrack</key>
+  <description>Load selected track in Sampler8, Button: PAD8 (in SAMPLER-Mode, Deck 2)</description>
+  <status>0x98</status>
+  <midino>0x37</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+<control>
+  <group>[Sampler4]</group>
+  <key>LoadSelectedTrack</key>
+  <description>Load selected track in Sampler4, Button: PAD8 (in SAMPLER-Mode, Deck 3)</description>
+  <status>0x99</status>
+  <midino>0x37</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+<control>
+  <group>[Sampler8]</group>
+  <key>LoadSelectedTrack</key>
+  <description>Load selected track in Sampler8, Button: PAD8 (in SAMPLER-Mode, Deck 4)</description>
+  <status>0x9A</status>
+  <midino>0x37</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+<control>
+  <group>[Sampler4]</group>
+  <key>eject</key>
+  <description>Eject Sampler4, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 1)</description>
+  <status>0x97</status>
+  <midino>0x3F</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+<control>
+  <group>[Sampler8]</group>
+  <key>eject</key>
+  <description>Eject Sampler8, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 2)</description>
+  <status>0x98</status>
+  <midino>0x3F</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+<control>
+  <group>[Sampler4]</group>
+  <key>eject</key>
+  <description>Eject Sampler4, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 3)</description>
+  <status>0x99</status>
+  <midino>0x3F</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+<control>
+  <group>[Sampler8]</group>
+  <key>eject</key>
+  <description>Eject Sampler8, Button: SHIFT PAD8 (in SAMPLER-Mode, Deck 4)</description>
+  <status>0x9A</status>
+  <midino>0x3F</midino>
+  <options>
+    <normal />
+  </options>
+</control>
+</controls>
+</controller>

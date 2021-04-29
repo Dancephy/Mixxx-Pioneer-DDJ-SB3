@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='utf-8'?>
+<controller>
+  <controls>
+    <!-- PAD 1 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x50</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x50</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x50</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD1 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x50</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <!-- PAD 2 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x51</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x51</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x51</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD2 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x51</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <!-- PAD3 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x52</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x52</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x52</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD3 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x52</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <!-- PAD4 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x53</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x53</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x53</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD4 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x53</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <!-- PAD5 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x54</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x54</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x54</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD5 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x54</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <!-- PAD6 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x55</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x55</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x55</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD6 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x55</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <!-- PAD7 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x56</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x56</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x56</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD7 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x56</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <!-- PAD8 -->
+
+    <control>
+      <group>[Channel1]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 1 active)</description>
+      <status>0x97</status>
+      <midino>0x57</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel2]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 2 active)</description>
+      <status>0x98</status>
+      <midino>0x57</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel3]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 3 active)</description>
+      <status>0x99</status>
+      <midino>0x57</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+
+    <control>
+      <group>[Channel4]</group>
+      <key>PioneerDDJSB3.beatloopRollButtons</key>
+      <description>Beatloop Roll, Button: PAD8 (in ROLL-Mode, Deck 4 active)</description>
+      <status>0x9A</status>
+      <midino>0x57</midino>
+      <options>
+        <script-binding />
+      </options>
+    </control>
+  </controls>
+</controller>
