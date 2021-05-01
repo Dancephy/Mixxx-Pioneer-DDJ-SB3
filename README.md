@@ -1,7 +1,7 @@
 # Mixxx-Pioneer-DDJ-SB3
 Mixxx  controller mappings for the Pioneer DDJ SB3
 
-These files are based on the DDJ-SB2 files that are part of the Mixxx distribution: https://github.com/mixxxdj/mixxx/tree/master/res/controllers, however they where adjusted to work fine with DDJ-SB3
+These files are based on the DDJ-SB2 files that are part of the Mixxx distribution: https://github.com/mixxxdj/mixxx/tree/master/res/controllers, however they were adjusted to work fine with DDJ-SB3
 
 ## Other branches
 You may want to check the branch [8-hotcues](https://github.com/julia-otran/Mixxx-Pioneer-DDJ-SB3/tree/8-hotcues). The difference is the `HOT CUE` pads: Use the pads as hotcues, and pressing shift:
@@ -32,8 +32,6 @@ The behavior on `master` branch is different:
 
 - Second option: You can just copy the files
 ```
-lodash.mixxx.js
-midi-components-0.0.js
 Pioneer-DDJ-SB3-scripts.js
 Pioneer-DDJ-SB3.midi.xml
 ```
@@ -64,8 +62,15 @@ to the Mixxx controllers folder.
 3. Install Jest
 4. run yarn test
 
+## Linting
+The mapping js file must not generate any eslint warnings in order to be merged into the mixxx project.
+```
+yarn run eslint Pioneer-DDJ-SB3-scripts.js
+```
+
+
 ## Contributing
-Please: **do not change the file `Pioneer-DDJ-SB3.midi.xml` manually**. Instead, modify first the files inside `xmls` folder and after run `node ./compile-xml.js`. The script will merge recusively all xmls inside the xmls folder and compile it in the final xml.
+Please: **do not change the file `Pioneer-DDJ-SB3.midi.xml` manually**. Instead, modify first the files inside the `xmls` folder and after run `node ./compile-xml.js`. The script will merge recusively all xmls inside the xmls folder and compile it in the final xml.
 
 ## Feature Matrix
 
