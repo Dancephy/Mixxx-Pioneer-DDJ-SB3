@@ -123,7 +123,9 @@ PioneerDDJSB3.updateBPM = function(bpm, group) {
 
     var offset = 16 - bpmBits.length;
 
-    for (var i=0; i<16; i++) {
+    var i;
+
+    for (i=0; i<16; i++) {
         if (i < offset) {
             bpmBitsPadded[i] = "0";
         } else {
@@ -133,8 +135,7 @@ PioneerDDJSB3.updateBPM = function(bpm, group) {
 
     var bytes = [];
 
-    // eslint-disable-next-line no-redeclare
-    for (var i=0; i<4; i++) {
+    for (i=0; i<4; i++) {
         var mbyte = 0;
 
         for (var j=0; j<4; j++) {
