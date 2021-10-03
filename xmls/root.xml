@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<MixxxControllerPreset schemaVersion="1" mixxxVersion="2.2+">
+<MixxxControllerPreset schemaVersion="1" mixxxVersion="2.3+">
   <info>
     <name>Pioneer DDJ-SB3</name>
     <author>Dancephy.com</author>
-    <description>Mapping file for the Pioneer DDJ-SB3 controller. Version 1.0.0.</description>
+    <description>Mapping file for the Pioneer DDJ-SB3 controller. Version 2.0.0.</description>
     <wiki></wiki>
     <forums></forums>
   </info>
