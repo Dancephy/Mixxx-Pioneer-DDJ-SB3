@@ -3,6 +3,9 @@ Mixxx  controller mappings for the Pioneer DDJ SB3
 
 These files are based on the DDJ-SB2 files that are part of the Mixxx distribution: https://github.com/mixxxdj/mixxx/tree/master/res/controllers, however they were adjusted to work fine with DDJ-SB3
 
+## Known Issues
+Decks 3 and 4 will NOT work unless you set the output of Mixxx to use DDJ-SB3. The controller requires that the on-board sound card be activated before it sends out the correct messages. It seems that is a bug (feature?) in the controller firmware. If pressing the deck 3 or deck 4 button does not light the button up, make sure you are using the controller sound card as output in Mixxx (Options -> Preferences -> Sound Hardware).
+
 ## Other branches
 You may want to check the branch [8-hotcues](https://github.com/julia-otran/Mixxx-Pioneer-DDJ-SB3/tree/8-hotcues). The difference is the `HOT CUE` pads: Use the pads as hotcues, and pressing shift:
   - The 4 pads on top will delete hotcues 1-4
