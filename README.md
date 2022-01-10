@@ -1,6 +1,10 @@
 # Mixxx-Pioneer-DDJ-SB3
 Mixxx  controller mappings for the Pioneer DDJ SB3
+------------
+**IMPORTANT!!!**
 
+**This mapping has been merged into the [official Mixxx repository](https://github.com/mixxxdj/mixxx/tree/2.3/res/controllers). No more development for this controller mapping will occur in this repository.**
+------------
 These files are based on the DDJ-SB2 files that are part of the Mixxx distribution: https://github.com/mixxxdj/mixxx/tree/master/res/controllers, however they were adjusted to work fine with DDJ-SB3
 
 ## Known Issues
